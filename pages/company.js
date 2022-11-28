@@ -4,7 +4,7 @@ function Company() {
   return (
   <>
         
-        <div id="hero-author-section" className="max-w-6xl mx-auto ">
+    <div id="hero-author-section" className="max-w-6xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
                 <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
                     <p className="text-sm text-truwingray-primary mb-3">Title Here</p>
@@ -25,10 +25,10 @@ function Company() {
                    
                 </div>
             </div>
-        </div>
+    </div>
        
 
-        <div id="onethird-info-section" className="lg:max-w-6xl mx-auto hidden md:block my-28 ">
+    <div id="onethird-info-section" className="lg:max-w-6xl mx-auto hidden md:block my-28 ">
         <div id="onethird-info-wrapper" className="mx-5 mt-10">
             <div className="text-center" >
                 <p className="text-sm text-truwinblue-900">We’re built to serve you.</p>
@@ -54,8 +54,6 @@ function Company() {
         </div>
     </div>
    
-   
-
     <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
@@ -74,44 +72,44 @@ function Company() {
     </div>
    
    {/** AUTHOR */}
-<div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
-    <div id="card-onethrid-wrapper" className=" mx-5 sm:mx-auto mt-10 md:min-h-[390px] max-w-[600px] md:hidden">
-        <div className="mt-5 sx:flex sx:min-h-[300px]">
-            
-                <img src="/images/Jay Chapp - President.png" className="w-full max-h-[600px] sx:max-h-[300px]" alt="" />
-            
-            <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
-                <p className="font-graphikSemibold">Jay Chappell</p>
-                <p className="font-graphikLight">President</p>
+    <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" className=" mx-5 sm:mx-auto mt-10 md:min-h-[390px] max-w-[600px] md:hidden">
+            <div className="mt-5 sx:flex sx:min-h-[300px]">
+                
+                    <img src="/images/Jay Chapp - President.png" className="w-full max-h-[600px] sx:max-h-[300px]" alt="" />
+                
+                <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
+                    <p className="font-graphikSemibold">Jay Chappell</p>
+                    <p className="font-graphikLight">President</p>
 
-                <p className="mt-4 sx:text-sm">Jay Chappell, our founder and president, believes we’re selling an experience, not just windows. And he believes so strongly in being a transparent company that he likes customers to ask him anything, day or night.</p>
-            </div>
-        </div>
-        
-        <div className="mt-5 sx:flex sx:min-h-[300px]">
-            
-                <img src="/images/Tom Harrin.png" className="w-full max-h-[600px] sx:w-auto sx:max-h-[300px]"  alt="" />
-            
-            <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
-                <p className="font-graphikSemibold">Tom Harrigan</p>
-                <p className="font-graphikLight">Senior Consultant</p>
-
-                <p className="mt-4 sx:text-sm">Tom, our resident expert, believes that the best thing to ask a customer is what is important to them. He helps lead the team with his decades of window, door and siding experience.</p>
+                    <p className="mt-4 sx:text-sm">Jay Chappell, our founder and president, believes we’re selling an experience, not just windows. And he believes so strongly in being a transparent company that he likes customers to ask him anything, day or night.</p>
+                </div>
             </div>
             
-        </div>
+            <div className="mt-5 sx:flex sx:min-h-[300px]">
+                
+                    <img src="/images/Tom Harrin.png" className="w-full max-h-[600px] sx:w-auto sx:max-h-[300px]"  alt="" />
+                
+                <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
+                    <p className="font-graphikSemibold">Tom Harrigan</p>
+                    <p className="font-graphikLight">Senior Consultant</p>
 
+                    <p className="mt-4 sx:text-sm">Tom, our resident expert, believes that the best thing to ask a customer is what is important to them. He helps lead the team with his decades of window, door and siding experience.</p>
+                </div>
+                
+            </div>
+
+        </div>
     </div>
-</div>
-{/** END AUTHOR */}
+    {/** END AUTHOR */}
 
-{/** SERVICE VALUE */}
+    {/** SERVICE VALUE */}
     <style jsx> {`
         #service-value-wrapper{
             color: rgb(43 80 175)
         }
     `}
-       
+        
     </style>
     <div id="service-value-section" className="my-16 bg-softblue-primary">
         <div id="service-value-wrapper" className="mx-auto py-16 px-10 lg:max-w-6xl">
@@ -149,42 +147,43 @@ function Company() {
 
         </div>
     </div>
-{/** END OF SERVICE VALUE */}
+    {/** END OF SERVICE VALUE */}
 
-{/** MORE POSTS */}
-<div id="more-posts-section" className="lg:max-w-6xl mx-auto">
-        <div id="more-posts-wrapper" className="mx-5 mt-20">
-            <p className="text-2xl text-truwinblue-900 font-graphik">Keep browsing</p>
-            <div id="more-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">
-                <div className="relative my-4 w-full bg-truwinsoftblue-primary min-h-[370px] rounded">
-                    <p className="absolute text-sm t-0 left-0 text-truwinblue-900 font-graphik pl-5 pt-5 ">Windows</p>
-                    <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphik px-5 pt-20 md:text-lg">Get to know Truwin’s Door Warranty</p>
-                    <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                    
+    {/** MORE POSTS */}
+    <div id="more-posts-section" className="lg:max-w-6xl mx-auto">
+            <div id="more-posts-wrapper" className="mx-5 mt-20">
+                <p className="text-2xl text-truwinblue-900 font-graphik">Keep browsing</p>
+                <div id="more-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">
+                    <div className="relative my-4 w-full bg-truwinsoftblue-primary min-h-[370px] rounded">
+                        <p className="absolute text-sm t-0 left-0 text-truwinblue-900 font-graphik pl-5 pt-5 ">Windows</p>
+                        <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphik px-5 pt-20 md:text-lg">Get to know Truwin’s Door Warranty</p>
+                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
+                        
+                    </div>
+                    <div className="relative my-4 w-full min-h-[370px]p">
+                        <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Doors</p>
+                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Our review of the JeldWin Sliding Back Door System</p>
+                        <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-doors.png" alt="" />
+                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
+                    </div>
+                    <div className="relative my-4 w-full bg-truwinblue-900 min-h-[370px] rounded" >
+                        <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5 ">Siding</p>
+                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Truwin now carries Pella Vinyl Doors</p>
+                    {/**<!----*/} <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-siding.png" alt="" /> { /** -->*/}
+                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
+                    </div>
+                    <div className="relative my-4 w-full min-h-[370px]">
+                        <p className="absolute z-10 text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Roofs</p>
+                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Offering 15% off any door type thru September 2022</p>
+                        <img className="w-full min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-roofs.png" alt="" />
+                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
+                    </div>
+                
                 </div>
-                <div className="relative my-4 w-full min-h-[370px]p">
-                    <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Doors</p>
-                    <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Our review of the JeldWin Sliding Back Door System</p>
-                    <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-doors.png" alt="" />
-                    <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                </div>
-                <div className="relative my-4 w-full bg-truwinblue-900 min-h-[370px] rounded" >
-                    <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5 ">Siding</p>
-                    <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Truwin now carries Pella Vinyl Doors</p>
-                   {/**<!----*/} <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-siding.png" alt="" /> { /** -->*/}
-                    <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                </div>
-                <div className="relative my-4 w-full min-h-[370px]">
-                    <p className="absolute z-10 text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Roofs</p>
-                    <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Offering 15% off any door type thru September 2022</p>
-                    <img className="w-full min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-roofs.png" alt="" />
-                    <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                </div>
-               
             </div>
-        </div>
-</div>
-{/** END MORE POSTS */}
+    </div>
+    {/** END MORE POSTS */}
+    
     {/** END END */}
     </>
     

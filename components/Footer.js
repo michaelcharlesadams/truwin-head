@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
     return (
@@ -42,16 +43,22 @@ function Footer() {
             <div id="footer-content" className="flex flex-wrap mx-auto text-xs w-11/12 pl-[10%] sm:flex-nowrap sm:pl-0 lg:w-3/5 lg:pt-12">
                 <div id="footer-col-1" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Services</h4>
-                    <p><a href="">Windows</a></p>
-                    <p><a href="">Doors</a></p>
-                    <p><a href="">Siding</a></p>
-                    <p><a href="">Roofing</a></p>
+                    <p>
+                    <Link href=""><a >Windows</a></Link>
+                    </p>
+                    <p>
+                    <Link href=""><a >Doors</a></Link>
+                    </p>
+                    <p>
+                    <Link href=""><a >Siding</a></Link>
+                    </p>
+                    <p><Link href=""><a >Roofing</a></Link></p>
                 </div>
                 <div id="footer-col-2" className="w-2/4 mb-12 lg:mb-5">
-                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">About Truwin</h4>
-                    <p><a href="/company">Company</a></p>
-                    <p><a href="/post">Resource</a></p>
-                    <p><a href="/blog.html">Blog</a></p>
+                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">About Truwin</h4>     
+                    <p><Link href="/company"><a >Company</a></Link></p>
+                    <p><Link href="/post"><a >Resources</a></Link></p>
+                    <p><Link href="/blog.html"><a >Blog</a></Link></p>
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Service Area</h4>

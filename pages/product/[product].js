@@ -136,9 +136,44 @@ export default function Product() {
 }
 
 /**
- * 
+ * getStatic Paths
  * getStatic Props 
  */
+/* 
+ export async function getStaticPaths() {
+
+  //fetch all posts urls for static pages
+  const res = await fetch('http://localhost:8888/graphql', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+          query: `
+          query getPostsPathsQuery {
+              posts {
+                  nodes {
+                      slug 
+                  }
+              }
+          }
+      `})
+  })
+
+  //turn into JSON
+  const json = await res.json();
+
+  //drill down through JSON tree to the post data
+  const posts = json.data.posts.nodes;
+
+  //create an array of slugs for static paths
+  const paths = posts.map((post) => ({
+      params: { slug: post.slug }
+  }))
+  
+  //return the paths
+  return { paths, fallback: false }
+
+}
+
  export async function getStaticProps({params}) {
   //grab the slug
   const { slug } = params;
@@ -199,6 +234,7 @@ export default function Product() {
       props: { post: json.data.postBy }
   }
 }
+*/
 
 
 
