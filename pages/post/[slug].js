@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import { client } from '../_app';
+import { useQuery, gql } from '@apollo/client';
 
 export default function Post({post}){
     //deconstruct the posts contents
-    console.log(post);
+    
     const {title, date, slug, content } = post;
     const postHeaderImage = post.postsFeaturedImages.postsFeaturedImage.sourceUrl;
     const postAuthor = post.author.node.people.edges[0].node.people_avatar.truwinAvatar.title;
@@ -66,98 +68,95 @@ export default function Post({post}){
 
 }
 
+
+/*********************************************************
+ * Get Static paths
+ * @returns 
+ *******************************************************/
 export async function getStaticPaths() {
 
-    //fetch all posts urls for static pages
-    const res = await fetch('http://localhost:8888/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            query: `
-            query AllPostsPathsQuery {
-                posts {
-                    nodes {
-                        slug 
+    //1.2 Define a query: posts
+    const get_posts_path_query = await client.query({
+        query: gql`
+                query AllPostsPathsQuery {
+                    posts {
+                        nodes {
+                            slug 
+                        }
                     }
                 }
-            }
-        `})
-    })
+            `,
+    });
 
-    //turn into JSON
-    const json = await res.json();
 
-    //drill down through JSON tree to the post data
-    const posts = json.data.posts.nodes;
-
-    //create an array of slugs for static paths
-    const paths = posts.map((post) => ({
+    //2. create array of paths
+    const paths = get_posts_path_query.data.posts.nodes.map((post) => ({
         params: { slug: post.slug }
     }))
-    
-    //return the paths
+
     return { paths, fallback: false }
+    
 
 }
 
+
+/*********************************************************
+ * Get statis props
+ * @param  
+ * @returns post content by slug
+ ********************************************************/
 export async function getStaticProps({params}) {
     //grab the slug
     const { slug } = params;
    
-    //fetch the post data by the slug
-    const res = await fetch('http://localhost:8888/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            query: `
-                query SinglePostQuery($slug: String){
-                    postBy(slug: $slug) {
-                      content
-                      date
-                      slug
-                      title
-                      uri
-                      categories {
-                        nodes {
-                          name
-                        }
-                      }
-                      author {
-                        node {
-                          people {
-                            edges {
-                              node {
-                                people_avatar {
-                                  jobTitle
-                                  truwinAvatar {
-                                    
-                                    sourceUrl(size: THUMBNAIL)
-                                    title
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                      postsFeaturedImages {
-                        postsFeaturedImage {
-                          sourceUrl
-                        }
-                      }
+     //1.2 Define a query: posts
+    const get_post_slug_query = await client.query({
+        query: gql`
+            query SinglePostQuery($slug: String){
+                postBy(slug: $slug) {
+                content
+                date
+                slug
+                title
+                uri
+                categories {
+                    nodes {
+                    name
                     }
-                  }
-            `,
-            variables: { slug }
-        })
-    })
+                }
+                author {
+                    node {
+                    people {
+                        edges {
+                        node {
+                            people_avatar {
+                            jobTitle
+                            truwinAvatar {
+                                
+                                sourceUrl(size: THUMBNAIL)
+                                title
+                            }
+                            }
+                        }
+                        }
+                    }
+                    }
+                }
+                postsFeaturedImages {
+                    postsFeaturedImage {
+                    sourceUrl
+                    }
+                }
+                }
+            }
+        `,
+        variables: { slug }
+    });
 
-    //turn into JSON
-    const json = await res.json()
 
-    //return the props to be used
     return {
-        props: { post: json.data.postBy }
+        props: { post: get_post_slug_query.data.postBy }
     }
+
 }
 

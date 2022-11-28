@@ -2,8 +2,6 @@ import Link from "next/link";
 
 function FeaturedPost({ posts }) {
 
-    console.log(posts);
-
 const title_0 = posts[0].title;
 const uri_0 = posts[0].uri;
 const excerpt_0 = posts[0].excerpt;
@@ -57,49 +55,3 @@ const image_1 = posts[1].postsFeaturedImages.postsFeaturedImage.sourceUrl;
 }
 
 export default FeaturedPost
-
-
-/*********
- * Get 2 featured post
- * dangerouslySetInnerHTML={{ __html: excerpt_0 }}
- * dangerouslySetInnerHTML={{ __html: excerpt_1 }}
- */
-export async function getStaticProps(){
-
-    const res = await fetch('http://localhost:8888/graphql', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            query: `
-            query featuredPostQuery {
-                posts(first: 2) {
-                  nodes {
-                    title
-                    uri
-                    slug
-                    postsFeaturedImages {
-                      postsFeaturedImage {
-                        sourceUrl
-                      }
-                    }
-                    excerpt
-                    categories {
-                      nodes {
-                        name
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-        })
-    })
-    const json = await res.json();
-
-    return {
-      props: {
-          posts: json.data.posts,
-      },
-    }
-  
-  }
