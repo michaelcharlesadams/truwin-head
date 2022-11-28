@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 function FeaturedPost({ posts }) {
+
+    console.log(posts);
+
 const title_0 = posts[0].title;
 const uri_0 = posts[0].uri;
 const excerpt_0 = posts[0].excerpt;
@@ -13,9 +16,9 @@ const excerpt_1 = posts[1].excerpt;
 const cat_1 = posts[1].categories.nodes[0].name;
 const image_1 = posts[1].postsFeaturedImages.postsFeaturedImage.sourceUrl;
 
-console.log(posts);
 
-  return (
+
+  return (    
     <>
     <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
