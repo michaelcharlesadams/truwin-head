@@ -4,7 +4,7 @@ export default function Product() {
   return (
     <>
 
-      {/** HERO */}
+      {/* * HERO 
       <div id="hero-author-section" class="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" class="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div class="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
@@ -33,11 +33,11 @@ export default function Product() {
       </div>
       {/** END HERO */}
 
-      {/** VENDOR LOGOS  <Vendor />  */}
+      {/** VENDOR LOGOS  <Vendor />  
      
       {/** VENDOR LOGOS */}
 
-      {/** PRODUCT MATERIALS */}
+      {/** PRODUCT MATERIALS 
       <div id="window-material-section" class="max-w-6xl mx-auto">
         <div id="window-material-wrapper" class="mx-5 mt-16">
             
@@ -70,7 +70,7 @@ export default function Product() {
       </div>
       {/** END PRODUCT MATERIALS */}
 
-      {/**  PRODUCT TYPE */}
+      {/**  PRODUCT TYPE 
       <div id="window-type-section" class="max-w-6xl mx-auto">
         <div id="window-type-wrapper" class="mx-5 mt-16">
             

@@ -9,8 +9,8 @@ import { useQuery, gql } from '@apollo/client';
 
 export default function Home({posts, featuredPosts}) {
 
-
-const { sourceUrl } = posts.frontPageOptions.homeHeroImage;
+//posts.frontPageOptions.homeHeroImage;
+const { sourceUrl } = "body";
 
   return (
   <div>
@@ -128,8 +128,8 @@ const { sourceUrl } = posts.frontPageOptions.homeHeroImage;
     </div>
     {/** END Get Started Form */}
 
-    {/** FEATURED POST   */}
-    <FeaturedPost posts={featuredPosts} /> 
+    {/** FEATURED POST  <FeaturedPost posts={featuredPosts} />  */}
+    
     {/** END FEATURED  */}
 
     {/**  WHY TRUWIN   */}
@@ -176,7 +176,7 @@ export async function getStaticProps(){
   const front_page_query = await client.query({
   query: gql`
       query frontPageQuery {
-        page(id: "home-page", idType: URI) {
+        page(id: "home", idType: URI) {
           slug
           title
           uri
