@@ -12,6 +12,8 @@ export default function Home({posts, featuredPosts}) {
 //posts.frontPageOptions.homeHeroImage;
 const { sourceUrl } = "body";
 
+console.log(featuredPosts);
+
   return (
   <div>
 
@@ -194,7 +196,7 @@ export async function getStaticProps(){
   const featured_posts_query = await client.query({
     query: gql`
         query featuredPostQuery {
-          posts(last: 2) {
+          posts(first: 2) {
             nodes {
               title
               uri
