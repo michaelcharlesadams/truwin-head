@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-import Vendor from '../components/vendor';
+//import Vendor from '../components/vendor';
 import FeaturedPost from '../components/FeaturedPost';
 import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
@@ -52,8 +52,8 @@ const { sourceUrl } = posts.frontPageOptions.homeHeroImage;
     </div>
     {/** END HERO */}
 
-    {/** VENDOR LOGOS */}
-    <Vendor />
+    {/** VENDOR LOGOS <Vendor />*/}
+    
     {/** VENDOR LOGOS */}
 
     {/** Categories */}

@@ -1,5 +1,4 @@
-import Vendor from "../../components/vendor"
-
+//import Vendor from "../../components/vendor"
 
 export default function Product() {
   return (
@@ -34,8 +33,8 @@ export default function Product() {
       </div>
       {/** END HERO */}
 
-      {/** VENDOR LOGOS */}
-      <Vendor />  
+      {/** VENDOR LOGOS  <Vendor />  */}
+     
       {/** VENDOR LOGOS */}
 
       {/** PRODUCT MATERIALS */}
