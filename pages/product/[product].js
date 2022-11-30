@@ -10,12 +10,6 @@ export default function Product({post}) {
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
 
-
-
-  
-
-
-
   return (
     <>
 
@@ -189,7 +183,6 @@ query: gql`
             products {
             nodes {
                 slug
-                uri
             }
         }
     }
