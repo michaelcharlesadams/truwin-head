@@ -113,10 +113,8 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
-        <Script>
-            AOS.init();
-        </Script>
+        {/* <Script id="truwin-aos" src="https://unpkg.com/aos@next/dist/aos.js"></Script> */}
+        
        </>
     )
   }
