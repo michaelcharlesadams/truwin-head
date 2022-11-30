@@ -23,7 +23,7 @@ module.exports = {
     extend: {
       colors: {
         truwinblue: {
-          50: '#B9C2D',
+          50: '#B9C2DA',
           100: '#95A4CB',
           300: '#7B8EBE',
           500: '#5370BB',

@@ -9,16 +9,15 @@ import { useQuery, gql } from '@apollo/client';
 
 export default function Home({posts, featuredPosts}) {
 
-//posts.frontPageOptions.homeHeroImage;
-const { sourceUrl } = "body";
+const {slug, title, uri, frontPageOptions} = posts;
 
-console.log(featuredPosts);
+//const { sourceUrl } = "body";
 
   return (
   <div>
 
     {/** HERO - FRONT PAGE */}
-    <div id="hero-section" className="max-w-6xl mx-auto ">
+    <div id="hero-section" className="max-w-6xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
       <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
           <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:w-5/12 md:h-auto">
               <div className="w-12 mx-auto">
@@ -39,8 +38,9 @@ console.log(featuredPosts);
           
           <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
               <div className="w-full max-h-46 md:object-cover md:h-full rounded" >
+
               <img className="w-full max-h-46 md:object-cover md:h-full rounded" 
-              src={sourceUrl} alt="truwin builder video"/>
+              src={frontPageOptions.homeHeroImage.sourceUrl} alt="truwin builder video"/>
               </div>
               
                 
@@ -59,13 +59,13 @@ console.log(featuredPosts);
     {/** VENDOR LOGOS */}
 
     {/** Categories */}
-    <div id="post-title-section" className="lg:max-w-6xl mx-auto">
+    <div id="post-title-section" className="lg:max-w-6xl mx-auto" >
       <div id="post-title-wrapper" className="mx-5 mt-20">
           <div className="mx-2 mb-11">
               <h2 className="text-[28px] text-center text-truwinblue-900 font-serif pb-4 sm:text-4xl">Add beauty and security to your home</h2>
               <p className="font-graphikLight text-truwinblue-900 text-center">We believe window, door, and siding companies can do better for customers. </p>
           </div>
-          <div id="post-title-wrapper-content" className="sm:flex flex-wrap">
+          <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 group">
                   <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-10">Windows</h3>
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-0" src="/images/tr-windows.png" alt="" />
