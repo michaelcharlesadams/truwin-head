@@ -114,9 +114,9 @@ function Footer() {
             </div>
         </div>
         <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
-        <script>
+        <Script>
             AOS.init();
-        </script>
+        </Script>
        </>
     )
   }
