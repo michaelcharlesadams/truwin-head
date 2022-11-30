@@ -10,7 +10,7 @@ export default function Product({post}) {
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
 
-  console.log(productMaterials);
+
 
   
 
@@ -59,18 +59,16 @@ export default function Product({post}) {
       <div id="window-material-section" className="max-w-6xl mx-auto">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
-            <div dangerouslySetInnerHTML={{__html: content}}>
-                
-            </div>
+            
             <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">We carry all window materials.</h3>
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
-                {productMaterials.map((material) => {
+                {productMaterials.map((material, key) => {
                     
                     return (
                         <Link href={material.uri}><a>
-                        <div key={material.id} className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+                        <div key={material.id.toString()} className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
                             <p className="text-2xl font-graphikSemibold text-truwinblue-900">{material.title}</p>
                             <p className="text-sm font-graphik pt-4">{material.product_Materials.materialBlurp}</p>
                            <div class="w-auto h-auto mx-auto mt-4">
@@ -221,7 +219,7 @@ query: gql`
  export async function getStaticProps({params}) {
   //     //grab the slug
   
-    console.log(params);
+   
   
     const { product } = params;
      
@@ -260,7 +258,7 @@ query: gql`
           `,
       });
   
-      console.log(get_single_product_query);
+     
   
       return {
           props: { post: get_single_product_query}

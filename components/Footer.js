@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from 'next/script'
 
 function Footer() {
     return (
@@ -112,7 +113,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
         <script>
             AOS.init();
         </script>

@@ -6,16 +6,16 @@ function Nav() {
     const myNavToggle = (e) => {
        
         let navMobile = document.querySelector('#navMobile');
-        //console.log(navMobile);
+      
 
         let navList = document.querySelector('#navList');
-        //console.log(navList);
+      
 
         let nav = document.querySelector('#navMobile').getAttribute("name");
-        //console.log(nav);
+        
         
         let toggle = nav === "menu" ? (navMobile.setAttribute("name", "close") , navList.classList.replace("hidden", "block") ) : ( navMobile.setAttribute("name", "menu") , navList.classList.replace("block", "hidden") );
-        //console.log(toggle); 
+       
     }
 
   return (
