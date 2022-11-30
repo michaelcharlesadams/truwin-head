@@ -58,7 +58,7 @@ export default function Product({post}) {
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
-                {productMaterials.map((material) => {
+                {productMaterials > 0 && productMaterials.map((material) => {
                     
                     return (
                         <Link key={material.id.toString()} href={material.uri}><a>
@@ -189,6 +189,7 @@ query: gql`
     `,
 });
 
+ 
 
   //create an array of slugs for static paths
   const paths = get_single_product_paths_query.data.products.nodes.map((post) => ({
@@ -212,9 +213,8 @@ query: gql`
  export async function getStaticProps({params}) {
   //     //grab the slug
   
-   
-  
     const { product } = params;
+    
      
        //1.2 Define a query: posts
       const get_single_product_query = await client.query({

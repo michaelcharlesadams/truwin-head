@@ -5,7 +5,7 @@ import { useQuery, gql } from '@apollo/client';
 export default function Post({post}){
     //deconstruct the posts contents
     
-    console.log(post);
+  
     const {title, date, slug, content } = post;
     //const postHeaderImage = post.postsFeaturedImages.postsFeaturedImage.sourceUrl;
     //const postAuthor = post.author.node.people.edges[0].node.people_avatar.truwinAvatar.title;
@@ -159,7 +159,7 @@ export async function getStaticProps({params}) {
         variables: { slug }
     });
 
-    console.log(get_post_slug_query);
+   
 
     return {
         props: { post: get_post_slug_query.data.postBy }
