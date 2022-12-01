@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link';
-//import Vendor from '../components/vendor';
+import Vendor from '../components/vendor';
 import FeaturedPost from '../components/FeaturedPost';
 import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
@@ -10,8 +10,6 @@ import { useQuery, gql } from '@apollo/client';
 export default function Home({posts, featuredPosts}) {
 
 const {slug, title, uri, frontPageOptions} = posts;
-
-//const { sourceUrl } = "body";
 
   return (
   <div>
@@ -54,8 +52,8 @@ const {slug, title, uri, frontPageOptions} = posts;
     </div>
     {/** END HERO */}
 
-    {/** VENDOR LOGOS <Vendor />*/}
-    
+    {/** VENDOR LOGOS */}
+    <Vendor />
     {/** VENDOR LOGOS */}
 
     {/** Categories */}
@@ -130,8 +128,8 @@ const {slug, title, uri, frontPageOptions} = posts;
     </div>
     {/** END Get Started Form */}
 
-    {/** FEATURED POST  <FeaturedPost posts={featuredPosts} />  */}
-    
+    {/** FEATURED POST    */}
+    <FeaturedPost posts={featuredPosts} />
     {/** END FEATURED  */}
 
     {/**  WHY TRUWIN   */}
@@ -201,12 +199,17 @@ export async function getStaticProps(){
               title
               uri
               slug
-              postsFeaturedImages {
-                postsFeaturedImage {
+              excerpt
+              id
+              featuredImage {
+                node {
                   sourceUrl
+                  mediaDetails {
+                    height
+                    width
+                  }
                 }
               }
-              excerpt
               categories {
                 nodes {
                   name

@@ -1,4 +1,4 @@
-//import Vendor from "../../components/vendor"
+import Vendor from "../../components/vendor"
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 export default function Product({post}) {
 
- 
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
 
@@ -45,8 +44,8 @@ export default function Product({post}) {
       </div>
       {/** END HERO */}
 
-      {/** VENDOR LOGOS  <Vendor />  **/}
-     
+      {/** VENDOR LOGOS    **/}
+      <Vendor />
       {/** VENDOR LOGOS */}
 
       {/** PRODUCT MATERIALS **/}
@@ -58,14 +57,16 @@ export default function Product({post}) {
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
-                {productMaterials > 0 && productMaterials.map((material) => {
+                {productMaterials?.map((material) => {
                     
                     return (
-                        <Link key={material.id.toString()} href={material.uri}><a>
-                        <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
-                            <p className="text-2xl font-graphikSemibold text-truwinblue-900">{material.title}</p>
+                        
+                        <div key={material.id.toString()} className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+                            <p className="text-2xl font-graphikSemibold text-truwinblue-900">
+                                <Link href={material.uri}><a>{material.title}  </a></Link>
+                              </p>
                             <p className="text-sm font-graphik pt-4">{material.product_Materials.materialBlurp}</p>
-                           <div class="w-auto h-auto mx-auto mt-4">
+                           <div className="w-auto h-auto mx-auto mt-4">
                                 <Image 
                                     src={material.product_Materials.materialImage.sourceUrl}
                                     width={material.product_Materials.materialImage.mediaDetails.width}
@@ -76,9 +77,7 @@ export default function Product({post}) {
                             {/* <img  src={material.productsProductMaterialImage.sourceUrl} alt="windows and partner " /> */}
 
                         </div>
-                        </a>
-                        
-                </Link>
+                      
                        
                     )
 
@@ -252,7 +251,6 @@ query: gql`
       });
   
      
-  
       return {
           props: { post: get_single_product_query}
           //props: { post: page }
