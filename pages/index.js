@@ -6,8 +6,9 @@ import Vendor from '../components/vendor';
 import FeaturedPost from '../components/FeaturedPost';
 import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
+import MorePost from '../components/MorePost';
 
-export default function Home({posts, featuredPosts}) {
+export default function Home({posts, featuredPosts, morePost}) {
 
 const {slug, title, uri, frontPageOptions} = posts;
 
@@ -170,6 +171,11 @@ const {slug, title, uri, frontPageOptions} = posts;
     </div>
     {/**  WHY TRUWIN   */}
 
+
+    {/**  MORE POSTS   */}
+    <MorePost  posts={morePost}/>
+    {/**  END MORE POSTS   */}
+
   </div>
     
   )
@@ -231,11 +237,44 @@ export async function getStaticProps(){
         `,
   });
 
+    //1.3 Define a query: posts
+    const more_posts_query = await client.query({
+      query: gql`
+          query morePostQuery {
+            posts(first: 10) {
+              nodes {
+                id
+                uri
+                title
+                slug
+                featuredImage {
+                  node {
+                    sourceUrl
+                    mediaDetails {
+                      width
+                      height
+                    }
+                  }
+                }
+                categories {
+                  nodes {
+                    name
+                  }
+                }
+              }
+            }
+          }
+          `,
+    });
+
+    
+
   //2. return props
   return {
     props: {
         posts: front_page_query.data.page,
-        featuredPosts: featured_posts_query.data.posts.nodes
+        featuredPosts: featured_posts_query.data.posts.nodes,
+        morePost: more_posts_query.data.posts.nodes
 
     },
   }

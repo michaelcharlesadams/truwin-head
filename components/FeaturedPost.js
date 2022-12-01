@@ -3,8 +3,6 @@ import Image from "next/image";
 
 function FeaturedPost({ posts }) {
 
-console.log(posts);
-
 const title_0 = posts[0].title;
 const uri_0 = posts[0].uri;
 const excerpt_0 = posts[0].excerpt;
