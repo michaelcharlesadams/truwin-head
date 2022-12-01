@@ -1,38 +1,48 @@
 import Image from 'next/image'
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
+import Date from '../../components/date';
 
 export default function Post({post}){
     //deconstruct the posts contents
     
   
     const {title, date, slug, content } = post;
-    //const postHeaderImage = post.postsFeaturedImages.postsFeaturedImage.sourceUrl;
-    //const postAuthor = post.author.node.people.edges[0].node.people_avatar.truwinAvatar.title;
-    //const postAuthorAvatar = post.author.node.people.edges[0].node.people_avatar.truwinAvatar.sourceUrl
-    
-    
+    const postHeaderImage = post.featuredImage.node?.sourceUrl;
+    const postAuthor = post.rel_people_con_post.people?.[0].title; 
+    const postAuthorAvatar = post.rel_people_con_post.people?.[0].people_avatar.truwinAvatar.sourceUrl
+ 
     return (
     <>
         
-        {/** BLOG FEATURED IMAGE 
-        { post.postsFeaturedImages.postsFeaturedImage.sourceUrl &&  
+        {/** BLOG FEATURED IMAGE **/}
+        { postHeaderImage &&  
         <div id="blog-feature-hero-section" className="mx-auto md:max-w-6xl">
             <div id="blog-feature-hero-wrapper" className="mx-5 mt-5 text-white md:max-h-[450px] relative mx-auto">
                 <div id="blog-feature-hero-info" className="absolute bottom-10 left-10 w-4/5 md:w-full">
                     <h2 className="font-serif text-2xl md:text-4xl lg:text-center py-2">{title}</h2>
                     <p className="lg:text-center hidden md:block text-md">Learn how we turned this Kingwood house into a modern home.</p>
                 </div>
-                <div class="w-full h-[300px] rounded bg-blend-multiply" style={`background-color: #777777; background-image: url(${postHeaderImage}); background-blend-mode: multiply; background-size: cover;`}>
+                <div //HEADER IMAGE
+                        //className="w-full h-[300px] rounded bg-blend-multiply" 
+                        style={{
+                            backgroundColor : '#777777', 
+                            backgroundBlendMode: 'multiply', 
+                            backgroundSize: 'cover', 
+                            backgroundImage: 'url("'+ postHeaderImage +'")',
+                            height: '300px',
+                            borderRadius: '5px'
+                            }} >
                 </div>
-                <img className="object-cover w-full h-[300px] rounded bg-blend-overlay" src={postHeaderImage} alt="blog featured image" />
+                
+                {/* <img className="object-cover w-full h-[300px] rounded bg-blend-overlay" src={postHeaderImage} alt="blog featured image" /> */}
         
             </div>
         </div>
         }
           {/** END BLOG FEATURED IMAGE */}
 
-        {/** BLOG CONTENT 
+        {/** BLOG CONTENT **/}
         <style jsx>{`
             #blog-content p {
                 padding-top: .5em;
@@ -44,10 +54,17 @@ export default function Post({post}){
             <div id="blog-wrapper" className="px-5 my-8 text-white md:mx-5 rounded">
                 <div id="blog-author-wrap" className="flex p-4 mb-2 border-b-[1px] border-truwinblue-50 max-w-[625px] mx-auto ">
                     <div id="blog-author" className="flex">
-                        <img src={postAuthorAvatar} alt="author - Jay Chappo" className="max-w-[50px] max-h-[50px] mr-4 rounded-full" />
+
+                         {/** AUTHOR IMAGE **/}
+                        {postAuthorAvatar && <img src={postAuthorAvatar} alt="author - Jay Chappo" className="max-w-[50px] max-h-[50px] mr-4 rounded-full" />}
+
+                        {/** AUTHOR INFO **/}
                         <div id="blog-author-info">
                             <p className="text-truwinblue-900 font-graphikSemibold">{postAuthor}</p>
-                            <p className="text-truwinblue-900 text-sm">{date}</p>
+                            <div className="text-truwinblue-900 text-sm">
+                                <Date dateString={date} />
+                            </div>
+                            
                             <p className="text-truwinblue-900 text-sm"></p>
                         </div>
                     </div>
@@ -83,7 +100,7 @@ export async function getStaticPaths() {
     const get_posts_path_query = await client.query({
         query: gql`
                 query AllPostsPathsQuery {
-                    posts {
+                    posts(first: 100) {
                         nodes {
                             slug 
                         }
@@ -120,39 +137,43 @@ export async function getStaticProps({params}) {
         query: gql`
             query SinglePostQuery($slug: String){
                 postBy(slug: $slug) {
-                content
-                date
-                slug
-                title
-                uri
-                categories {
-                    nodes {
-                    name
+                    date
+                    slug
+                    title
+                    uri
+                    content
+                    featuredImage {
+                      node {
+                        sourceUrl
+                        mediaDetails {
+                          height
+                          width
+                        }
+                      }
                     }
-                }
-                author {
-                    node {
-                    people {
-                        edges {
-                        node {
-                            people_avatar {
+                    categories {
+                      nodes {
+                        name
+                      }
+                    }
+                    rel_people_con_post {
+                      people {
+                        ... on Person {
+                          id
+                          title
+                          people_avatar {
                             jobTitle
                             truwinAvatar {
-                                
-                                sourceUrl(size: THUMBNAIL)
-                                title
+                              sourceUrl
+                              mediaDetails {
+                                height
+                                width
+                              }
                             }
-                            }
+                          }
                         }
-                        }
+                      }
                     }
-                    }
-                }
-                postsFeaturedImages {
-                    postsFeaturedImage {
-                    sourceUrl
-                    }
-                }
                 }
             }
         `,
