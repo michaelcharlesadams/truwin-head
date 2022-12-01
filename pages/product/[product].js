@@ -53,7 +53,7 @@ export default function Product({post}) {
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
             
-            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">We carry all window materials.</h3>
+            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">We carry {title.toLowerCase()} materials.</h3>
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
@@ -81,23 +81,8 @@ export default function Product({post}) {
                        
                     )
 
-                })}
-               
-                <div className="w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] ">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] ">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
-                </div>
+                })}    
+
             </div>
 
         </div>

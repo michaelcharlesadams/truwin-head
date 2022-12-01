@@ -65,7 +65,7 @@ function Nav() {
                      <Link href="/product/windows/"><a>Windows</a></Link>
                       </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded">
-                     <Link href="#"><a >Doors</a></Link>
+                     <Link href="/product/doors/"><a >Doors</a></Link>
                        </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded">
                      <Link href="#"><a >Roofing</a></Link>

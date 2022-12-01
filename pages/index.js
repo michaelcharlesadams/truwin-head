@@ -64,12 +64,22 @@ const {slug, title, uri, frontPageOptions} = posts;
               <p className="font-graphikLight text-truwinblue-900 text-center">We believe window, door, and siding companies can do better for customers. </p>
           </div>
           <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
+            
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 group">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-10">Windows</h3>
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-10">
+                  <Link href="/product/windows">
+                    <a>Windows</a>
+                  </Link>
+                  </h3>
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-0" src="/images/tr-windows.png" alt="" />
               </div>
+              
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto group">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-10">Doors</h3>
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-10">
+                  <Link href="/product/doors">
+                    <a>Doors</a>
+                  </Link>
+                  </h3>
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-0" src="/images/tr-doors.png" alt="" />
               </div>
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto group" >
