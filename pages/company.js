@@ -1,6 +1,9 @@
 
+import { client } from './_app';
+import { useQuery, gql } from '@apollo/client';
+import MorePost from "../components/MorePost";
 
-function Company() {
+function Company({morePost}) {
   return (
   <>
         
@@ -149,40 +152,9 @@ function Company() {
     </div>
     {/** END OF SERVICE VALUE */}
 
-    {/** MORE POSTS */}
-    <div id="more-posts-section" className="lg:max-w-6xl mx-auto">
-            <div id="more-posts-wrapper" className="mx-5 mt-20">
-                <p className="text-2xl text-truwinblue-900 font-graphik">Keep browsing</p>
-                <div id="more-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">
-                    <div className="relative my-4 w-full bg-truwinsoftblue-primary min-h-[370px] rounded">
-                        <p className="absolute text-sm t-0 left-0 text-truwinblue-900 font-graphik pl-5 pt-5 ">Windows</p>
-                        <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphik px-5 pt-20 md:text-lg">Get to know Truwin’s Door Warranty</p>
-                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                        
-                    </div>
-                    <div className="relative my-4 w-full min-h-[370px]p">
-                        <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Doors</p>
-                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Our review of the JeldWin Sliding Back Door System</p>
-                        <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-doors.png" alt="" />
-                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                    </div>
-                    <div className="relative my-4 w-full bg-truwinblue-900 min-h-[370px] rounded" >
-                        <p className="absolute text-sm t-0 left-0 text-white font-graphik pl-5 pt-5 ">Siding</p>
-                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Truwin now carries Pella Vinyl Doors</p>
-                    {/**<!----*/} <img className="w-full  min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-siding.png" alt="" /> { /** -->*/}
-                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                    </div>
-                    <div className="relative my-4 w-full min-h-[370px]">
-                        <p className="absolute z-10 text-sm t-0 left-0 text-white font-graphik pl-5 pt-5">Roofs</p>
-                        <p className="absolute text-2xl md:text-lg t-0 left-0 text-white font-graphik px-5 pt-20">Offering 15% off any door type thru September 2022</p>
-                        <img className="w-full min-h-[370px] max-h-44 object-cover rounded md:max-h-[370px]" src="/images/tr-roofs.png" alt="" />
-                        <button className="px-5 py-2 bg-truwinblue-900 text-white rounded-full absolute bottom-5 left-5">Read More</button>
-                    </div>
-                
-                </div>
-            </div>
-    </div>
-    {/** END MORE POSTS */}
+    {/**  MORE POSTS   */}
+    <MorePost  posts={morePost}/>
+    {/**  END MORE POSTS   */}
     
     {/** END END */}
     </>
@@ -191,3 +163,51 @@ function Company() {
 }
 
 export default Company
+
+
+/**
+ * Fetch Data: Images, Feature Posts
+ * @returns props
+ */ 
+ export async function getStaticProps(){
+    //const dataLayer = process.env.HOST_DATA_LAYER;
+  
+      //1.3 Define a query: posts
+      const more_posts_query = await client.query({
+        query: gql`
+            query morePostQuery {
+              posts(first: 10) {
+                nodes {
+                  id
+                  uri
+                  title
+                  slug
+                  featuredImage {
+                    node {
+                      sourceUrl
+                      mediaDetails {
+                        width
+                        height
+                      }
+                    }
+                  }
+                  categories {
+                    nodes {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+            `,
+      });
+  
+      
+  
+    //2. return props
+    return {
+      props: {
+          morePost: more_posts_query.data.posts.nodes
+      },
+    }
+  }

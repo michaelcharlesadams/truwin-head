@@ -3,8 +3,9 @@ import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
 import Image from 'next/image';
+import MorePost from "../../components/MorePost";
 
-export default function Product({post}) {
+export default function Product({post, morePost}) {
 
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
@@ -149,6 +150,10 @@ export default function Product({post}) {
       </div>
       {/** END OF PRODUCT TYPE */}
 
+      {/**  MORE POSTS   */}
+      <MorePost  posts={morePost}/>
+      {/**  END MORE POSTS   */}
+
     </>
   )
 }
@@ -235,10 +240,43 @@ query: gql`
           `,
       });
   
+
+          //1.3 Define a query: posts
+    const more_posts_query = await client.query({
+      query: gql`
+          query morePostQuery {
+            posts(first: 10) {
+              nodes {
+                id
+                uri
+                title
+                slug
+                featuredImage {
+                  node {
+                    sourceUrl
+                    mediaDetails {
+                      width
+                      height
+                    }
+                  }
+                }
+                categories {
+                  nodes {
+                    name
+                  }
+                }
+              }
+            }
+          }
+          `,
+    });
      
       return {
-          props: { post: get_single_product_query}
-          //props: { post: page }
+          props: { 
+            post: get_single_product_query,
+            morePost: more_posts_query.data.posts.nodes
+          }
+          
       }
   
   }
