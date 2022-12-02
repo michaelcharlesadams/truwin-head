@@ -22,11 +22,7 @@ function GetStartForm() {
         field.value = "";
     })
 
-    //signal that the form was successfully sent
-
-   console.log(formData);
-   console.log(getForm.value);
-   
+    //signal that the form was successfully sent  
 }
 
 

@@ -2,11 +2,7 @@
 import Link from "next/link";
 
 function MorePost({posts}) {
-
-
-console.log(posts);
     
-
   return (
     <>
     
