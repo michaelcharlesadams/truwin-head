@@ -1,4 +1,3 @@
-import Vendor from '../../components/vendor';
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
@@ -6,6 +5,7 @@ import Image from 'next/image';
 import MorePost from "../../components/MorePost";
 import { useRef } from "react";
 import ProductVideo from "../../components/ProductVideo";
+import Vendor from '../../components/vendor';
 
 export default function Product({post, morePost}) {
 

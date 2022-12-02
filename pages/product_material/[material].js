@@ -1,7 +1,7 @@
-import Vendor from "../../components/vendor";
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
+import Vendor from "../../components/vendor";
 
 export default function Product({post}) {
 
