@@ -29,14 +29,12 @@ export default Page;
             `,
     });
 
-    console.log(get_page_path_query);
-
     // //2. create array of paths
     const paths = get_page_path_query.data.pages.nodes.map((post) => ({
         params: { page: post.slug}
     }))
 
-    console.log(paths);
+  
 
     return { paths, fallback: false }
 
@@ -52,7 +50,7 @@ export default Page;
 export async function getStaticProps({params}) {
 //     //grab the slug
 
-  console.log(params);
+ 
 
   const { page } = params;
    
@@ -70,7 +68,7 @@ export async function getStaticProps({params}) {
         `,
     });
 
-    console.log(get_single_page_query);
+    
 
     return {
         props: { post: get_single_page_query.data.pageBy }
