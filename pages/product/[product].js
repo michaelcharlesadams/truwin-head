@@ -102,48 +102,46 @@ export default function Product({post, morePost}) {
             <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
                
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
                         <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
                         
                         <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                     </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
                         <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                         
                         <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                     </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
                         <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                         
                         <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                     </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
                         <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                     
                         <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                     </div>
-               
-              
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                   
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 pt-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                   
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                   
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                        <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
+                        
+                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                    </div>
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                        
+                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                    </div>
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                        
+                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                    </div>
+                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                        
+                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                    </div>
               </div>
               
 

@@ -6,9 +6,12 @@ import GetStartForm from '../../components/GetStartForm';
 
 export default function Product({post}) {
 
- 
-  const {content, title, slug, uri} = post.data.productMaterialBy;
-  const postHeaderImage = "http://truwin.flywheelstaging.com/wp-content/uploads/2022/12/window-material-hero.jpg";
+ console.log(post);
+
+  const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
+  const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
+  const postMaterialTypes = product_Materials.materialProductTypes;
+
   return (
     <>
 
@@ -28,7 +31,7 @@ export default function Product({post}) {
                       backgroundSize: 'cover', 
                       backgroundImage: 'url("'+ postHeaderImage +'")',
                       height: '300px',
-                      borderRadius: '5px'
+                      borderRadius: '5px',
                       }} >
           </div>
           
@@ -37,7 +40,7 @@ export default function Product({post}) {
       </div>
   </div>
   }
-    {/** END BLOG FEATURED IMAGE */}
+  {/** END BLOG FEATURED IMAGE */}
 
   {/** VENDOR LOGOS  <Vendor />  **/}
   <Vendor />
@@ -49,74 +52,94 @@ export default function Product({post}) {
   <div id="window-type-section" className="max-w-6xl mx-auto">
     <div id="window-type-wrapper" className="mx-5 mt-16">
         
-        <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">Find your window by type:</h3>
+        {postMaterialTypes && 
+        <>
 
-        <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
+          <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">Find your window by type:</h3>
+
+          <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+
+                {postMaterialTypes?.map( (postType) =>  (
+                
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                  <p className="text-2xl font-graphikSemibold text-truwinblue-900">{postType.materialProductTypeTitle}</p>
+                  
+                  <img 
+                    className="w-auto h-auto pt-8" 
+                    src={postType.materialProductTypeImage.sourceUrl} 
+                    alt="window type" />
+                </div>
+                  )
+                )}
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
                     <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
                     
                     <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                     
                     <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                     
                     <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
                 
                     <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                </div>      
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
+                    
+                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
                 </div>
-            
-          
-            <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                
-                <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-            </div>
-            <div className="w-auto border rounded border-truwinblue-300 p-8 pt-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                
-                <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-            </div>
-            <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                
-                <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-            </div>
-            <div className="w-auto border rounded border-truwinblue-300 p-8 mt-4 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                
-                <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-            </div>
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                    
+                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                </div>
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                    
+                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                </div>
+                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
+                    
+                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
+                </div>
           </div>
-          
+        
 
-        </div>
+      </div>
+        
+        </>
+       
+        
+        }
+        
 
     </div>
   </div>
   {/** END OF PRODUCT TYPE */}
 
-  {/**  MATERIAL INFO SECTION  */}
-  <div id="card-onethird-session" class="lg:max-w-6xl mx-auto">
-        <div id="card-onethrid-wrapper" class="mx-5 mt-10 md:flex md:min-h-[390px]">
-            <div class="md:w-1/2">
-                <img class="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/window-material-type.jpg" alt="" />
+ {/**  MATERIAL INFO SECTION  */}
+ <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
+            <div className="md:w-1/2">
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/window-material-type.jpg" alt="" />
             </div>
-            <div class="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
-                <p class="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
-                <h3 class="font-serif text-4xl py-2">Energy Efficient Single-Hung Windows</h3>
-                <p class="py-2 font-graphik">Single-hung windows incorporate two sashes, one fixed and one that slides up and down. Although most homeowners prefer double-hung windows with two operating sashes, single hung windows are an attractive, more practical choice for some homes. </p>
+            <div className="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
+                <p className="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
+                <h3 className="font-serif text-4xl py-2">Energy Efficient Single-Hung Windows</h3>
+                <p className="py-2 font-graphik">Single-hung windows incorporate two sashes, one fixed and one that slides up and down. Although most homeowners prefer double-hung windows with two operating sashes, single hung windows are an attractive, more practical choice for some homes. </p>
 
-                    <p class="py-2 font-graphik"> SoftLite’s single-hung windows are ideal for homeowners who are more budget conscious or prefer this operating style, because they improve your home’s appearance and are still built to provide decades of thermal efficiency, security, durability, and easy operation, like all SoftLite vinyl windows.</p>
+                    <p className="py-2 font-graphik"> SoftLite’s single-hung windows are ideal for homeowners who are more budget conscious or prefer this operating style, because they improve your home’s appearance and are still built to provide decades of thermal efficiency, security, durability, and easy operation, like all SoftLite vinyl windows.</p>
                
            
             </div>
@@ -171,7 +194,7 @@ export default function Product({post}) {
   </div>
   {/**  END MATERIAL BENEFITS   */}
 
-  
+
  
     </>
   )
@@ -228,12 +251,34 @@ export default function Product({post}) {
           query: gql`
               query SingleProductMaterialQuery{
                     productMaterialBy(uri: "${material}"){
-                    content
-                    title
-                    uri
-                    slug
+                      content
+                      title
+                      uri
+                      slug
+                      product_Materials {
+                        materialProductTypes {
+                          materialProductTypeTitle
+                          materialProductTypeImage {
+                            mediaDetails {
+                              height
+                              width
+                            }
+                            sourceUrl
+                          }
+                        }
+                      }
+                      featuredImage {
+                        node {
+                          sourceUrl
+                          mediaDetails {
+                            height
+                            width
+                          }
+                        }
+                      }
                   }
-              } 
+              }
+             
           `,
       });
   

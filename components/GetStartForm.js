@@ -29,8 +29,8 @@ function GetStartForm() {
   return (
     <>
 
-    <div id="form-section" className="mx-auto ">
-      <div id="form-getstarted-wrapper" className="px-5 py-10 mt-20 bg-truwinblue-900 text-white md:flex md:flex-wrap">
+    <div id="form-section" className=" bg-truwinblue-900">
+      <div id="form-getstarted-wrapper" className="px-5 py-10 mt-20 text-white md:flex md:flex-wrap mx-auto lg:max-w-6xl">
 
         <h2 className="font-serif text-2xl md:hidden">Get started on your free exteriors estimate.</h2>
 

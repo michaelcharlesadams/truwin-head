@@ -41,6 +41,8 @@ export default function getStartedForm() {
     }
     return (
       // We pass the event to the handleSubmit() function on submit.
-        <p></p>
+        <p>
+            
+        </p>
     )
   }

@@ -8,6 +8,7 @@ function Layout({ children }) {
   return (
     <>
       <Head>
+        
         <style jsx>{`
           .body{
             background-color: white;
