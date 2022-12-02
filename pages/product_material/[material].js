@@ -1,50 +1,45 @@
-//import Vendor from "../../components/vendor"
+import Vendor from "../../components/vendor"
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
 
 export default function Product({post}) {
 
-  console.log(post);
+ 
   const {content, title, slug, uri} = post.data.productMaterialBy;
-
+  const postHeaderImage = "http://truwin.flywheelstaging.com/wp-content/uploads/2022/12/window-material-hero.jpg";
   return (
     <>
 
-      {/* * HERO **/}
-      <div id="hero-author-section" className="max-w-6xl mx-auto ">
-        <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
-          <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">/ Windows</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{title}</h3>
-              <p className="text-white text-sm mt-3 font-graphik font-medium">Time to improve your home’s appearance and energy efficiency? Consider Truwin your partner in window replacement. You’ll enjoy quality and service at a competitive price, a true win-win.</p>
-              <Link href="">
-                <a>
-                    <button className="block mt-8 py-5 px-10 bg-truwinblue-500 rounded">
-                        <span className="text-white">Get a free estimate</span> 
-                    </button>
-                </a>
-              </Link>
-             
+ {/** BLOG FEATURED IMAGE **/}
+ { postHeaderImage &&  
+  <div id="blog-feature-hero-section" className="mx-auto md:max-w-6xl">
+      <div id="blog-feature-hero-wrapper" className="mx-5 mt-5 text-white md:max-h-[450px] relative mx-auto">
+          <div id="blog-feature-hero-info" className="absolute bottom-10 left-10 w-4/5 md:w-full">
+              <h2 className="font-serif text-2xl md:text-4xl lg:text-center py-2">{title}</h2>
+              <p className="lg:text-center hidden md:block text-md">Learn how we turned this Kingwood house into a modern home.</p>
           </div>
-            
-            
-          <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
-              <img className="w-full max-h-46 md:object-cover md:h-full rounded" src="/images/siding-hero.png" alt="truwin builder video" />
-              
-            
-            <div className="absolute bottom-0 left-0 w-16 hidden">
-            <p className="font-graphikSemibold text-white text-2xl">The Exterior
-                Experts</p>
+          <div //HEADER IMAGE
+                  //className="w-full h-[300px] rounded bg-blend-multiply" 
+                  style={{
+                      backgroundColor : '#777777', 
+                      backgroundBlendMode: 'multiply', 
+                      backgroundSize: 'cover', 
+                      backgroundImage: 'url("'+ postHeaderImage +'")',
+                      height: '300px',
+                      borderRadius: '5px'
+                      }} >
           </div>
-                
-            </div>
-        </div>
+          
+          {/* <img className="object-cover w-full h-[300px] rounded bg-blend-overlay" src={postHeaderImage} alt="blog featured image" /> */}
+  
       </div>
-      {/** END HERO */}
+  </div>
+  }
+    {/** END BLOG FEATURED IMAGE */}
 
       {/** VENDOR LOGOS  <Vendor />  **/}
-     
+     <Vendor />
       {/** VENDOR LOGOS */}
 
 
@@ -155,7 +150,7 @@ export default function Product({post}) {
  export async function getStaticProps({params}) {
   //     //grab the slug
   
-    console.log(params);
+    
   
     const { material } = params;
      
@@ -173,7 +168,7 @@ export default function Product({post}) {
           `,
       });
   
-      console.log(get_single_product_material_query);
+     
   
       return {
           props: { post: get_single_product_material_query}

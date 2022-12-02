@@ -4,11 +4,14 @@ import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
 import Image from 'next/image';
 import MorePost from "../../components/MorePost";
+import { useRef } from "react";
+import ProductVideo from "../../components/ProductVideo";
 
 export default function Product({post, morePost}) {
 
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
+
 
   return (
     <>
@@ -150,10 +153,39 @@ export default function Product({post, morePost}) {
       </div>
       {/** END OF PRODUCT TYPE */}
 
+      {/** HERO VIDEO SECTION  <ProductVideo /> **/}
+     
+      {/**  END HERO VIDEO SECTION **/}
+
+      {/**  PRODUCT CONTENT SECTION **/}
+      <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
+            <div className="md:w-1/2">
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="http://truwin.flywheelstaging.com/wp-content/uploads/2018/09/window-installation.jpg" alt="" />
+            </div>
+            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
+                <p className="py-2 font-graphik text-truwingray-primary">High Quality Installations</p>
+                <h3 className="font-serif text-4xl py-2">Truwin delivers great installation results.</h3>
+                <p className="py-2 font-graphik">With nearly 100 years of combined experience in new construction and remodeling, we make the process simple.</p>
+                <hr className="mt-4 mb-4" />
+                <ul className="ml-4">
+                    <li className="p-2 list-disc">
+                          Our installers are able to handle any challenge that may arise during installation, including framing issues.</li>
+                    <li className="p-2 list-disc">
+                      
+                          We use installation materials and best practices that help your windows last longer.</li>
+                    <li className="p-2 list-disc">
+                        
+                          Your windows will look great and have a tighter fit.</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      {/**  END PRODUCT CONTENT SECTION **/}
+
       {/**  MORE POSTS   */}
       <MorePost  posts={morePost}/>
       {/**  END MORE POSTS   */}
-
     </>
   )
 }

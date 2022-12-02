@@ -8,6 +8,7 @@ function Layout({ children }) {
   return (
     <>
       <Head>
+      {/* <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" /> */}
         <style jsx>{`
           .body{
             background-color: white;

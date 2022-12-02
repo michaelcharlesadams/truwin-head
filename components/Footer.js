@@ -113,8 +113,18 @@ function Footer() {
                 </div>
             </div>
         </div>
+        {/**  START OF SCRIPTS */}
+
+
+        {/**  LIGHTGALLERY */}
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/plugins/lg-thumbnail.umd.js"></script>
+        <script src="js/plugins/lg-zoom.umd.js"></script>
+
+
         {/* <Script id="truwin-aos" src="https://unpkg.com/aos@next/dist/aos.js"></Script> */}
         
+         {/**  END OF SCRIPTS */}
        </>
     )
   }

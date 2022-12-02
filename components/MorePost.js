@@ -21,7 +21,7 @@ console.log(posts);
                         className="relative my-4 w-full min-h-[370px] rounded"
 
                 style={{
-                    //backgroundColor : '#777777', 
+                    backgroundColor : '#777777', 
                     backgroundBlendMode: 'multiply', 
                     backgroundSize: 'cover', 
                     backgroundImage: 'url("'+ post.featuredImage.node.sourceUrl +'")',
