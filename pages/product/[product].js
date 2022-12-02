@@ -5,7 +5,7 @@ import Image from 'next/image';
 import MorePost from "../../components/MorePost";
 import { useRef } from "react";
 import ProductVideo from "../../components/ProductVideo";
-import Vendor from '../../components/vendor';
+import Vendor from '../../components/Vendor';
 
 export default function Product({post, morePost}) {
 
