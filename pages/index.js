@@ -139,6 +139,34 @@ const {slug, title, uri, frontPageOptions} = posts;
     <MorePost  posts={morePost}/>
     {/**  END MORE POSTS   */}
 
+
+ {/**  WHY TRUWIN   */}
+ <div id="onethird-info-section" className="lg:max-w-6xl mx-auto hidden md:block my-28 ">
+      <div id="onethird-info-wrapper" className="mx-5 mt-10">
+          <div className="text-center" >
+              <p className="text-sm text-truwinblue-900">The Exteriors Experts™</p>
+              <h3 className="font-serif text-5xl py-2 text-truwinblue-900">Why trust Truwin Exteriors?</h3>
+          </div>
+          <div className="1/3-column-wrap md:flex mt-14">
+              <div className="mr-8">
+                  <img src="/images/truwin-prices.png" className="w-auto pb-2" alt="Transparent Prices icon" />
+                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Transparent Prices</p>
+                  <p className="text-truwinblue-900">At Truwin, we don’t hide our pricing at any point in the process. We want to help you improve your home and will work with budgets of all type to make that possible. </p>
+              </div>
+              <div className="mx-8">
+                  <img src="/images/truwin-vetted.png" className="w-auto pb-2 " alt="Vetted Professionals icon" />
+                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Vetted Professionals</p>
+                  <p className="text-truwinblue-900">Having strangers working on your home can be odd. But worry not, we’ve vetted every one of our professionasl on staff with thorough background checks and interviews.</p>
+              </div>
+              <div className="ml-8">
+                  <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
+                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Amazing Warranties</p>
+                  <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+    {/**  WHY TRUWIN   */}
   </div>
     
   )
