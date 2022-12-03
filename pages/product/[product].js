@@ -155,11 +155,11 @@ export default function Product({post, morePost}) {
       <div id="banner-type-section" className="max-w-6xl mx-auto">
           <div id="banner-type-wrapper" className="mx-5 my-16">
             
-            <div id="banner-container" class="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
+            <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
 
-                  <h3 class="text-white font-serif  py-5 sm:p-0 text-3xl sx:text-left sx:text-4xl">It’s time to enjoy better windows.</h3>
+                  <h3 className="text-white font-serif  py-5 sm:p-0 text-3xl sx:text-left sx:text-4xl">It’s time to enjoy better windows.</h3>
                   <Link href="/">
-                    <button class="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
+                    <button className="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
                   </Link>
             </div>
 
@@ -197,6 +197,38 @@ export default function Product({post, morePost}) {
       </div>
       {/**  END PRODUCT CONTENT SECTION **/}
 
+      {/**  COMPARISON **/}
+      <div id="comparison-session" className="lg:max-w-6xl mx-auto">
+        <div id="comparison-wrapper" className="mx-5 my-20 ">
+
+            <h3 className="text-2xl text-center font-serif text-truwinblue-900">Compare our windows to competitors</h3>
+            <div id="comparison-links" className="p-5 justify-around  text-truwinblue-900 max-w-md mx-auto hidden" >
+                <small>Link 1</small>
+                <small>Link 2</small>
+                <small>Link 3</small>
+                <small>Link 4</small>
+            </div>
+
+            <div id="comparison-container" className="bg-truwinsoftblue-primary py-10 px-10 md:px-14  md:py-20 sm:flex mt-10">
+                <div className='max-w-sm'>
+                  <Image
+                  src="/images/comparison–windows.jpg"
+                  width={862}
+                  height={608}
+                  />
+                </div>
+                <div id="comparison-content" className="my-5 sm:pl-14 md:pl-20 sm:pr-5 ss:max-w-[430px] md:max-w-lg">
+                    <small className='text-truwinblue-900'>Higher Quality Frames</small>
+                    <h3 className="text-2xl md:text-3xl py-2 font-cigar text-truwinblue-900">27% more viewing area means more light in your home.</h3>
+                    <p className="text-truwinblue-900">Compare our windows to our competitors to really see what you’re getting. Be sure to ask to see this during our in-person consultation.</p>
+                </div>
+               
+
+            </div>
+
+        </div>
+      </div>
+      {/**  END  COMPARISON **/}
 
 
       {/**  MORE POSTS   */}
