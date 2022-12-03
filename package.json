@@ -11,6 +11,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.1",
     "@sendgrid/mail": "^7.7.0",
+    "aos": "^2.3.4",
     "date-fns": "^2.29.3",
     "graphql": "^16.6.0",
     "lightgallery": "^2.7.0",

@@ -8,6 +8,7 @@ import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
 import MorePost from '../components/MorePost';
 import GetStartForm from '../components/GetStartForm';
+import Aos from "aos";
 
 export default function Home({posts, featuredPosts, morePost}) {
 

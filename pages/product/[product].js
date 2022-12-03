@@ -151,6 +151,22 @@ export default function Product({post, morePost}) {
       </div>
       {/** END OF PRODUCT TYPE */}
 
+      {/** BANNER - ENJOY A BETTER PRODUCT */}
+      <div id="banner-type-section" className="max-w-6xl mx-auto">
+          <div id="banner-type-wrapper" className="mx-5 my-16">
+            
+            <div id="banner-container" class="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
+
+                  <h3 class="text-white font-serif  py-5 sm:p-0 text-3xl sx:text-left sx:text-4xl">It’s time to enjoy better windows.</h3>
+                  <Link href="/">
+                    <button class="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
+                  </Link>
+            </div>
+
+          </div>
+      </div>
+      {/** END BANNER - ENJOY A BETTER PRODUCT */}
+
       {/** HERO VIDEO SECTION  <ProductVideo /> **/}
      
       {/**  END HERO VIDEO SECTION **/}
@@ -180,6 +196,8 @@ export default function Product({post, morePost}) {
         </div>
       </div>
       {/**  END PRODUCT CONTENT SECTION **/}
+
+
 
       {/**  MORE POSTS   */}
       <MorePost  posts={morePost}/>
