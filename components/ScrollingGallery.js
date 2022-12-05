@@ -36,8 +36,8 @@ const onInit = () => {
                     >
                         {postGallery?.map((photo) =>
 
-                            <a href={photo.productTypeGalleryImage.sourceUrl}>
-                                <img className="w-auto removeMaxImage" alt={photo.productTypeGalleryTitle} src={photo.productTypeGalleryImage.sourceUrl} />
+                            <a key={photo?.sourceUrl} href={photo.productTypeGalleryImage.sourceUrl}>
+                                <img className="w-auto removeMaxImage h-[500px]" alt={photo.productTypeGalleryTitle} src={photo.productTypeGalleryImage.sourceUrl} />
                             </a>
                         
                         )}
