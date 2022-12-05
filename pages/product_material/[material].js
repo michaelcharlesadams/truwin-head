@@ -3,6 +3,7 @@ import { useQuery, gql } from '@apollo/client';
 import Link from 'next/link';
 import Vendor from '../../components/Vendor';
 import GetStartForm from '../../components/GetStartForm';
+import ScrollingGallery from '../../components/ScrollingGallery';
 
 export default function Product({post}) {
 
@@ -11,6 +12,7 @@ export default function Product({post}) {
   const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
   const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
   const postMaterialTypes = product_Materials.materialProductTypes;
+  const postGallery = product_Materials.productTypeGallery
 
   return (
     <>
@@ -202,7 +204,10 @@ export default function Product({post}) {
   </div>
   {/**  END MATERIAL BENEFITS   */}
 
-
+  {/** SCROLLING GALLERY SECTION */}
+      <ScrollingGallery postGallery={postGallery} />
+  {/** END SCROLLING GALLERY SECTION */}
+ 
  
     </>
   )
@@ -267,13 +272,19 @@ export default function Product({post}) {
                         materialProductTypes {
                           materialProductTypeTitle
                           materialProductTypeImage {
-                            mediaDetails {
-                              height
-                              width
-                            }
                             id
                             sourceUrl
                           }
+                        }
+                        productTypeGallery {
+                          productTypeGalleryImage {
+                            sourceUrl
+                            mediaDetails {
+                              width
+                              height
+                            }
+                          }
+                          productTypeGalleryTitle
                         }
                       }
                       featuredImage {

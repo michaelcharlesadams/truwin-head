@@ -70,7 +70,7 @@ export default function Product({post, morePost}) {
                                 <Link href={material.uri}><a>{material.title}  </a></Link>
                               </p>
                             <p className="text-sm font-graphik pt-4">{material.product_Materials.materialBlurp}</p>
-                           <div className="w-auto h-auto mx-auto mt-4">
+                           <div className="w-auto h-auto mx-auto mt-4 relative top-[6px]">
                                 <Image 
                                     src={material.product_Materials.materialImage.sourceUrl}
                                     width={material.product_Materials.materialImage.mediaDetails.width}
@@ -167,7 +167,7 @@ export default function Product({post, morePost}) {
       </div>
       {/** END BANNER - ENJOY A BETTER PRODUCT */}
 
-      {/** HERO VIDEO SECTION  <ProductVideo /> **/}
+      {/** HERO VIDEO SECTION  **/}
      
       {/**  END HERO VIDEO SECTION **/}
 
