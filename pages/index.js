@@ -101,10 +101,63 @@ const {slug, title, uri, frontPageOptions} = posts;
     </div>
     {/** Categories */}
 
+
+
     {/** Get Started Form */}
     <GetStartForm />
     {/** END Get Started Form */}
 
+{/** PRODUCT TYPES */}
+<div id="window-type-section" class="max-w-6xl mx-auto">
+        <div id="window-type-wrapper" class="mx-5 mt-16">
+            
+            <h3 class="text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
+            <p class="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
+
+            <div id="window-type-post-wrapper" class="mt-8 mx-auto sm:my-0">
+{/*                
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4"> */}
+              <div class="flex flex-col sx:flex-wrap md:max-h-[1000px] lg:max-h-[700px]">
+
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   max-h-[270px]">
+                    <p class="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
+                   
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   ">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clan</p>
+                  
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]  ">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
+                    
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
+                   
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png"  alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
+                    
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] ">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
+                    
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
+                </div>
+                   
+              </div>
+              
+
+            </div>
+
+        </div>
+    </div>
+{/** END PRODUCT TYPES */}
 
   {/** PRODUCT MATERIALS **/}
   <div id="window-material-section" class="max-w-6xl mx-auto my-20">
@@ -141,7 +194,6 @@ const {slug, title, uri, frontPageOptions} = posts;
   {/** END PRODUCT MATERIALS */}
 
     {/** FEATURED POST    */}
-
     <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div class="md:w-2/4 lg:w-3/5">
