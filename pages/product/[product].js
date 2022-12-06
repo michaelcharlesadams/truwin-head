@@ -168,7 +168,7 @@ export default function Product({post, morePost}) {
       {/** END BANNER - ENJOY A BETTER PRODUCT */}
 
       {/** HERO VIDEO SECTION  **/}
-     
+      
       {/**  END HERO VIDEO SECTION **/}
 
       {/**  PRODUCT CONTENT SECTION **/}
