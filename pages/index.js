@@ -10,6 +10,8 @@ import MorePost from '../components/MorePost';
 import GetStartForm from '../components/GetStartForm';
 import Aos from "aos";
 
+
+
 export default function Home({posts, featuredPosts, morePost}) {
 
 const {slug, title, uri, frontPageOptions} = posts;
@@ -104,7 +106,39 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** END Get Started Form */}
 
     {/** FEATURED POST    */}
-    <FeaturedPost posts={featuredPosts} />
+
+    <div id="card-onethird-session-reverse" class="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" class="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
+            <div class="md:w-2/4 lg:w-3/5">
+                <img loading="lazy" class="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
+            </div>
+            <div class="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+                <p class="py-2 font-graphikSemibold">Siding</p>
+                <h3 class="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
+                <p class="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
+                <Link href="/siding">
+                   <button class="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
+                </Link>
+            </div>
+        </div>
+    </div>
+
+    <div id="card-onethird-session" class="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" class="mx-5 mt-10 md:flex md:min-h-[390px]">
+            <div class="md:w-2/4 lg:w-3/5">
+                <img loading="lazy" class="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
+            </div>
+            <div class="px-5 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+                <p class="py-2 font-graphikSemibold">Roofing</p>
+                <h3 class="font-serif text-3xl py-2">Hassel Free Roof Replacement</h3>
+                <p class="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
+                <Link href="/roofing">
+                   <button class="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>
+                </Link>
+               
+            </div>
+        </div>
+    </div>
     {/** END FEATURED  */}
 
     {/**  WHY TRUWIN   */}
