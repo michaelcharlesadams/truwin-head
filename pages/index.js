@@ -105,35 +105,70 @@ const {slug, title, uri, frontPageOptions} = posts;
     <GetStartForm />
     {/** END Get Started Form */}
 
+
+  {/** PRODUCT MATERIALS **/}
+  <div id="window-material-section" class="max-w-6xl mx-auto my-20">
+        <div id="window-material-wrapper" class="mx-5 mt-16">
+            
+            <h3 class="text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
+            <p class="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
+
+            <div id="window-post-wrapper" class="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+                    <p class="text-2xl font-graphikSemibold text-truwinblue-900">Wood</p>
+                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] ">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
+                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] ">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Forged Iron</p>
+                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                </div>
+                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px]">
+                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Solid Panel</p>
+                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                </div>
+            </div>
+
+        </div>
+    </div>
+  {/** END PRODUCT MATERIALS */}
+
     {/** FEATURED POST    */}
 
-    <div id="card-onethird-session-reverse" class="lg:max-w-6xl mx-auto">
-        <div id="card-onethrid-wrapper" class="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
+    <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div class="md:w-2/4 lg:w-3/5">
-                <img loading="lazy" class="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
+                <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
             </div>
-            <div class="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
-                <p class="py-2 font-graphikSemibold">Siding</p>
-                <h3 class="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
-                <p class="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
+            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+                <p className="py-2 font-graphikSemibold">Siding</p>
+                <h3 className="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
+                <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 <Link href="/siding">
-                   <button class="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
+                   <button className="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
                 </Link>
             </div>
         </div>
     </div>
 
-    <div id="card-onethird-session" class="lg:max-w-6xl mx-auto">
-        <div id="card-onethrid-wrapper" class="mx-5 mt-10 md:flex md:min-h-[390px]">
-            <div class="md:w-2/4 lg:w-3/5">
-                <img loading="lazy" class="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
+    <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
+            <div className="md:w-2/4 lg:w-3/5">
+                <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
             </div>
-            <div class="px-5 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
-                <p class="py-2 font-graphikSemibold">Roofing</p>
-                <h3 class="font-serif text-3xl py-2">Hassel Free Roof Replacement</h3>
-                <p class="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
+            <div className="px-5 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+                <p className="py-2 font-graphikSemibold">Roofing</p>
+                <h3 className="font-serif text-3xl py-2">Hassel Free Roof Replacement</h3>
+                <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 <Link href="/roofing">
-                   <button class="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>
+                   <button className="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>
                 </Link>
                
             </div>
