@@ -6,7 +6,6 @@ import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgVideo from 'lightgallery/plugins/video';
-import { LightGallerySettings } from 'lightgallery/lg-settings';
 import Link from "next/link";
 
 function ScrollingGallery({postGallery}) {
