@@ -75,11 +75,13 @@ export default function Product({post, morePost}) {
                                 <Image 
                                     src={material.product_Materials.materialImage.sourceUrl}
                                     width={material.product_Materials.materialImage.mediaDetails.width}
+                                  
                                     height={material.product_Materials.materialImage.mediaDetails.height} 
+                                   
                                 />
                            </div>
                                 
-                            {/* <img  src={material.productsProductMaterialImage.sourceUrl} alt="windows and partner " /> */}
+                            {/* <img  src={material.product_Materials.materialImage.sourceUrl} alt="windows and partner " /> */}
 
                         </div>
                       
@@ -253,7 +255,7 @@ query: gql`
                                 height
                                 width
                               }
-                              sourceUrl(size: THUMBNAIL)
+                              sourceUrl
                             }
                             materialBlurp
                           }
