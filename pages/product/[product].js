@@ -10,8 +10,12 @@ import Vendor from '../../components/Vendor';
 export default function Product({post, morePost}) {
 
   console.log(post);
-  const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
+  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
+  const heroSection = productPage.productPageHeroSection
+  const heroFeaturedImage = featuredImage?.node
+  const contentCard = productPage.productProductServicesCard
+
 
 
   return (
@@ -21,9 +25,9 @@ export default function Product({post, morePost}) {
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">All Windows / Windows</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{title}</h3>
-              <p className="text-white text-sm mt-3 font-graphik font-medium">Time to improve your home’s appearance and energy efficiency? Consider Truwin your partner in window replacement. You’ll enjoy quality and service at a competitive price, a true win-win.</p>
+              <p className="text-sm text-truwingray-primary mb-3">All {title} / {title}</p>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{heroSection.productPageHeroTitle}</h3>
+              <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.productPageHeroBlurp}</p>
               <Link href="">
                 <a>
                     <button className="block mt-8 py-5 px-10 bg-truwinblue-500 rounded">
@@ -36,7 +40,7 @@ export default function Product({post, morePost}) {
             
             
           <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
-              <img className="w-full max-h-46 md:object-cover md:h-full rounded" src="/images/siding-hero.png" alt="truwin builder video" />
+              <img className="w-full max-h-46 md:object-cover md:h-full rounded" src={heroFeaturedImage?.sourceUrl} alt="truwin builder video" />
               
             
             <div className="absolute bottom-0 left-0 w-16 hidden">
@@ -122,25 +126,33 @@ export default function Product({post, morePost}) {
       <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
-                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="http://truwin.flywheelstaging.com/wp-content/uploads/2018/09/window-installation.jpg" alt="" />
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard.productsProductServicesImage?.sourceUrl} alt="" />
             </div>
             <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
-                <p className="py-2 font-graphik text-truwingray-primary">High Quality Installations</p>
-                <h3 className="font-serif text-4xl py-2">Truwin delivers great installation results.</h3>
-                <p className="py-2 font-graphik">With nearly 100 years of combined experience in new construction and remodeling, we make the process simple.</p>
-                <hr className="mt-4 mb-4" />
-                <ul className="ml-4">
-                    <li className="p-2 list-disc">
-                          Our installers are able to handle any challenge that may arise during installation, including framing issues.</li>
-                    <li className="p-2 list-disc">
-                      
-                          We use installation materials and best practices that help your windows last longer.</li>
-                    <li className="p-2 list-disc">
+                <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
+                <h3 className="font-serif text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
+                <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
+                {contentCard.productServicesCardDecriptionList && 
+                    <>
+                      <hr className="mt-4 mb-4" />
+                      <ul className="ml-4">
+                          
+                            {contentCard.productServicesCardDecriptionList?.map((item) => 
+                                {
+                                  return(
+                                    <li className="p-2 list-disc">
+                                      {item.productDescriptionListItem}
+                                    </li>
+                                  )
+                                }
+                            )}
                         
-                          Your windows will look great and have a tighter fit.</li>
-                </ul>
+                      </ul>
+                    </>
+                }
+                
             </div>
-        </div>
+        </div> . 
       </div>
       {/**  END PRODUCT CONTENT SECTION **/}
 
@@ -259,6 +271,36 @@ query: gql`
                             }
                             materialBlurp
                           }
+                        }
+                      }
+                    }
+                    featuredImage {
+                      node {
+                        sourceUrl
+                        mediaDetails {
+                          height
+                          width
+                        }
+                      }
+                    }
+                    productPage {
+                      productPageHeroSection {
+                        productPageHeroTitle
+                        productPageHeroBlurp
+                      }
+                      productProductServicesCard {
+                         productServicesCardDecriptionList {
+                          productDescriptionListItem
+                        }
+                        productServicesCardDescription
+                        productServicesCardHeadline
+                        productServicesCardTitle
+                        productsProductServicesImage {
+                          mediaDetails {
+                            height
+                            width
+                          }
+                          sourceUrl
                         }
                       }
                     }
