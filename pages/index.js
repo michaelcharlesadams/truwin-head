@@ -203,7 +203,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 <p className="py-2 font-graphikSemibold">Siding</p>
                 <h3 className="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
-                <Link href="/siding">
+                <Link href="#">
                    <button className="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
                 </Link>
             </div>
@@ -219,7 +219,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 <p className="py-2 font-graphikSemibold">Roofing</p>
                 <h3 className="font-serif text-3xl py-2">Hassel Free Roof Replacement</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
-                <Link href="/roofing">
+                <Link href="#">
                    <button className="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>
                 </Link>
                
