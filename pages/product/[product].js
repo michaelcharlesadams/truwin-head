@@ -93,63 +93,7 @@ export default function Product({post, morePost}) {
       </div>
       {/** END PRODUCT MATERIALS */}
 
-      {/**  PRODUCT TYPE **/}
-      <div id="window-type-section" className="max-w-6xl mx-auto">
-        <div id="window-type-wrapper" className="mx-5 mt-16">
-            
-            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">Find your window by type:</h3>
-
-            <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
-               
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-                    <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 sm:my-0 max-w-[300px] lg:max-w-[300px]">
-                        <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                        
-                        <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                    </div>
-              </div>
-              
-
-            </div>
-
-        </div>
-      </div>
-      {/** END OF PRODUCT TYPE */}
+    
 
       {/** BANNER - ENJOY A BETTER PRODUCT */}
       <div id="banner-type-section" className="max-w-6xl mx-auto">
@@ -157,7 +101,7 @@ export default function Product({post, morePost}) {
             
             <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
 
-                  <h3 className="text-white font-serif  py-5 sm:p-0 text-3xl sx:text-left sx:text-4xl">It’s time to enjoy better windows.</h3>
+                  <h3 className="text-white font-serif  py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better windows.</h3>
                   <Link href="/">
                     <button className="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
                   </Link>
@@ -168,7 +112,7 @@ export default function Product({post, morePost}) {
       {/** END BANNER - ENJOY A BETTER PRODUCT */}
 
       {/** HERO VIDEO SECTION  **/}
-      
+      <ProductVideo />
       {/**  END HERO VIDEO SECTION **/}
 
       {/**  PRODUCT CONTENT SECTION **/}
