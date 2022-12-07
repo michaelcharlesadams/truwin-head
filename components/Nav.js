@@ -39,14 +39,13 @@ function Nav() {
             {/** END LOGO */}
 
              {/** Button */}
-            <div id="hug" className="w-[150px] flex justify-between md:hidden">
-                 <div className="">
+            <div id="hug" className="w-[150px] flex justify-between md:hidden ">
+                 <div className="px-4 py-2 rounded bg-truwinblue-900">
                      <button>
                         <Link href="/pricing">
-                            <a  className="px-4 py-2 rounded bg-truwinblue-900 text-white font-graphikSemibold">Get Pricing</a>
+                            <a  className=" text-white font-graphikSemibold">Get Pricing</a>
                         </Link>
-                        
-                        </button>
+                    </button>
                  </div>
                  <div id="navMobile" className="cursor-pointer" name="menu" onClick={myNavToggle}>
                      <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-truwinblue-300">
