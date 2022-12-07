@@ -137,10 +137,10 @@ export default function Product({post, morePost}) {
                       <hr className="mt-4 mb-4" />
                       <ul className="ml-4">
                           
-                            {contentCard.productServicesCardDecriptionList?.map((item) => 
+                            {contentCard.productServicesCardDecriptionList?.map((item, index) => 
                                 {
                                   return(
-                                    <li className="p-2 list-disc">
+                                    <li key={index} className="p-2 list-disc">
                                       {item.productDescriptionListItem}
                                     </li>
                                   )

@@ -6,7 +6,7 @@ function ProductVideo() {
 
 //toggle video modal
 const [display, setDisplay] = useState('none');
-const [playing, setPlaying] = useState(0);
+const [playing, setPlaying] = useState(false);
 
 const vidStyle = {
     width: '100%',
@@ -23,7 +23,7 @@ const vidStyle = {
         <button id="myBtn" onClick={() => {
             display === 'none' ? setDisplay('block') : setDisplay('none');
             //start video
-            playing === 0 ? setPlaying(1) : setPlaying(0);
+            playing === false ? setPlaying(true) : setPlaying(false);
         }}  >
 
             {/** PLACE HOLDER IMAGE */}
@@ -52,7 +52,7 @@ const vidStyle = {
         <p id="stop-vid" className="closebtn cursor-pointer"  onClick={() => {
             display === 'none' ? setDisplay('block') : setDisplay('none');
             //stop video
-            playing === 1 ? setPlaying(0) : setPlaying(1);
+            playing === true ? setPlaying(false) : setPlaying(true);
 
             
         
