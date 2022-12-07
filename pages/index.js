@@ -109,7 +109,7 @@ const {slug, title, uri, frontPageOptions} = posts;
 
 {/** PRODUCT TYPES */}
 <div id="window-type-section" class="max-w-6xl mx-auto">
-        <div id="window-type-wrapper" class="mx-5 mt-16">
+        <div id="window-type-wrapper" class="mx-5 mt-24">
             
             <h3 class="text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
             <p class="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
@@ -195,7 +195,7 @@ const {slug, title, uri, frontPageOptions} = posts;
 
     {/** FEATURED POST    */}
     <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
-        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
+        <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div class="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
             </div>

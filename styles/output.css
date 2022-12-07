@@ -709,6 +709,10 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
