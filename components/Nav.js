@@ -14,7 +14,12 @@ function Nav() {
         let nav = document.querySelector('#navMobile').getAttribute("name");
         
         
-        let toggle = nav === "menu" ? (navMobile.setAttribute("name", "close") , navList.classList.replace("hidden", "block") ) : ( navMobile.setAttribute("name", "menu") , navList.classList.replace("block", "hidden") );
+        let toggle = nav === "menu" ? 
+            (navMobile.setAttribute("name", "close") , 
+            navList.classList.replace("hidden", "block") ) 
+            : 
+            ( navMobile.setAttribute("name", "menu") , 
+            navList.classList.replace("block", "hidden") );
        
     }
 
@@ -60,22 +65,22 @@ function Nav() {
                {/** NAV  */}
              <div id="navList" className="w-full pt-3 md:pt-0 md:flex md:justify-end hidden transition ease-in-out duration-500">
                  <ul className="md:flex ">
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" >
-                     <Link href="/product/windows/"><a>Windows</a></Link>
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                     <Link href="/product/windows/" ><a>Windows</a></Link>
                       </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded">
-                     <Link href="/product/doors/"><a >Doors</a></Link>
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()}>
+                     <Link href="/product/doors/"  ><a >Doors</a></Link>
                        </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded">
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="#"><a >Roofing</a></Link>
                         </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded">
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="#"><a >Siding</a></Link>
                         </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded">
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/company"><a >About Us</a></Link>
                         </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded">
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/resources"><a >Resources</a></Link>
                     </li>
                  </ul>
