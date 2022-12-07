@@ -9,6 +9,7 @@ import Vendor from '../../components/Vendor';
 
 export default function Product({post, morePost}) {
 
+  console.log(post);
   const {content, title, slug, uri, rel_productMaterials_con_product} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
 
@@ -20,7 +21,7 @@ export default function Product({post, morePost}) {
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">/ Windows</p>
+              <p className="text-sm text-truwingray-primary mb-3">All Windows / Windows</p>
               <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{title}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">Time to improve your home’s appearance and energy efficiency? Consider Truwin your partner in window replacement. You’ll enjoy quality and service at a competitive price, a true win-win.</p>
               <Link href="">
