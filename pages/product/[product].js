@@ -6,6 +6,7 @@ import MorePost from "../../components/MorePost";
 import { useRef } from "react";
 import ProductVideo from "../../components/ProductVideo";
 import Vendor from '../../components/Vendor';
+import MoreServices from '../../components/MoreServices';
 
 export default function Product({post, morePost}) {
 
@@ -189,6 +190,9 @@ export default function Product({post, morePost}) {
       </div>
       {/**  END  COMPARISON **/}
 
+      {/**  MORE  WAYS  */}
+      <MoreServices />
+      {/**  END MORE WAYS   */}
 
       {/**  MORE POSTS   */}
       <MorePost  posts={morePost}/>

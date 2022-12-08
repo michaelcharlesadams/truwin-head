@@ -111,7 +111,7 @@ const {slug, title, uri, frontPageOptions} = posts;
 <div id="window-type-section" class="max-w-6xl mx-auto">
         <div id="window-type-wrapper" class="mx-5 mt-24">
             
-            <h3 class="text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
+            <h3 class="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
             <p class="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
 
             <div id="window-type-post-wrapper" class="mt-8 mx-auto sm:my-0">
@@ -163,7 +163,7 @@ const {slug, title, uri, frontPageOptions} = posts;
   <div id="window-material-section" class="max-w-6xl mx-auto my-20">
         <div id="window-material-wrapper" class="mx-5 mt-16">
             
-            <h3 class="text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
+            <h3 class="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
             <p class="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
 
             <div id="window-post-wrapper" class="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
