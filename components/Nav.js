@@ -29,7 +29,7 @@ function Nav() {
          
          <div className="p-4 border-solid border-2 border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
              {/** LOGO */}
-             <div className="w-32 md:pt-[19px] md:max-w-36 pt-2" onClick={()=> myNavToggle()}>
+             <div className="w-32 md:pt-[19px] md:max-w-36 pt-2" >
                  <Link href="/" >
                     <a >
                         <Image src="/images/truwin.png"
