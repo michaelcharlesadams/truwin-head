@@ -4,10 +4,11 @@ import Link from 'next/link';
 import Vendor from '../../components/Vendor';
 import GetStartForm from '../../components/GetStartForm';
 import ScrollingGallery from '../../components/ScrollingGallery';
+import MoreServices from '../../components/MoreServices';
 
 export default function Product({post}) {
 
-
+  console.log(post);
 
   const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
   const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
@@ -23,9 +24,9 @@ export default function Product({post}) {
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">/ Windows</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{title}</h3>
-              <p className="text-white text-sm mt-3 font-graphik font-medium">Time to improve your home’s appearance and energy efficiency? Consider Truwin your partner in window replacement. You’ll enjoy quality and service at a competitive price, a true win-win.</p>
+              <p className="text-sm text-truwingray-primary mb-3">{title}</p>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
+              <p className="text-white text-sm mt-3 font-graphik font-medium">{product_Materials.productMaterialHeroSection.heroSectionBlurp}</p>
               <Link href="">
                 <a>
                     <button className="block mt-8 py-5 px-10 bg-truwinblue-500 rounded">
@@ -83,46 +84,7 @@ export default function Product({post}) {
                 </div>
                   )
                 )}
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>      
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4  max-w-[300px] lg:max-w-[300px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Single-hung</p>
-                    
-                    <img className="w-auto h-auto pt-8" src="/images/window-type.png" alt="window type" />
-                </div>
+               
           </div>
         
 
@@ -208,7 +170,9 @@ export default function Product({post}) {
       <ScrollingGallery postGallery={postGallery} />
   {/** END SCROLLING GALLERY SECTION */}
  
- 
+    {/**  MORE  WAYS  */}
+    <MoreServices />
+    {/**  END MORE WAYS   */}
     </>
   )
 }
@@ -285,6 +249,11 @@ export default function Product({post}) {
                             }
                           }
                           productTypeGalleryTitle
+                        }
+                        materialBlurp
+                        productMaterialHeroSection {
+                          heroSectionBlurp
+                          heroSectionTitle
                         }
                       }
                       featuredImage {

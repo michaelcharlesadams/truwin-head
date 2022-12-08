@@ -28,7 +28,7 @@ function MoreServices() {
                     }} 
                 
                 >
-                    <p className="absolute text-4xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Durable Doors</p>
+                    <p className="absolute text-3xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Durable Doors</p>
                     <p className="absolute text-2xl t-0 left-0 text-truwinsoftblue-primary  font-graphik px-5 pt-20 md:text-lg"></p>
                     <Link href='/product/doors'> 
                     <a>
@@ -51,7 +51,7 @@ function MoreServices() {
                     }} 
                 
                 >
-                    <p className="absolute text-4xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Stronger Siding</p>
+                    <p className="absolute text-3xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Stronger Siding</p>
                     <p className="absolute text-2xl t-0 left-0 text-truwinsoftblue-primary  font-graphik px-5 pt-20 md:text-lg"></p>
                     <Link href='/product/siding'> 
                     <a>
@@ -74,7 +74,7 @@ function MoreServices() {
                     }} 
                 
                 >
-                    <p className="absolute text-4xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Replacement Roofing</p>
+                    <p className="absolute text-3xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Replace Roofing</p>
                     <p className="absolute text-2xl t-0 left-0 text-truwinsoftblue-primary  font-graphik px-5 pt-20 md:text-lg"></p>
                     <Link href='/product/roofing'> 
                     <a>

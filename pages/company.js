@@ -2,6 +2,7 @@
 import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
 import MorePost from "../components/MorePost";
+import MoreServices from '../components/MoreServices';
 
 function Company({morePost}) {
   return (
@@ -151,6 +152,10 @@ function Company({morePost}) {
         </div>
     </div>
     {/** END OF SERVICE VALUE */}
+
+    {/**  MORE  WAYS  */}
+    <MoreServices />
+    {/**  END MORE WAYS   */}
 
     {/**  MORE POSTS   */}
     <MorePost  posts={morePost}/>
