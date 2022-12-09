@@ -3,9 +3,8 @@
 function GetPricingForm() {
   return (
     <>
-     <div id="form-getstarted" className='mx-auto '>
-        <p className="text-white">Book a visit by contacting us below.</p>
-        <br/>
+     <div id="form-getstarted" className='mx-auto'>
+        <p className="text-white md:pb-4">Book a visit by contacting us below.</p>
             <form 
                 action="/api/get-started-form.js" 
                 method="post" 
@@ -25,7 +24,7 @@ function GetPricingForm() {
 
                 <input name="message" placeholder="Message" type="textarea" className="rounded p-2  col-span-2 h-20 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
 
-                <button type="submit" className="bg-truwinblue-300 px-8 py-5 rounded text-white">Book a Service</button>
+                <button type="submit" className="bg-truwinblue-300 py-5 rounded text-white">Book a Service</button>
             </form>
         </div>
     </>
