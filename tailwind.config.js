@@ -65,7 +65,7 @@ module.exports = {
       graphikMeduim: ['Graphik_Meduim', 'sans-serif'],
       graphikSemibold: ['Graphik_Semibold', 'sans-serif'],
       graphikLight: ['Graphik_Light', 'sans-serif'],
-      cigar: ['Cigar', 'serif'],
+      cigar: ['Cigar'],
       cigarBold: ['Cigar_bold', 'serif'],
       cigarSemibold: ['Cigar_Semibold', 'serif'],
       cigarLight: ['Cigar_Light', 'serif'],

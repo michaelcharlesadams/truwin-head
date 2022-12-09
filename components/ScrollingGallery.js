@@ -51,11 +51,13 @@ const onInit = () => {
                 .removeMaxImage{
                     max-width: none
                 }
+               
                 `}</style>
             </div>
         </div>
+        
     }
-   
+
     </>
   )
 }
