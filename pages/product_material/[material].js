@@ -27,7 +27,7 @@ export default function Product({post}) {
               <p className="text-sm text-truwingray-primary mb-3">{title}</p>
               <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-cigarBold mt-3">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{product_Materials.productMaterialHeroSection.heroSectionBlurp}</p>
-              <Link href="">
+              <Link href="/pricing">
                 <a>
                     <button className="block mt-8 py-5 px-10 bg-truwinblue-500 rounded">
                         <span className="text-white">Get a free estimate</span> 

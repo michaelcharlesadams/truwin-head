@@ -1,8 +1,6 @@
 
 import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
-import MorePost from "../components/MorePost";
-import MoreServices from '../components/MoreServices';
 import GetPricingForm from '../components/GetPricingForm';
 import Vendor from '../components/Vendor';
 
@@ -93,50 +91,3 @@ function Pricing({morePost}) {
 
 export default Pricing
 
-
-/**
- * Fetch Data: Images, Feature Posts
- * @returns props
- */ 
- export async function getStaticProps(){
-    //const dataLayer = process.env.HOST_DATA_LAYER;
-  
-      //1.3 Define a query: posts
-      const more_posts_query = await client.query({
-        query: gql`
-            query morePostQuery {
-              posts(first: 10) {
-                nodes {
-                  id
-                  uri
-                  title
-                  slug
-                  featuredImage {
-                    node {
-                      sourceUrl
-                      mediaDetails {
-                        width
-                        height
-                      }
-                    }
-                  }
-                  categories {
-                    nodes {
-                      name
-                    }
-                  }
-                }
-              }
-            }
-            `,
-      });
-  
-      
-  
-    //2. return props
-    return {
-      props: {
-          morePost: more_posts_query.data.posts.nodes
-      },
-    }
-  }
