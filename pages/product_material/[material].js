@@ -25,7 +25,7 @@ export default function Product({post}) {
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">{title}</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-2xl font-cigarBold mt-3">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-cigarBold mt-3">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{product_Materials.productMaterialHeroSection.heroSectionBlurp}</p>
               <Link href="">
                 <a>
