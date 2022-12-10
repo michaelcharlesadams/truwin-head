@@ -801,6 +801,10 @@ video {
   max-height: 400px;
 }
 
+.max-h-\[375px\] {
+  max-height: 375px;
+}
+
 .min-h-\[370px\] {
   min-height: 370px;
 }
@@ -1771,6 +1775,10 @@ video {
     max-height: 480px;
   }
 
+  .md\:max-h-\[375px\] {
+    max-height: 375px;
+  }
+
   .md\:min-h-\[375px\] {
     min-height: 375px;
   }
@@ -1785,6 +1793,10 @@ video {
 
   .md\:min-h-\[380px\] {
     min-height: 380px;
+  }
+
+  .md\:min-h-\[350px\] {
+    min-height: 350px;
   }
 
   .md\:w-5\/12 {

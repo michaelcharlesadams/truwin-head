@@ -9,8 +9,8 @@ function Company({morePost}) {
   return (
   <>
         
-    <div id="hero-author-section" className="max-w-6xl mx-auto ">
-            <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
+    <div id="hero-company-section" className="max-w-6xl mx-auto ">
+            <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
                 <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
                     <p className="text-sm text-truwingray-primary mb-3">Title Here</p>
                     <h3 className="text-white text-3xl sm:text-4xl font-cigarBold mt-3">We’re changing the  experience of buying windows, doors, and siding.</h3>
