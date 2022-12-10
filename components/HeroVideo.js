@@ -26,7 +26,7 @@ const vidStyle = {
         }}  >
 
             {/** PLACE HOLDER IMAGE */}
-            <img className="cursor-pointer w-full min-h-[400px] max-h-[480px] md:object-cover rounded" src="/images/truwin-jay-chapp.jpg" alt="truwin president" />
+            <img className="cursor-pointer w-full md:min-h-[400px] max-h-[480px] md:object-cover rounded" src="/images/truwin-jay-chapp.jpg" alt="truwin president" />
         </button>
        
         {/** VIDEO CONTAINER */}
