@@ -8,11 +8,13 @@ export default function handler(req, res) {
 
     const message = `
     
-    Name: ${body.yname}\r\n
+    Name: ${body.fname}\r\n
     Email: ${body.email}\r\n
     Project Type: ${body.projecttype}\r\n
     Phone: ${body.phone}\r\n
-    Zip Code: ${body.zip}
+    Zip Code: ${body.zip}\r\n
+    Interest: ${body.interest}\r\n
+    Message: ${body.message}
 
     `;
 
@@ -27,5 +29,6 @@ export default function handler(req, res) {
     mail.send(data);
 
     res.status(200).json({ status: 'Okay' });
+    
   }
   

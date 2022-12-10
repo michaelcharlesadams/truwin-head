@@ -14,17 +14,29 @@ function GetStartForm() {
     fetch('/api/mail', {
         method: 'post',
         body: JSON.stringify(formData)
-    });
-
-    //clear the form
-   const getForm = document.querySelector("#form-getstarted input");
-   forEach(getForm => {
-        field.value = "";
     })
+    .then((res) => {
 
-    //signal that the form was successfully sent  
+        if(res.status === 200){ 
+           const reply = document.querySelector('#reply');
+           reply.innerHTML = "Your message was sent successful";
+
+           //clear the form
+           document.querySelector('#name').value = "";
+           document.querySelector('#email').value = "";
+           document.querySelector('#projecttype').value = "";
+           document.querySelector('#phone').value = "";
+           document.querySelector('#zip').value = "";
+          
+        }else{
+            const reply = document.querySelector('#reply');
+            reply.innerHTML = "Oh no, something went wrong. Try again";
+            //reply.innerHTML = "Oh no, something went wrong. try again or give us a call(832) 777-3681.";
+        } 
+
+    })
+    .catch((err) => {console.log(err)});
 }
-
 
   return (
     <>
@@ -47,19 +59,21 @@ function GetStartForm() {
         </div>
           
         <div id="form-getstarted" className='mx-auto md:w-[40%]'>
+        <p className="text-white font-bold py-2" id="reply"></p>
             <form 
-                action="/api/get-started-form.js" 
+                
                 method="post" 
                 className="grid gap-2 grid-cols-2 my-10 md:my-0"
                 onSubmit={handleOnSubmit}
                 >
                 <input id="name" required name="yname" placeholder="Your Name" type="text" className="rounded col-span-2 p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
-                <input required name="email" placeholder="Email Address" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
-                <input required name="projecttype" placeholder="Project Type" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
-                <input name="phone" placeholder="Phone Number" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
-                <input name="zip" placeholder="Zip Code" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <input id="email"  required name="email" placeholder="Email Address" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <input id="projecttype"  required name="projecttype" placeholder="Project Type" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <input id="phone" name="phone" placeholder="Phone Number" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <input id="zip" name="zip" placeholder="Zip Code" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
                 <button type="submit" className="bg-truwinblue-300 px-8 py-5 col-span-2 rounded">Request Free Consultation</button>
             </form>
+        
         </div>
     
           <div id="form-getstarted-info" className="flex sx:max-w-[435px] sx:mx-auto md:hidden" >
