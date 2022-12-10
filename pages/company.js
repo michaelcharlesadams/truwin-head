@@ -3,6 +3,7 @@ import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
 import MorePost from "../components/MorePost";
 import MoreServices from '../components/MoreServices';
+import HeroVideo from '../components/HeroVideo';
 
 function Company({morePost}) {
   return (
@@ -17,17 +18,9 @@ function Company({morePost}) {
                 </div>
                 
                 
-                <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
-                    <img className="w-full max-h-46 md:object-cover md:h-full rounded" src="/images/truwin-jay-chapp.jpg" alt="truwin president" />
-                    
-    
-                      
-                    <div className="absolute bottom-0 left-0 w-16 hidden">
-                        <p className="font-graphikSemibold text-white text-2xl">The Exterior
-                            Experts</p>
-                    </div>
-                   
-                </div>
+                {/**  */}
+                <HeroVideo />
+                {/**  */}
             </div>
     </div>
        

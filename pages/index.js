@@ -70,30 +70,30 @@ const {slug, title, uri, frontPageOptions} = posts;
           </div>
           <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
             
-              <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 group">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-10">
+              <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5">
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   <Link href="/product/windows">
                     <a>Windows</a>
                   </Link>
                   </h3>
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] md:group-hover:-translate-y-6 md:group-hover:duration-500 md:group-hover:ease-in-out z-0" src="/images/tr-windows.png" alt="" />
+                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
               </div>
               
-              <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto group">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-10">
+              <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   <Link href="/product/doors">
                     <a>Doors</a>
                   </Link>
                   </h3>
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-0" src="/images/tr-doors.png" alt="" />
+                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
               </div>
-              <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto group" >
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-10">Siding</h3>
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-0" src="/images/tr-siding.png" alt="" />
+              <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto " >
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">Siding</h3>
+                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
               </div>
-              <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto group">
-                  <h3 className="absolute z-10 text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out">Roofs</h3>
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px]  group-hover:-translate-y-6 group-hover:duration-500 group-hover:ease-in-out z-0" src="/images/tr-roofs.png" alt="" />
+              <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
+                  <h3 className="absolute z-10 text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5">Roofs</h3>
+                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-roofs.png" alt="" />
               </div>
             
           </div>
@@ -108,46 +108,46 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** END Get Started Form */}
 
 {/** PRODUCT TYPES */}
-<div id="window-type-section" class="max-w-6xl mx-auto">
-        <div id="window-type-wrapper" class="mx-5 mt-24">
+<div id="window-type-section" className="max-w-6xl mx-auto">
+        <div id="window-type-wrapper" className="mx-5 mt-24">
             
-            <h3 class="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
-            <p class="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
+            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
+            <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
 
-            <div id="window-type-post-wrapper" class="mt-8 mx-auto sm:my-0">
+            <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
 {/*                
-              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4"> */}
-              <div class="flex flex-col sx:flex-wrap md:max-h-[1000px] lg:max-h-[700px]">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4"> */}
+              <div className="flex flex-col sx:flex-wrap md:max-h-[1000px] lg:max-h-[700px]">
 
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   max-h-[270px]">
-                    <p class="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   max-h-[270px]">
+                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
                    
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   ">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clan</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   ">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clan</p>
                   
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg" alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]  ">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]  ">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
                     
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
                    
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png"  alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png"  alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
                     
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] ">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] ">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
                     
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
                 </div>
                    
               </div>
@@ -160,32 +160,32 @@ const {slug, title, uri, frontPageOptions} = posts;
 {/** END PRODUCT TYPES */}
 
   {/** PRODUCT MATERIALS **/}
-  <div id="window-material-section" class="max-w-6xl mx-auto my-20">
-        <div id="window-material-wrapper" class="mx-5 mt-16">
+  <div id="window-material-section" className="max-w-6xl mx-auto my-20">
+        <div id="window-material-wrapper" className="mx-5 mt-16">
             
-            <h3 class="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
-            <p class="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
+            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
+            <p className="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
 
-            <div id="window-post-wrapper" class="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
-                    <p class="text-2xl font-graphikSemibold text-truwinblue-900">Wood</p>
-                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+            <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Wood</p>
+                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] ">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
-                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                <div className="w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] ">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
+                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] ">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Forged Iron</p>
-                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] ">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Forged Iron</p>
+                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
-                <div class="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px]">
-                    <p class="text-2xl text-truwinblue-900 font-graphikSemibold">Solid Panel</p>
-                    <p class="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img class="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px]">
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Solid Panel</p>
+                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
             </div>
 
@@ -196,7 +196,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** FEATURED POST    */}
     <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
-            <div class="md:w-2/4 lg:w-3/5">
+            <div className="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
             </div>
             <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">

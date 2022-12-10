@@ -1,6 +1,7 @@
 
 function GetPricingForm() {
 
+
     async function handleOnSubmit(e){
         //stop the default
         e.preventDefault();
@@ -20,8 +21,8 @@ function GetPricingForm() {
         .then((res) => {
 
         if(res.status === 200){ 
-           const reply = document.querySelector('#reply');
-           reply.innerHTML = "Your message was sent successful";
+           const success = document.querySelector('#success');
+           success.innerHTML = "<p>Your message was sent successful</p><br/>";
 
            //clear the form
            document.querySelector('#interest').value = "";
@@ -33,8 +34,8 @@ function GetPricingForm() {
            document.querySelector('#message').value = "";
           
         }else{
-            const reply = document.querySelector('#reply');
-            reply.innerHTML = "Oh no, something went wrong. Try again";
+            const error = document.querySelector('#error');
+            error.innerHTML = "<p>Oh no, something went wrong. Try again</p><br/>";
             //reply.innerHTML = "Oh no, something went wrong. try again or give us a call(832) 777-3681.";
         } 
 
@@ -48,6 +49,8 @@ function GetPricingForm() {
     <>
      <div id="form-getstarted" className='mx-auto'>
         <p className="text-white md:pb-4">Book a visit by contacting us below.</p>
+            <span className="text-green-600 font-bold md:py-4" id="success"></span>
+            <span className="text-red-600 font-bold py-4" id="error"></span>
             <form 
                 
                 method="post" 
@@ -70,7 +73,7 @@ function GetPricingForm() {
 
                 <button type="submit" className="bg-truwinblue-300 py-5 rounded text-white">Book a Service</button>
             </form>
-            <p className="text-white font-bold" id="reply"></p>
+            
         </div>
     </>
   )

@@ -18,8 +18,8 @@ function GetStartForm() {
     .then((res) => {
 
         if(res.status === 200){ 
-           const reply = document.querySelector('#reply');
-           reply.innerHTML = "Your message was sent successful";
+            const success = document.querySelector('#success');
+            success.innerHTML = "<p>Your message was sent successful</p><br/>";
 
            //clear the form
            document.querySelector('#name').value = "";
@@ -29,8 +29,8 @@ function GetStartForm() {
            document.querySelector('#zip').value = "";
           
         }else{
-            const reply = document.querySelector('#reply');
-            reply.innerHTML = "Oh no, something went wrong. Try again";
+            const error = document.querySelector('#error');
+            error.innerHTML = "<p>Oh no, something went wrong. Try again</p><br/>";
             //reply.innerHTML = "Oh no, something went wrong. try again or give us a call(832) 777-3681.";
         } 
 
@@ -59,7 +59,8 @@ function GetStartForm() {
         </div>
           
         <div id="form-getstarted" className='mx-auto md:w-[40%]'>
-        <p className="text-white font-bold py-2" id="reply"></p>
+        <span className="text-green-600 font-bold md:py-4" id="success"></span>
+        <span className="text-red-600 font-bold py-4" id="error"></span>
             <form 
                 
                 method="post" 
