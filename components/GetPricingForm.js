@@ -19,7 +19,7 @@ function GetPricingForm() {
         })
         .then((res) => {
 
-        if(res.status === 500){ 
+        if(res.status === 200){ 
            const reply = document.querySelector('#reply');
            reply.innerHTML = "Your message was sent successful";
 
