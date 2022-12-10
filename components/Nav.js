@@ -81,7 +81,7 @@ function Nav() {
                      <Link href="/company"><a >About Us</a></Link>
                         </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
-                     <Link href="/resources"><a >Resources</a></Link>
+                     <Link href="/post"><a >Resources</a></Link>
                     </li>
                  </ul>
              </div>

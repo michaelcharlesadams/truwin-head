@@ -11,24 +11,24 @@ function PostList({posts}) {
   return (
     <>
   
-{/** */}
-<div id="hero-company-section" className="max-w-6xl mx-auto ">
-            <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
-                <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
-                    <p className="text-sm text-truwingray-primary mb-3">/ Resources</p>
-                    <h3 className="text-white text-3xl sm:text-4xl font-cigarBold mt-3">A Truwin customer is an informed customer.</h3>
-                    <p className="text-white text-sm mt-3 font-graphik font-medium">The transparent window & door company.™ A Truwin customer is an informed customer.</p>
-                </div>
-                
-                
-                {/**  */}
-                <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
-                <img className="cursor-pointer w-full md:min-h-[375px] md:max-h-[375px] md:object-cover rounded" src="/images/Truwin-blog.jpg" alt="truwin president" />
-                </div>
-                {/**  */}
-            </div>
+  {/** */}
+  <div id="hero-company-section" className="max-w-6xl mx-auto ">
+      <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
+          <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
+              <p className="text-sm text-truwingray-primary mb-3">/ Resources</p>
+              <h3 className="text-white text-3xl sm:text-4xl font-cigarBold mt-3">A Truwin customer is an informed customer.</h3>
+              <p className="text-white text-sm mt-3 font-graphik font-medium">The transparent window & door company.™ A Truwin customer is an informed customer.</p>
+          </div>
+          
+          
+          {/**  */}
+          <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
+          <img className="cursor-pointer w-full md:min-h-[375px] md:max-h-[375px] md:object-cover rounded" src="/images/Truwin-blog.jpg" alt="truwin president" />
+          </div>
+          {/**  */}
+      </div>
     </div>
-{/** */}
+  {/** */}
 
   {/** BLOG POSTS */}
     <div id="blog-posts-section" className="lg:max-w-6xl mx-auto">
