@@ -9,11 +9,12 @@ import MoreServices from '../../components/MoreServices';
 export default function Product({post}) {
 
   console.log(post);
-
   const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
   const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
   const postMaterialTypes = product_Materials.materialProductTypes;
   const postGallery = product_Materials.productTypeGallery
+  const postGeneral = product_Materials.productMaterialGeneralInformation
+
 
   return (
     <>
@@ -57,8 +58,6 @@ export default function Product({post}) {
   <Vendor />
   {/** VENDOR LOGOS */}
 
-
-
   {/**  PRODUCT TYPE **/}
   <div id="window-type-section" className="max-w-6xl mx-auto">
     <div id="window-type-wrapper" className="mx-5 mt-16">
@@ -66,7 +65,7 @@ export default function Product({post}) {
         {postMaterialTypes && 
         <>
 
-          <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">Find your window by type:</h3>
+          <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">Types to choose from:</h3>
 
           <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
             
@@ -104,16 +103,23 @@ export default function Product({post}) {
  <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
-                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/window-material-type.jpg" alt="" />
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={postGeneral.productMaterialGeneralImage.sourceUrl} alt="" />
             </div>
             <div className="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
-                <p className="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
-                <h3 className="font-serif text-4xl py-2">Energy Efficient Single-Hung Windows</h3>
-                <p className="py-2 font-graphik">Single-hung windows incorporate two sashes, one fixed and one that slides up and down. Although most homeowners prefer double-hung windows with two operating sashes, single hung windows are an attractive, more practical choice for some homes. </p>
-
-                    <p className="py-2 font-graphik"> SoftLite’s single-hung windows are ideal for homeowners who are more budget conscious or prefer this operating style, because they improve your home’s appearance and are still built to provide decades of thermal efficiency, security, durability, and easy operation, like all SoftLite vinyl windows.</p>
+                <p className="py-2 font-graphik text-truwinblue-900">{postGeneral.productMaterialGeneralHeadline}</p>
+                <h3 className="font-serif text-4xl py-2">{postGeneral.productMaterialGeneralTitle}</h3>
+                <div className="py-2 font-graphik prod_p" dangerouslySetInnerHTML={{__html: postGeneral.productMaterialGeneralDescription}}></div>
                
-           
+                <p className="pt-6 font-graphik">Questions about {product_Materials.productMaterialHeroSection.heroSectionTitle}?</p>
+                <p className="font-graphikSemibold ">Call (832) 777-3681</p>
+
+            <style jsx>{`
+            .prod_p p{
+              padding-bottom: 5px;
+            }
+            `}
+              
+            </style>
             </div>
         </div>
     </div>
@@ -254,6 +260,18 @@ export default function Product({post}) {
                         productMaterialHeroSection {
                           heroSectionBlurp
                           heroSectionTitle
+                        }
+                        productMaterialGeneralInformation {
+                          productMaterialGeneralHeadline
+                          productMaterialGeneralTitle
+                          productMaterialGeneralDescription
+                          productMaterialGeneralImage {
+                            sourceUrl
+                            mediaDetails {
+                              height
+                              width
+                            }
+                          }
                         }
                       }
                       featuredImage {
