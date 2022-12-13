@@ -67,11 +67,11 @@ export default function Product({post, morePost}) {
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
-                {productMaterials?.map((material) => {
+                {productMaterials?.map((material, index) => {
                     
                     return (
                         
-                        <div key={material.id.toString()} className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+                        <div key={index} className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
                             <p className="text-2xl font-graphikSemibold text-truwinblue-900">
                                 <Link href={material.uri}><a>{material.title}  </a></Link>
                               </p>

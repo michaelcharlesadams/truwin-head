@@ -8,12 +8,12 @@ import MoreServices from '../../components/MoreServices';
 
 export default function Product({post}) {
 
-  console.log(post);
   const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
   const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
   const postMaterialTypes = product_Materials.materialProductTypes;
-  const postGallery = product_Materials.productTypeGallery
-  const postGeneral = product_Materials.productMaterialGeneralInformation
+  const postGallery = product_Materials.productTypeGallery;
+  const postGeneral = product_Materials.productMaterialGeneralInformation;
+  const postBenefits = product_Materials.productMaterialBenefits;
 
 
   return (
@@ -71,9 +71,9 @@ export default function Product({post}) {
             
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 
-                {postMaterialTypes?.map( (postType) =>  (
+                {postMaterialTypes?.map( (postType, index) =>  (
                 
-                <div key={postType.materialProductTypeImage.id} className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                <div key={index} className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
                   <p className="text-2xl font-graphikSemibold text-truwinblue-900">{postType.materialProductTypeTitle}</p>
                   
                   <img 
@@ -130,46 +130,31 @@ export default function Product({post}) {
   {/** END Get Started Form */}
 
   {/**  MATERIAL BENEFITS   */}
+  {postBenefits.productMaterialBenefitsSectionList &&
   <div id="onethird-info-section" className="lg:max-w-6xl mx-auto my-28 ">
     <div id="onethird-info-wrapper" className="mx-5 mt-10">
         <div className="text-center" >
-            <p className="text-sm text-truwinblue-900">Truwin, the window and door experts of Houston.</p>
-            <h3 className="font-serif text-5xl py-2 text-truwinblue-900">Benefits of a Vinyl Window</h3>
+            <p className="text-sm text-truwinblue-900">{postBenefits.productMaterialBenefitsSectionHeadliner}</p>
+            <h3 className="font-serif text-5xl py-2 text-truwinblue-900">{postBenefits.productMaterialBenefitsSectionTitle}</h3>
         </div>
         <div className="grid gap-4 grid-cols-1 sx:grid-cols-2  md:grid-cols-3 mt-14">
-            <div className="mt-5">
-                <img src="/images/truwin-prices.png" className="w-auto pb-2" alt="Transparent Prices icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">Diverse Materials</p>
-                <p className="text-truwinblue-900">At Truwin, we don’t hide our pricing at any point in the process. We want to help you improve your home and will work with budgets of all type to make that possible. </p>
-            </div>
-            <div className="mt-5">
-                <img src="/images/truwin-vetted.png" className="w-auto pb-2 " alt="Vetted Professionals icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">Ultra-Slim Frame</p>
-                <p className="text-truwinblue-900">Having strangers working on your home can be odd. But worry not, we’ve vetted every one of our professionasl on staff with thorough background checks and interviews.</p>
-            </div>
-            <div className="mt-5">
-                <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">Foam-Filled Frame</p>
-                <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
-            </div>
-            <div className="mt-5">
-                <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">3x Weather Stripping</p>
-                <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
-            </div>
-            <div className="mt-5">
-                <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">Pre-Sealed Impact Glass</p>
-                <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
-            </div>
-            <div className="mt-5">
-                <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
-                <p className="text-2xl font-serif text-truwinblue-900 py-2">Embedded Locks</p>
-                <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
-            </div>
+            
+
+               {postBenefits.productMaterialBenefitsSectionList.map((benefit, index) => (
+
+                <div key={index} className="mt-5">
+                  <img  src={benefit.productMaterialBenefitsListIcon.sourceUrl} className="w-auto pb-2" alt="Transparent Prices icon" />
+                  <p className="text-2xl font-serif text-truwinblue-900 py-2">{benefit.productMaterialBenefitsListTitle}</p>
+                  <p className="text-truwinblue-900">{benefit.productMaterialBenefitsListDescription}</p>
+                </div>
+
+              ))}
+                
+            
         </div>
     </div>
   </div>
+  }
   {/**  END MATERIAL BENEFITS   */}
 
   {/** SCROLLING GALLERY SECTION */}
@@ -270,6 +255,21 @@ export default function Product({post}) {
                             mediaDetails {
                               height
                               width
+                            }
+                          }
+                        }
+                        productMaterialBenefits {
+                          productMaterialBenefitsSectionHeadliner
+                          productMaterialBenefitsSectionTitle
+                          productMaterialBenefitsSectionList {
+                            productMaterialBenefitsListTitle
+                            productMaterialBenefitsListDescription
+                            productMaterialBenefitsListIcon {
+                              sourceUrl
+                              mediaDetails {
+                                height
+                                width
+                              }
                             }
                           }
                         }

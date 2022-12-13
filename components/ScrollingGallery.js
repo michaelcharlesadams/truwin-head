@@ -20,7 +20,7 @@ const onInit = () => {
     <>
     {postGallery && 
         <div id="gallery-section" className="mx-auto">
-            <div id="gallery-wrapper" className=" mx-auto">
+            <div id="gallery-wrapper" className=" mx-auto mt-20">
 
                 <h3 className="text-3xl text-center font-cigar text-truwinblue-900 py-6">Gallery of Inspiration</h3>
          
@@ -35,9 +35,9 @@ const onInit = () => {
                         plugins={[lgThumbnail, lgZoom]}
                         elementClassNames="flex overflow-scroll w-full"
                     >
-                        {postGallery?.map((photo) =>
+                        {postGallery?.map((photo, index) =>
 
-                            <a key={photo?.sourceUrl} href={photo.productTypeGalleryImage.sourceUrl}>
+                            <a key={index} href={photo.productTypeGalleryImage.sourceUrl}>
                                 <img className="w-auto removeMaxImage h-[500px]" alt={photo.productTypeGalleryTitle} src={photo.productTypeGalleryImage.sourceUrl} />
                             </a>
                         

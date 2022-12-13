@@ -1403,6 +1403,10 @@ video {
   background-blend-mode: multiply;
 }
 
+.bg-blend-screen {
+  background-blend-mode: screen;
+}
+
 .bg-blend-overlay {
   background-blend-mode: overlay;
 }
