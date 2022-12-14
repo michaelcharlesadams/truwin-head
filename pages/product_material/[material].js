@@ -122,7 +122,7 @@ export default function Product({post}) {
             </style>
             </div>
         </div>
-    </div>
+ </div>
   {/** END MATERIAL INFO SECTION  */}
 
   {/** Get Started Form */}
