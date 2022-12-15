@@ -78,7 +78,7 @@ function Nav() {
                      <Link href="/product/siding/"  ><a >Siding</a></Link>
                         </li>
                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
-                     <Link href="/company"><a >About Us</a></Link>
+                     <Link href="/company"><a >About</a></Link>
                         </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/post"><a >Blog</a></Link>
