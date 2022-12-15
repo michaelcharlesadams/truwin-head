@@ -71,25 +71,41 @@ const {slug, title, uri, frontPageOptions} = posts;
           <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
             
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5">
+              <Link href="/product/windows">
                   <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
-                  <Link href="/product/windows">
+                  
                     <a>Windows</a>
-                  </Link>
+                  
                   </h3>
+                  </Link>
+                  <Link href="/product/windows">
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
+
+                  </Link>
               </div>
               
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
+                <Link href="/product/doors">
                   <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
-                  <Link href="/product/doors">
+                  
                     <a>Doors</a>
-                  </Link>
+      
                   </h3>
+                  </Link>
+                  <Link href="/product/doors">
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
+                  </Link>
               </div>
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto " >
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">Siding</h3>
+              <Link href="/product/siding">
+                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  
+                    <a>Siding</a>
+                  </h3></Link>
+                  <Link href="/product/siding">
                   <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
+                  </Link>
+                  
               </div>
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
                   <h3 className="absolute z-10 text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5">Roofs</h3>
@@ -203,7 +219,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 <p className="py-2 font-graphikSemibold">Siding</p>
                 <h3 className="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
-                <Link href="#">
+                <Link href="/product/siding">
                    <button className="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
                 </Link>
             </div>
