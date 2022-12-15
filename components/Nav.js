@@ -46,11 +46,13 @@ function Nav() {
              {/** Button */}
             <div id="hug" className="w-[150px] flex justify-between md:hidden ">
                  <div className="px-4 py-2 rounded bg-truwinblue-900">
-                     <button>
-                        <Link href="/pricing">
+                    
+                    <Link href="/pricing">
+                        <button>
                             <a  className=" text-white font-graphikSemibold">Get Pricing</a>
-                        </Link>
-                    </button>
+                        </button>
+                    </Link>
+                    
                  </div>
                  <div id="navMobile" className="cursor-pointer" name="menu" onClick={myNavToggle}>
                      <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-truwinblue-300">
@@ -71,13 +73,11 @@ function Nav() {
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()}>
                      <Link href="/product/doors/"  ><a >Doors</a></Link>
                        </li>
+
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
-                     <Link href="#"><a >Roofing</a></Link>
+                     <Link href="/product/siding/"  ><a >Siding</a></Link>
                         </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
-                     <Link href="#"><a >Siding</a></Link>
-                        </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                    <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/company"><a >About Us</a></Link>
                         </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
@@ -88,13 +88,17 @@ function Nav() {
                {/** END NAV */}
             
          </div>
+         <Link href="/pricing" >
          <div className="hidden md:flex md:flex-auto mt-2 rounded mr-5 md:w-3/12 bg-truwinblue-900 hover:bg-truwinblue-500 cursor-pointer">
+                 
+                 
                  <button className="mx-auto">
-                 <Link href="/pricing" >
-                 <a className="text-white font-graphikSemibold">Get Pricing</a>
-                 </Link>
+                 <a className="text-white font-graphikSemibold">Get Pricing </a>
                  </button>
+                 
+                 
          </div>
+         </Link>
            {/**  */}
          
            {/**  */}

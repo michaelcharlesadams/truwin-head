@@ -63,9 +63,9 @@ function Footer() {
                     <Link href="/product/doors"><a >Doors</a></Link>
                     </p>
                     <p>
-                    <Link href=""><a >Siding</a></Link>
+                    <Link href="/product/siding"><a >Siding</a></Link>
                     </p>
-                    <p><Link href=""><a >Roofing</a></Link></p>
+                    <p><Link href="/product/roofing"><a >Roofing</a></Link></p>
                 </div>
                 <div id="footer-col-2" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwingray-primary pb-4">About Truwin</h4>     

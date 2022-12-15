@@ -158,7 +158,7 @@ export default function Product({post}) {
   {/**  END MATERIAL BENEFITS   */}
 
   {/** SCROLLING GALLERY SECTION */}
-      <ScrollingGallery postGallery={postGallery} />
+    <ScrollingGallery postGallery={postGallery} />
   {/** END SCROLLING GALLERY SECTION */}
  
     {/**  MORE  WAYS  */}
