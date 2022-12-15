@@ -22,7 +22,7 @@ export default function Product({post, morePost}) {
   return (
     <>
 
-      {/* * HERO **/}
+      {/* * HERO ***/}
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
@@ -54,11 +54,12 @@ export default function Product({post, morePost}) {
       </div>
       {/** END HERO */}
 
-      {/** VENDOR LOGOS    **/}
+      {/** VENDOR LOGOS    ***/}
       <Vendor />
       {/** VENDOR LOGOS */}
 
       {/** PRODUCT MATERIALS **/}
+      
       <div id="window-material-section" className="max-w-6xl mx-auto">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
@@ -99,6 +100,7 @@ export default function Product({post, morePost}) {
 
         </div>
       </div>
+
       {/** END PRODUCT MATERIALS */}
 
     
@@ -152,6 +154,10 @@ export default function Product({post, morePost}) {
                     </>
                 }
                 
+                {}
+                {/* <p className="pt-6 font-graphik">Questions about {product_Materials.productMaterialHeroSection.heroSectionTitle}?</p>
+                <p className="font-graphikSemibold ">Call (832) 777-3681</p> */}
+
             </div>
         </div> . 
       </div>
@@ -222,11 +228,18 @@ query: gql`
 });
 
  
+  //remove siding from path
+  const filterPath = get_single_product_paths_query.data.products.nodes.filter(item => item.slug !== "siding");
+
+  console.log(filterPath);
 
   //create an array of slugs for static paths
-  const paths = get_single_product_paths_query.data.products.nodes.map((post) => ({
-      params: { product: post.slug }
+  const paths = filterPath.map((post) => ({
+      params: { 
+        product: post.slug
+      }
   }))
+  
   
 
   //return the paths
