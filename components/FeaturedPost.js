@@ -28,7 +28,7 @@ const image_1 = posts[1].featuredImage.node.sourceUrl
             </div>
             <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
                 <p className="py-2 font-graphikSemibold">{cat_0}</p>
-                <h3 className="font-serif text-3xl py-2">{title_0}</h3>
+                <h3 className="font-[Cigars-Semibold] text-3xl py-2">{title_0}</h3>
                 <div className="py-2 font-graphik" dangerouslySetInnerHTML={{ __html: excerpt_0 }}></div>
                 <Link href={`/post${uri_0}`}> 
                     <button className="bg-truwinblue-900 py-4 px-6 rounded-full my-2 text-white">Learn More</button>
@@ -44,7 +44,7 @@ const image_1 = posts[1].featuredImage.node.sourceUrl
             </div>
             <div className="px-5 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
             <p className="py-2 font-graphikSemibold">{cat_1}</p>
-                <h3 className="font-serif text-3xl py-2">{title_1}</h3>
+                <h3 className="font-[Cigars-Semibold] text-3xl py-2">{title_1}</h3>
                 <div className="py-2 font-graphik" dangerouslySetInnerHTML={{ __html: excerpt_1 }}></div>
                 <Link href={`/post${uri_1}`}> 
                     <button className="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>

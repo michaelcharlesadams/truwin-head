@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function GetStartForm() {
 
@@ -44,10 +44,10 @@ function GetStartForm() {
     <div id="form-section" className=" bg-truwinblue-900">
       <div id="form-getstarted-wrapper" className="px-5 py-10 mt-20 text-white md:flex md:flex-wrap mx-auto lg:max-w-6xl">
 
-        <h2 className="font-serif text-2xl md:hidden">Get started on your free exteriors estimate.</h2>
+        <h2 className="font-[Cigars-Semibold] text-2xl md:hidden">Get started on your free exteriors estimate.</h2>
 
         <div id="form-getstarted-info" className="max-w-[50%] hidden md:block pl-5" >
-              <h2 className="font-serif text-2xl md:pr-4 md:w-full lg:text-3xl">Get started on your free exteriors estimate.</h2>
+              <h2 className="font-[Cigars-Semibold] text-2xl md:pr-4 md:w-full lg:text-3xl">Get started on your free exteriors estimate.</h2>
               <div className="flex mt-8 lg:mt-20">
                   <div className="align-middle">
                       <img src="/images/truwin-shield.png" alt="" className="w-8 md:w-auto" />

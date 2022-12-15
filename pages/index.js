@@ -33,7 +33,7 @@ const {slug, title, uri, frontPageOptions} = posts;
               </div>
               
             
-              <h3 className="text-white text-4xl font-cigarBold mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-semibold">Protect your family assets</h3>
+              <h3 className="text-white text-4xl mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-[Cigars-Semibold]">Protect your family assets</h3>
 
               <p className="text-white text-sm mt-3 sx:w-80 sm:w-80 md:w-auto mx-auto lg:w-[305px] font-graphik font-medium">Improve and secure your home with new windows, doors, siding and roofing from the trusted source in exteriors.</p>
           </div>
@@ -65,7 +65,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     <div id="post-title-section" className="lg:max-w-6xl mx-auto" >
       <div id="post-title-wrapper" className="mx-5 mt-20">
           <div className="mx-2 mb-11">
-              <h2 className="text-[28px] text-center text-truwinblue-900 font-serif pb-4 sm:text-4xl">Add beauty and security to your home</h2>
+              <h2 className="text-[28px] text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Add beauty and security to your home</h2>
               <p className="font-graphikLight text-truwinblue-900 text-center">We believe window, door, and siding companies can do better for customers. </p>
           </div>
           <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
@@ -127,7 +127,7 @@ const {slug, title, uri, frontPageOptions} = posts;
 <div id="window-type-section" className="max-w-6xl mx-auto">
         <div id="window-type-wrapper" className="mx-5 mt-24">
             
-            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Find quality windows in any material</h3>
+            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
             <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
 
             <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
@@ -179,7 +179,7 @@ const {slug, title, uri, frontPageOptions} = posts;
   <div id="window-material-section" className="max-w-6xl mx-auto my-20">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
-            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">Keep your home secure with new doors.</h3>
+            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">Keep your home secure with new doors.</h3>
             <p className="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
@@ -249,22 +249,22 @@ const {slug, title, uri, frontPageOptions} = posts;
       <div id="onethird-info-wrapper" className="mx-5 mt-10">
           <div className="text-center" >
               <p className="text-sm text-truwinblue-900">The Exteriors Experts™</p>
-              <h3 className="font-serif text-5xl py-2 text-truwinblue-900">Why trust Truwin Exteriors?</h3>
+              <h3 className="font-[Cigars-Semibold] text-5xl py-2 text-truwinblue-900">Why trust Truwin Exteriors?</h3>
           </div>
           <div className="1/3-column-wrap md:flex mt-14">
               <div className="mr-8">
                   <img src="/images/truwin-prices.png" className="w-auto pb-2" alt="Transparent Prices icon" />
-                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Transparent Prices</p>
+                  <p className="text-2xl font-[Cigars-Semibold] text-truwinblue-900 py-2">Transparent Prices</p>
                   <p className="text-truwinblue-900">At Truwin, we don’t hide our pricing at any point in the process. We want to help you improve your home and will work with budgets of all type to make that possible. </p>
               </div>
               <div className="mx-8">
                   <img src="/images/truwin-vetted.png" className="w-auto pb-2 " alt="Vetted Professionals icon" />
-                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Vetted Professionals</p>
+                  <p className="text-2xl font-[Cigars-Semibold] text-truwinblue-900 py-2">Vetted Professionals</p>
                   <p className="text-truwinblue-900">Having strangers working on your home can be odd. But worry not, we’ve vetted every one of our professionasl on staff with thorough background checks and interviews.</p>
               </div>
               <div className="ml-8">
                   <img src="/images/truwin-warranties.png" className="w-auto pb-2 " alt="Amazing Warranties icon" />
-                  <p className="text-2xl font-serif text-truwinblue-900 py-2">Amazing Warranties</p>
+                  <p className="text-2xl font-[Cigars-Semibold] text-truwinblue-900 py-2">Amazing Warranties</p>
                   <p className="text-truwinblue-900">We don’t just help you select the right product and install. We back our work and the products we sell you with industry-leading warranties. That’s just how we do business.</p>
               </div>
           </div>

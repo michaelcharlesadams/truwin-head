@@ -27,7 +27,7 @@ function Warranty() {
 
             <div className="md:w-2/5 bg-truwingold-700 text-white p-16">
                 <p className="py-2 font-graphik">Testimonials</p>
-                <div className="py-2 font-graphik text-2xl ">
+                <div className="py-2 font-graphik text-lg sm:text-2xl">
                     <p>“I have had Truwin at my house for two years now, just got my mom to get your service at her place. I have yet to have a bad customer experience. Truwin goes above and beyond.”</p>
                 </div>
                 <p className="py-2 font-graphik">Stephen t</p>

@@ -577,10 +577,6 @@ video {
   margin: 0.5rem;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -1007,12 +1003,12 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-\[1px\] {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-b-\[1px\] {
@@ -1081,11 +1077,6 @@ video {
 .bg-truwinblue-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(123 142 190 / var(--tw-bg-opacity));
-}
-
-.bg-truwingold-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(195 161 91 / var(--tw-bg-opacity));
 }
 
 .bg-truwingold-700 {
@@ -1270,11 +1261,11 @@ video {
 }
 
 .font-cigarBold {
-  font-family: Cigar_bold, serif;
+  font-family: Cigar_bold;
 }
 
 .font-graphik {
-  font-family: Graphik, sans-serif;
+  font-family: Graphik;
 }
 
 .font-serif {
@@ -1282,15 +1273,31 @@ video {
 }
 
 .font-graphikSemibold {
-  font-family: Graphik_Semibold, sans-serif;
+  font-family: Graphik_Semibold;
 }
 
 .font-graphikLight {
-  font-family: Graphik_Light, sans-serif;
+  font-family: Graphik_Light;
 }
 
 .font-cigar {
   font-family: Cigar;
+}
+
+.font-\[Cigars\] {
+  font-family: Cigars;
+}
+
+.font-cigarSemibold {
+  font-family: Cigar_Semibold;
+}
+
+.font-\[CigarsSemibold\] {
+  font-family: CigarsSemibold;
+}
+
+.font-\[Cigars-Semibold\] {
+  font-family: Cigars-Semibold;
 }
 
 .text-sm {
@@ -1349,8 +1356,16 @@ video {
   font-weight: 600;
 }
 
+.font-\[Cigars_Semibold\] {
+  font-weight: Cigars Semibold;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-truwingray-primary {
@@ -1430,66 +1445,90 @@ video {
   font-family: "Graphik";
 
   src: url('../public/fonts/Graphik/Graphik-Regular.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik_Bold";
 
   src: url('../public/fonts/Graphik/Graphik-Bold.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik_Super";
 
   src: url('../public/fonts/Graphik/Graphik-Super.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik_Medium";
 
   src: url('../public/fonts/Graphik/Graphik-Medium.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik_Semibold";
 
   src: url('../public/fonts/Graphik/Graphik-Semibold.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Graphik_Light";
 
   src: url('../public/fonts/Graphik/Graphik-Light.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Cigars";
 
   src: url('../public/fonts/hw-cigars/hw-cigars-regular.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Cigars_Bold";
 
   src: url('../public/fonts/hw-cigars/hw-cigars-bold.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Cigars_Semibold";
 
   src: url('../public/fonts/hw-cigars/hw-cigars-semibold.otf');
+
+  font-style: normal;
+
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Cigars_Light";
 
   src: url('../public/fonts/hw-cigars/hw-cigars-light.otf');
+
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Cigars_Strong";
 
   src: url('../public/fonts/hw-cigars/hw-cigars-strong.otf');
+
+  font-style: normal;
 }
 
 .placeholder\:text-truwinblue-300::-moz-placeholder {
@@ -1642,12 +1681,12 @@ video {
     width: 50%;
   }
 
-  .sm\:w-auto {
-    width: auto;
-  }
-
   .sm\:w-\[75\%\] {
     width: 75%;
+  }
+
+  .sm\:w-auto {
+    width: auto;
   }
 
   .sm\:grid-cols-3 {
@@ -1684,6 +1723,11 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1705,11 +1749,6 @@ video {
     margin-bottom: 0px;
   }
 
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1720,14 +1759,6 @@ video {
 
   .md\:mt-2 {
     margin-top: 0.5rem;
-  }
-
-  .md\:mr-0 {
-    margin-right: 0px;
-  }
-
-  .md\:mb-5 {
-    margin-bottom: 1.25rem;
   }
 
   .md\:mr-5 {
@@ -1840,10 +1871,6 @@ video {
 
   .md\:w-3\/12 {
     width: 25%;
-  }
-
-  .md\:w-\[75\%\] {
-    width: 75%;
   }
 
   .md\:w-3\/5 {
@@ -2011,11 +2038,6 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-5xl {
