@@ -7,6 +7,7 @@ import { useRef } from "react";
 import ProductVideo from "../../components/ProductVideo";
 import Vendor from '../../components/Vendor';
 import MoreServices from '../../components/MoreServices';
+import Warranty from '../../components/Warrant';
 
 export default function Product({post, morePost}) {
 
@@ -126,6 +127,11 @@ export default function Product({post, morePost}) {
       {/**  END HERO VIDEO SECTION **/}
 
       {/**  PRODUCT CONTENT SECTION **/}
+      {slug === 'doors'
+      ?
+        <Warranty />
+      :
+      
       <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
@@ -161,6 +167,7 @@ export default function Product({post, morePost}) {
             </div>
         </div> . 
       </div>
+      }
       {/**  END PRODUCT CONTENT SECTION **/}
 
       {/**  COMPARISON **/}
@@ -228,10 +235,8 @@ query: gql`
 });
 
  
-  //remove siding from path
+  //remove siding from static paths
   const filterPath = get_single_product_paths_query.data.products.nodes.filter(item => item.slug !== "siding");
-
-  console.log(filterPath);
 
   //create an array of slugs for static paths
   const paths = filterPath.map((post) => ({
