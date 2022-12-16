@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import ReactPlayer from 'react-player/youtube'
 
-function ProductVideo({slug}) {  
+function ProductDoorsVideo() {  
 
 //toggle video modal
 const [display, setDisplay] = useState('none');
@@ -27,10 +27,7 @@ const vidStyle = {
         }}  >
 
             {/** PLACE HOLDER IMAGE */}
-            {slug === 'windows'
-            ?<img className="cursor-pointer" src="/images/video-windows-th.png" alt="truwin windows video showcase" />
-            :<img className="cursor-pointer" src="/images/truwin-doors-video.jpg" alt="truwin windows video showcase" />
-            }
+            <img className="cursor-pointer" src="/images/truwin-doors-video.jpg" alt="truwin windows video showcase" />
         
         </button>
        
@@ -76,7 +73,7 @@ const vidStyle = {
             <ReactPlayer 
                 className='react-player'
                 playing={playing} 
-                url='https://www.youtube.com/watch?v=eeL_Yi0n3Kw&mute=0&rel=0'
+                url='https://www.youtube.com/watch?v=oEazXz2Klus&mute=0&rel=0'
                 width='100%'
                 height='300px'
                 controls='true'
@@ -107,4 +104,4 @@ const vidStyle = {
   )
 }
 
-export default ProductVideo
+export default ProductDoorsVideo;

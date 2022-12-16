@@ -11,7 +11,7 @@ import Warranty from '../../components/Warrant';
 
 export default function Product({post, morePost}) {
 
-  console.log(post);
+  
   const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
   const heroSection = productPage.productPageHeroSection
@@ -25,7 +25,7 @@ export default function Product({post, morePost}) {
 
       {/* * HERO ***/}
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
-        <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
+        <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[480px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">All {title} / {title}</p>
               <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-3">{heroSection.productPageHeroTitle}</h3>
@@ -123,7 +123,7 @@ export default function Product({post, morePost}) {
       {/** END BANNER - ENJOY A BETTER PRODUCT */}
 
       {/** HERO VIDEO SECTION  **/}
-      <ProductVideo />
+      <ProductVideo slug={slug} />
       {/**  END HERO VIDEO SECTION **/}
 
       {/**  PRODUCT CONTENT SECTION **/}
