@@ -83,9 +83,7 @@ export default function Post({post}){
         </div>
         {/** END BLOG CONTENT */}  
 
-        {/** Get Started Form */}
-        <GetStartForm />
-        {/** END Get Started Form */}
+       
     </>
         
     )
