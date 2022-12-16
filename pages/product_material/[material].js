@@ -164,7 +164,7 @@ export default function Product({post}) {
   {/** END SCROLLING GALLERY SECTION */}
  
 {/** QUOTE SECTION */}
-{slug === 'vinyl-doors' &&
+{slug === 'vinyl-doors' || slug === 'wood' &&
 
   <Quote />
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import { useState } from "react";
+import GetStartForm from "../../components/GetStartForm";
 
 
 function PostList({posts}) {
@@ -69,6 +70,10 @@ function PostList({posts}) {
     </div>
   {/** END BLOG POSTS */} 
     
+     {/** Get Started Form */}
+     <GetStartForm />
+    {/** END Get Started Form */}
+
      <style jsx>{`
         #blog-post-card:nth-child(even) p {
         color: white;
