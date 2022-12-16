@@ -28,7 +28,7 @@ export default function Product({post, morePost}) {
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">All {title} / {title}</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-cigarBold mt-3">{heroSection.productPageHeroTitle}</h3>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-3">{heroSection.productPageHeroTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.productPageHeroBlurp}</p>
               <Link href="/pricing">
                 <a>
@@ -65,7 +65,7 @@ export default function Product({post, morePost}) {
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
             
-            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-cigar">We carry {title.toLowerCase()} materials.</h3>
+            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-[Cigars]">We carry {title.toLowerCase()} materials.</h3>
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
@@ -112,7 +112,7 @@ export default function Product({post, morePost}) {
             
             <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
 
-                  <h3 className="text-white font-serif  py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better windows.</h3>
+                  <h3 className="text-white font-[Cigars-Semibold] py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better windows.</h3>
                   <Link href="/pricing">
                     <button className="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
                   </Link>
@@ -139,7 +139,7 @@ export default function Product({post, morePost}) {
             </div>
             <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
                 <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
-                <h3 className="font-serif text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
+                <h3 className="font-[Cigars-Semibold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
                 <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
                 {contentCard.productServicesCardDecriptionList && 
                     <>
@@ -174,7 +174,7 @@ export default function Product({post, morePost}) {
       <div id="comparison-session" className="lg:max-w-6xl mx-auto">
         <div id="comparison-wrapper" className="mx-5 my-20 ">
 
-            <h3 className="text-2xl text-center font-serif text-truwinblue-900">Compare our windows to competitors</h3>
+            <h3 className="text-2xl md:text-3xl text-center font-[Cigars-Semibold] text-truwinblue-900">Compare our windows to competitors</h3>
             <div id="comparison-links" className="p-5 justify-around  text-truwinblue-900 max-w-md mx-auto hidden" >
                 <small>Link 1</small>
                 <small>Link 2</small>
@@ -192,7 +192,7 @@ export default function Product({post, morePost}) {
                 </div>
                 <div id="comparison-content" className="my-5 sm:pl-14 md:pl-20 sm:pr-5 ss:max-w-[430px] md:max-w-lg">
                     <small className='text-truwinblue-900'>Higher Quality Frames</small>
-                    <h3 className="text-2xl md:text-3xl py-2 font-cigar text-truwinblue-900">27% more viewing area means more light in your home.</h3>
+                    <h3 className="text-2xl md:text-3xl py-2 font-[Cigars] text-truwinblue-900">27% more viewing area means more light in your home.</h3>
                     <p className="text-truwinblue-900">Compare our windows to our competitors to really see what you’re getting. Be sure to ask to see this during our in-person consultation.</p>
                 </div>
                

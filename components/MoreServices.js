@@ -9,7 +9,7 @@ function MoreServices() {
 <div id="more-posts-section" className="lg:max-w-6xl mx-auto">
         <div id="more-posts-wrapper" className="mx-5 mt-20">
 
-             <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-cigar">More ways to improve your exterior:</h3>
+             <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">More ways to improve your exterior:</h3>
             <p className="text-center text-truwinblue-900 font-graphik">Need more than just windows? Our team can help with all of it.</p><br/>
             <div id="more-posts-wrapper-content" className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4 mx-auto">
 
