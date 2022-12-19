@@ -55,7 +55,7 @@ function LocationList({locations, morePost}) {
 
                     {post.locationProducts.locationServicesSection[0].locationProductsSection?.map((locpro, index) => (
                       
-                        <span className="py-2 pr-5 text-truwinblue-900 bottom-5 text-sm">{locpro.locationProduct}</span>
+                        <span key={index} className="py-2 pr-5 text-truwinblue-900 bottom-5 text-sm">{locpro.locationProduct}</span>
                       
 
                     ))}

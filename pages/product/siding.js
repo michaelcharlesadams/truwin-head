@@ -28,7 +28,7 @@ export default function Siding({post, morePost}) {
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">All {title} / {title}</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-cigarBold mt-3">{heroSection.productPageHeroTitle}</h3>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-3">{heroSection.productPageHeroTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.productPageHeroBlurp}</p>
               <Link href="/pricing">
                 <a>
@@ -133,7 +133,7 @@ export default function Siding({post, morePost}) {
             
             <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
 
-                  <h3 className="text-white font-serif  py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better Siding.</h3>
+                  <h3 className="text-white font-[Cigar-Semibold]  py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better Siding.</h3>
                   <Link href="/pricing">
                     <button className="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
                   </Link>
