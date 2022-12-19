@@ -953,6 +953,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -983,6 +987,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .overflow-scroll {
@@ -1269,6 +1277,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1440,6 +1452,10 @@ video {
 .text-truwinblue-300 {
   --tw-text-opacity: 1;
   color: rgb(123 142 190 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .bg-blend-multiply {
