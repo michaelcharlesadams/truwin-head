@@ -27,7 +27,11 @@ export default function Siding({post, morePost}) {
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">All {title} / {title}</p>
+              <p className="text-sm text-truwingray-primary mb-3">
+              <span className='pr-2'>
+                  <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+              </span>
+                / {title}</p>
               <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-3">{heroSection.productPageHeroTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.productPageHeroBlurp}</p>
               <Link href="/pricing">

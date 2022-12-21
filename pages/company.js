@@ -4,6 +4,7 @@ import { useQuery, gql } from '@apollo/client';
 import MorePost from "../components/MorePost";
 import MoreServices from '../components/MoreServices';
 import HeroVideo from '../components/HeroVideo';
+import Image from 'next/image';
 
 function Company({morePost}) {
   return (
@@ -12,7 +13,12 @@ function Company({morePost}) {
     <div id="hero-company-section" className="max-w-6xl mx-auto ">
             <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
                 <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
-                    <p className="text-sm text-truwingray-primary mb-3">Title Here</p>
+                
+                    <p className="text-sm text-truwingray-primary mb-3">
+                        <span className='pr-2'>
+                        <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+                        </span>
+                     / Company</p>
                     <h3 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-3">We’re changing the  experience of buying windows, doors, and siding.</h3>
                     <p className="text-white text-sm mt-3 font-graphik font-medium">We’re built to serve you. We’re a different kind of company. </p>
                 </div>

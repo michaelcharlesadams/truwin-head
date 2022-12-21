@@ -3,6 +3,7 @@ import { client } from './_app';
 import { useQuery, gql } from '@apollo/client';
 import GetPricingForm from '../components/GetPricingForm';
 import Vendor from '../components/Vendor';
+import Image from 'next/image';
 
 function Pricing({morePost}) {
   return (
@@ -12,7 +13,11 @@ function Pricing({morePost}) {
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
                 
                 <div className="bg-truwinsoftblue-primary rounded text-left px-10 py-12 md:w-1/2 md:h-auto">
-                    <p className="text-sm text-truwinblue-900 mb-3">Get Pricing</p>
+                    <p className="text-sm text-truwinblue-900 mb-3">
+                    <span className='pr-2'>
+                        <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} />
+                    </span>
+                        / Get Pricing</p>
                     <h3 className="text-truwinblue-900 text-3xl sm:text-5xl font-[Cigars-SemiBold] mt-3">Schedule your hassle-free estimate.</h3>
                     <p className="text-truwinblue-900 text-sm mt-3 font-graphik font-medium">(832) 777-3681   |   Sales@Truwin.com</p>
                 </div>

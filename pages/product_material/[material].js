@@ -6,6 +6,7 @@ import GetStartForm from '../../components/GetStartForm';
 import ScrollingGallery from '../../components/ScrollingGallery';
 import MoreServices from '../../components/MoreServices';
 import Quote from '../../components/Quote';
+import Image from 'next/image';
 
 export default function Product({post}) {
 
@@ -27,7 +28,11 @@ export default function Product({post}) {
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
-              <p className="text-sm text-truwingray-primary mb-3">{title}</p>
+              <p className="text-sm text-truwingray-primary mb-3">
+              <span className='pr-2'>
+                <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+              </span>
+                / {title}</p>
               <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-SemiBold] mt-3">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{product_Materials.productMaterialHeroSection.heroSectionBlurp}</p>
               <Link href="/pricing">
