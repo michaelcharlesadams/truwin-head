@@ -3,7 +3,7 @@ import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import { useState } from "react";
 import GetStartForm from "../../components/GetStartForm";
-
+import Image from "next/image";
 
 function PostList({posts}) {
 
