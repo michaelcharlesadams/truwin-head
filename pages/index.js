@@ -72,44 +72,49 @@ const {slug, title, uri, frontPageOptions} = posts;
             
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5">
               <Link href="/product/windows">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Windows</a>
                   
                   </h3>
                   </Link>
                   <Link href="/product/windows">
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
+                  <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
 
                   </Link>
               </div>
               
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
                 <Link href="/product/doors">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Doors</a>
       
                   </h3>
                   </Link>
                   <Link href="/product/doors">
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
+                  <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
                   </Link>
               </div>
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto " >
               <Link href="/product/siding">
-                  <h3 className="absolute text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Siding</a>
                   </h3></Link>
                   <Link href="/product/siding">
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
+                  <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
                   </Link>
                   
               </div>
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
-                  <h3 className="absolute z-10 text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5">Roofs</h3>
-                  <img className="w-full max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-roofs.png" alt="" />
+                  <Link href="/product/siding">
+                    <h3 className="absolute cursor-pointer z-10 text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5">Roofs</h3>
+                  </Link>
+                 
+                  <Link href="/product/roofing">
+                     <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-roofs.png" alt="" />
+                  </Link>
               </div>
             
           </div>
@@ -128,7 +133,7 @@ const {slug, title, uri, frontPageOptions} = posts;
         <div id="window-type-wrapper" className="mx-5 mt-24">
             
             <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
-            <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u>View all Windows</u></Link></p><br/>
+            <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u className="cursor-pointer">View all Windows</u></Link></p><br/>
 
             <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
 {/*                

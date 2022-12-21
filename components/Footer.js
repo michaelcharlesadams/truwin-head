@@ -74,10 +74,16 @@ function Footer() {
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Service Area</h4>
-                    <p>Houston Area</p>
-                    <p>Kingwood</p>
-                    <p>Bryan</p>
-                    <p>College Station</p>
+                    <p><Link href="/location"><a className="cursor-pointer" >Houston Area</a></Link></p>
+                    <p><Link href="/location"><a className="cursor-pointer" >Kingwood</a></Link></p>
+                    <p><Link href="/location"><a className="cursor-pointer">Bryan</a></Link></p>
+                    <p><Link href="/location"><a className="cursor-pointer">College Station</a></Link></p>
+                    
+                    
+                    
+                    
+                
+                    
                 </div>
                 <div id="footer-col-4" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Contact Us</h4>
