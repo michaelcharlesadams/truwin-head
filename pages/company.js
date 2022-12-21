@@ -58,7 +58,7 @@ function Company({morePost}) {
             </div>
             <div className="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
                 <p className="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
-                <h3 className="font-serif text-4xl py-2">We get it—a lot of people dread working with window, door, and siding companies.</h3>
+                <h3 className="font-[Cigars-SemiBold] text-4xl py-2">We get it—a lot of people dread working with window, door, and siding companies.</h3>
                 <p className="py-2 text-lg font-graphik">So we strive to upend those expectations throughout each step of the job.</p>
 
                     <p className="py-2 font-graphik">Usually, a salesperson shows up at your door, spends hours in your house talking your ears off, and won’t leave until you hand over your contact information. They’re pushy, overwhelming, and, frankly, annoying. Opaque pricing and sub-par workmanship are more headaches that plague this industry.</p>

@@ -553,8 +553,20 @@ video {
   left: 1.25rem;
 }
 
-.top-\[6px\] {
-  top: 6px;
+.top-8 {
+  top: 2rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.bottom-\[-5px\] {
+  bottom: -5px;
+}
+
+.left-\[15\%\] {
+  left: 15%;
 }
 
 .z-10 {
@@ -761,12 +773,12 @@ video {
   height: 300px;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-6 {
   height: 1.5rem;
+}
+
+.h-20 {
+  height: 5rem;
 }
 
 .h-\[500px\] {
@@ -801,6 +813,10 @@ video {
   min-height: 370px;
 }
 
+.min-h-\[350px\] {
+  min-height: 350px;
+}
+
 .min-h-\[280px\] {
   min-height: 280px;
 }
@@ -833,12 +849,12 @@ video {
   width: 80%;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-6 {
   width: 1.5rem;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-11\/12 {
@@ -875,10 +891,6 @@ video {
 
 .w-\[150px\] {
   width: 150px;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .w-\[110px\] {
@@ -953,10 +965,6 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -981,16 +989,16 @@ video {
   gap: 1rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .overflow-scroll {
@@ -1241,6 +1249,10 @@ video {
   padding-top: 1rem;
 }
 
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1277,10 +1289,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1293,12 +1301,16 @@ video {
   vertical-align: middle;
 }
 
-.font-cigarBold {
-  font-family: Cigar_bold;
+.font-\[Cigars-SemiBold\] {
+  font-family: Cigars-SemiBold;
 }
 
 .font-graphik {
   font-family: Graphik;
+}
+
+.font-\[Cigars\] {
+  font-family: Cigars;
 }
 
 .font-serif {
@@ -1313,36 +1325,24 @@ video {
   font-family: Graphik_Light;
 }
 
-.font-cigar {
-  font-family: Cigar;
-}
-
-.font-\[Cigars\] {
-  font-family: Cigars;
-}
-
-.font-cigarSemibold {
-  font-family: Cigar_Semibold;
-}
-
-.font-\[CigarsSemibold\] {
-  font-family: CigarsSemibold;
-}
-
 .font-\[Cigars-Semibold\] {
   font-family: Cigars-Semibold;
 }
 
-.font-\[Cigar-SemiBold\] {
-  font-family: Cigar-SemiBold;
+.font-cigar {
+  font-family: Cigar;
 }
 
-.font-\[Cigars-SemiBold\] {
-  font-family: Cigars-SemiBold;
+.font-cigarBold {
+  font-family: Cigar_bold;
 }
 
 .font-\[Cigar-Semibold\] {
   font-family: Cigar-Semibold;
+}
+
+.font-\[Cigars-SemiBol\] {
+  font-family: Cigars-SemiBol;
 }
 
 .text-sm {
@@ -1401,16 +1401,8 @@ video {
   font-weight: 600;
 }
 
-.font-\[Cigars_Semibold\] {
-  font-weight: Cigars Semibold;
-}
-
 .font-bold {
   font-weight: 700;
-}
-
-.font-black {
-  font-weight: 900;
 }
 
 .text-truwingray-primary {
@@ -1428,6 +1420,11 @@ video {
   color: rgb(19 62 172 / var(--tw-text-opacity));
 }
 
+.text-truwinblue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(43 80 175 / var(--tw-text-opacity));
+}
+
 .text-green-600 {
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
@@ -1441,11 +1438,6 @@ video {
 .text-truwinblue-500 {
   --tw-text-opacity: 1;
   color: rgb(83 112 187 / var(--tw-text-opacity));
-}
-
-.text-truwinblue-700 {
-  --tw-text-opacity: 1;
-  color: rgb(43 80 175 / var(--tw-text-opacity));
 }
 
 .text-truwinsoftblue-primary {
@@ -1620,6 +1612,10 @@ video {
 }
 
 @media (min-width: 475px) {
+  .sx\:left-\[5\%\] {
+    left: 5%;
+  }
+
   .sx\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1749,11 +1745,6 @@ video {
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .sm\:px-20 {
@@ -2037,10 +2028,6 @@ video {
     padding: 5rem;
   }
 
-  .md\:p-14 {
-    padding: 3.5rem;
-  }
-
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -2140,24 +2127,12 @@ video {
     max-height: 700px;
   }
 
-  .lg\:max-h-\[420px\] {
-    max-height: 420px;
-  }
-
   .lg\:max-h-\[480px\] {
     max-height: 480px;
   }
 
-  .lg\:max-h-\[440px\] {
-    max-height: 440px;
-  }
-
-  .lg\:min-h-\[480px\] {
-    min-height: 480px;
-  }
-
-  .lg\:min-h-\[400px\] {
-    min-height: 400px;
+  .lg\:max-h-\[420px\] {
+    max-height: 420px;
   }
 
   .lg\:w-\[305px\] {
@@ -2195,11 +2170,6 @@ video {
   .lg\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:px-14 {

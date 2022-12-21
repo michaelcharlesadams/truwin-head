@@ -13,7 +13,7 @@ function Pricing({morePost}) {
                 
                 <div className="bg-truwinsoftblue-primary rounded text-left px-10 py-12 md:w-1/2 md:h-auto">
                     <p className="text-sm text-truwinblue-900 mb-3">Get Pricing</p>
-                    <h3 className="text-truwinblue-900 text-3xl sm:text-5xl font-cigar mt-3">Schedule your hassle-free estimate.</h3>
+                    <h3 className="text-truwinblue-900 text-3xl sm:text-5xl font-[Cigars-SemiBold] mt-3">Schedule your hassle-free estimate.</h3>
                     <p className="text-truwinblue-900 text-sm mt-3 font-graphik font-medium">(832) 777-3681   |   Sales@Truwin.com</p>
                 </div>
                 
@@ -39,7 +39,7 @@ function Pricing({morePost}) {
 
             <div className="px-5 py-6 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded lg:px-7 md:w-1/2">
                 <p className="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
-                <h3 className="font-serif text-3xl py-4">What To Expect From Truwin:</h3>
+                <h3 className="font-[Cigars-Semibold] text-3xl py-4">What To Expect From Truwin:</h3>
                 <ul className="ml-4">
             
                     <li className="list-disc">A phone call from one of our consultants.</li>
