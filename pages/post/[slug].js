@@ -43,6 +43,14 @@ export default function Post({post}){
           {/** END BLOG FEATURED IMAGE */}
 
         {/** BLOG CONTENT **/}
+        <style jsx>{`
+                    #blog-content p{
+                        padding-top: 8px !important;
+                        padding-bottom: 8px !important;
+                        line-height: 24px !important; 
+                    }  
+                `}
+            </style>
         <div id="blog-section" className="mx-auto md:max-w-6xl">
             <div id="blog-wrapper" className="px-5 my-8 text-white md:mx-5 rounded">
                 <div id="blog-author-wrap" className="flex p-4 mb-2 border-b-[1px] border-truwinblue-50 max-w-[625px] mx-auto ">
@@ -69,21 +77,16 @@ export default function Post({post}){
                 </div>
                 <div id="blog-container" className="my-10 max-w-[625px] mx-auto text-truwinblue-900 ">
                     <h3 className="text-2xl font-graphikSemibold py-2">{title}</h3>
-                    <div id="blog-content" dangerouslySetInnerHTML={{__html: content}}>
+                    <div id="blog-content" dangerouslySetInnerHTML={
+                        {__html: "<style>#blog-content h2, #blog-content p{padding-top: 8px !important;padding-bottom: 8px !important;line-height: 24px !important;} #blog-content a{text-decoration:underline;} #blog-content h2{font-size:22px;}</style>" + content }
+                        
+                    } 
+                        style={ {paddingTop: '8px'} }>
                    
                     </div>
 
                 </div>
-                <style jsx>{`
-                    #blog-content p{
-                        padding-top: 8px;
-                        padding-bottom: 8px;
-                        line-height: 24px;
-                        
-                    }
-                    
-                `}
-            </style>
+               
             </div>
         </div>
         {/** END BLOG CONTENT */}  

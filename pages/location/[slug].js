@@ -45,8 +45,8 @@ export default function Post({post}){
         {/** BLOG CONTENT **/}
         <style jsx>{`
             #blog-content p {
-                padding-top: .5em;
-                padding-bottom: .5em;
+                padding-top: .5em !important;
+                padding-bottom: .5em !important;
             }
         `}
         </style>

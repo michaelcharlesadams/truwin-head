@@ -62,12 +62,13 @@ export default function Siding({post, morePost}) {
      {/**  PRODUCT CONTENT SECTION **/}
      <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
+            
             <div className="md:w-1/2">
                 <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard.productsProductServicesImage?.sourceUrl} alt="" />
             </div>
-            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
+            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-14">
                 <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
-                <h3 className="font-serif text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
+                <h3 className="font-[Cigar-Semibold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
                 <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
                 {contentCard.productServicesCardDecriptionList && 
                     <>
@@ -87,8 +88,8 @@ export default function Siding({post, morePost}) {
                       </ul>
                     </>
                 }
-                
-                <p className="pt-6 font-graphik">Questions about Siding?</p>
+                 <hr className="mt-4 mb-2" />
+                <p className="pt-4 font-graphik">Questions about Siding?</p>
                 <p className="font-graphikSemibold ">Call (832) 777-3681</p>
 
             </div>
