@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Date from '../../components/date';
+import Link from 'next/link';
 
 export default function Post({post}){
     //deconstruct the posts contents
@@ -11,6 +12,9 @@ export default function Post({post}){
     const postHeaderImage = post.featuredImage.node?.sourceUrl;
     const postAuthor = post.rel_people_con_post.people?.[0].title; 
     const postAuthorAvatar = post.rel_people_con_post.people?.[0].people_avatar.truwinAvatar.sourceUrl
+    const postAuthorSocial = post.rel_people_con_post.people?.[0].people_avatar.socialMediaLinks;
+    console.log(post);
+    console.log(postAuthorSocial);
  
     return (
     <>
@@ -53,7 +57,7 @@ export default function Post({post}){
             </style>
         <div id="blog-section" className="mx-auto md:max-w-6xl">
             <div id="blog-wrapper" className="px-5 my-8 text-white md:mx-5 rounded">
-                <div id="blog-author-wrap" className="flex p-4 mb-2 border-b-[1px] border-truwinblue-50 max-w-[625px] mx-auto ">
+                <div id="blog-author-wrap" className="flex justify-between p-4 mb-2 border-b-[1px] border-truwinblue-50 max-w-[625px] mx-auto ">
                     <div id="blog-author" className="flex">
 
                          {/** AUTHOR IMAGE **/}
@@ -69,11 +73,34 @@ export default function Post({post}){
                             <p className="text-truwinblue-900 text-sm"></p>
                         </div>
                     </div>
-                    <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+
+                    {postAuthorSocial && 
+                    <div id="blog-social" className="flex">
+
+                        {postAuthorSocial.map((social,index) => {
+                            
+                            
+                            
+                           if(social.personSocialLabel === "Facebook"){
+
+                                return(<Link key={index} href={social.personSocialLink}><a target="__blank">
+                                <img className="px-6 py-3 border-[1px] border-[#eaeaea] w-auto h-[45px]" src="/images/facebook.jpg" alt="Facebook" /></a>
+                                </Link>)
+                           }
+
+                           if(social.personSocialLabel === "Twitter"){
+
+                            return(<Link key={index} href={social.personSocialLink} ><a target="__blank">
+                            <img className="px-6 py-3 border-[1px] border-[#eaeaea] w-auto h-[45px]" src="/images/twitter.jpg" alt="Facebook" /></a>
+                            </Link>)
+                       }
+                          
+                             
+
+                        })}
+                            
                     </div>
+                    }           
                 </div>
                 <div id="blog-container" className="my-10 max-w-[625px] mx-auto text-truwinblue-900 ">
                     <h3 className="text-2xl font-graphikSemibold py-2">{title}</h3>
@@ -177,6 +204,10 @@ export async function getStaticProps({params}) {
                                 height
                                 width
                               }
+                            }
+                            socialMediaLinks {
+                                personSocialLabel
+                                personSocialLink
                             }
                           }
                         }

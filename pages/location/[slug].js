@@ -69,9 +69,8 @@ export default function Post({post}){
                         </div>
                     </div>
                     <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                        <img src="/images/facebook.jpg" alt="Facebook" />
+                        <img src="/images/twitter.jpg" alt="Facebook" />
                     </div>
                 </div>
                 <div id="blog-content" className="my-10 max-w-[625px] mx-auto text-truwinblue-900 ">
