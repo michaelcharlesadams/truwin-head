@@ -17,10 +17,10 @@ function Footer() {
             <div id="sub-footer-wrapper" className="p-10 mt-20 bg-truwinsoftblue-primary">
 
                 <div className="grid grid-cols-1 sx:grid-cols-2 md:grid-cols-4 ">
-                    <img className="m-4 mx-auto" src="/images/bbb.png" width='140px' height='54px' />
-                    <img className="m-4 mx-auto" src="/images/lake-houston-chamber.png" width='165px' height='59px' />
-                    <img className="m-4 mx-auto" src="/images/houzz.png" width='165px' height='44px'/>
-                    <img className="m-4 mx-auto"  src="/images/google.png" width='131px' height='58px' />
+                    <img className="m-4 mx-auto" src="/images/bbb.jpg" width='140px' height='54px' />
+                    <img className="m-4 mx-auto" src="/images/lake-houston-chamber.jpg" width='165px' height='59px' />
+                    <img className="m-4 mx-auto" src="/images/houzz.jpg" width='165px' height='44px'/>
+                    <img className="m-4 mx-auto"  src="/images/google.jpg" width='131px' height='58px' />
                 </div>
                
             </div>
