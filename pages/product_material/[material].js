@@ -307,7 +307,8 @@ export default function Product({post}) {
      
   
       return {
-          props: { post: get_single_product_material_query}
+          props: { post: get_single_product_material_query},
+          revalidate: 10
           //props: { post: page }
       }
   

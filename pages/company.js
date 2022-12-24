@@ -15,9 +15,9 @@ function Company({morePost}) {
                 <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
                 
                     <p className="text-sm text-truwingray-primary mb-3">
-                        <span className='pr-2'>
+                    <span className='pr-2'>
                         <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
-                        </span>
+                    </span>
                      / Company</p>
                     <h3 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-3">We’re changing the  experience of buying windows, doors, and siding.</h3>
                     <p className="text-white text-sm mt-3 font-graphik font-medium">We’re built to serve you. We’re a different kind of company. </p>
@@ -213,5 +213,6 @@ export default Company
       props: {
           morePost: more_posts_query.data.posts.nodes
       },
+      revalidate: 10
     }
   }

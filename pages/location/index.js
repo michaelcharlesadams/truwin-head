@@ -159,7 +159,8 @@ export default LocationList;
         props: { 
           locations: get_all_locations_query.data.locations,
           morePost: more_posts_query.data.posts.nodes
-        }
+        },
+        revalidate: 10
     }
 
 }

@@ -183,7 +183,8 @@ export async function getStaticProps({params}) {
    
 
     return {
-        props: { post: get_post_slug_query.data.postBy }
+        props: { post: get_post_slug_query.data.postBy },
+        revalidate: 10
     }
 
 }

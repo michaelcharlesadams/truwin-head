@@ -384,6 +384,7 @@ export async function getStaticProps(){
         morePost: more_posts_query.data.posts.nodes
 
     },
+    revalidate: 10
   }
 }
 
