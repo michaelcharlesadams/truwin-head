@@ -80,11 +80,11 @@ export default function Product({post}) {
 
                 {postMaterialTypes?.map( (postType, index) =>  (
                 
-                <div key={index} className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px]">
+                <div key={index} className="w-auto border rounded border-truwinblue-300 p-8 sm:mt-4 max-w-[300px] lg:max-w-[300px] relative h-52">
                   <p className="text-2xl font-graphikSemibold text-truwinblue-900">{postType.materialProductTypeTitle}</p>
                   
                   <img 
-                    className="w-auto h-auto pt-8" 
+                    className="w-auto h-auto pt-8 absolute left-7 bottom-7" 
                     src={postType.materialProductTypeImage.sourceUrl} 
                     alt="window type" />
                 </div>
