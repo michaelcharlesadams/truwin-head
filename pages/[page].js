@@ -29,8 +29,13 @@ export default Page;
             `,
     });
 
+
+      //remove siding from static paths
+    const filterPath = get_page_path_query.data.pages.nodes.filter(item => item.slug !== "company");
+
+
     // //2. create array of paths
-    const paths = get_page_path_query.data.pages.nodes.map((post) => ({
+    const paths = filterPath.map((post) => ({
         params: { page: post.slug}
     }))
 
