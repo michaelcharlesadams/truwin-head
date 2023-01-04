@@ -25,9 +25,9 @@ function Nav() {
 
   return (
     <>
-        <div className="md:flex lg:max-w-6xl lg:mx-auto my-2">
+        <div className="md:flex lg:max-w-6xl lg:mx-auto mt-2 mb-3">
          
-         <div className="p-4 border-solid border-[1px] border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
+         <div className="p-3 border-solid border-[1px] border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
              {/** LOGO */}
              <div className="w-32 md:pt-[16px] md:min-w-[140px] pt-2" >
                  <Link href="/" >
