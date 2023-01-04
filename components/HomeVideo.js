@@ -20,7 +20,7 @@ const vidStyle = {
   return (
     <>
     
-    <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
+    <div className="relative mt-4 w-full h-auto md:ml-2 md:mt-0 ">
                     
 
         <button id="myBtn" onClick={() => {

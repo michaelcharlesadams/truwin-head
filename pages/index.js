@@ -9,6 +9,7 @@ import { useQuery, gql } from '@apollo/client';
 import MorePost from '../components/MorePost';
 import GetStartForm from '../components/GetStartForm';
 import Aos from "aos";
+import HomeVideo from '../components/HomeVideo';
 
 
 
@@ -22,7 +23,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** HERO - FRONT PAGE */}
     <div id="hero-section" className="max-w-6xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
       <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
-          <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:w-5/12 md:h-auto">
+          <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:min-w-5/12 md:h-auto">
               <div className="w-12 mx-auto">
                 <Image
                 src="/images/truwin-shield.png"
@@ -39,18 +40,25 @@ const {slug, title, uri, frontPageOptions} = posts;
           </div>
           
           
-          <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
-              <div className="w-full max-h-46 md:object-cover md:h-full rounded" >
+          <div className="relative mt-4 w-full h-auto md:min-w-7/12 md:ml-2 md:mt-0 ">
+              <div className="w-full max-h-46 md:object-cover md:h-full rounded " >
 
-              <img className="w-full max-h-46 md:object-cover md:h-full rounded" 
-              src={frontPageOptions.homeHeroImage.sourceUrl} alt="truwin builder video"/>
+              {/* <img className="w-full max-h-46 md:object-cover md:h-full rounded" 
+              src={frontPageOptions.homeHeroImage.sourceUrl} alt="truwin builder video"/> */}
+
+                <HomeVideo 
+                    url="https://www.youtube.com/watch?v=eeL_Yi0n3Kw&mute=0&rel=0" 
+                    cover={frontPageOptions.homeHeroImage.sourceUrl}
+                />
               </div>
               
                 
-              <div className="absolute bottom-0 left-0 w-16 hidden">
-                  <p className="font-graphikSemibold text-white text-2xl">The Exterior
+              <div className="absolute bottom-8 left-10 w-16 z-1 ">
+                  <p className="font-graphikSemibold text-white text-lg sx:text-3xl pb-2 border-b-2  md:w-32 w-20 leading-5 sx:leading-8">The Exterior
                       Experts</p>
               </div>
+
+              
               
           </div>
       </div>

@@ -25,7 +25,7 @@ function Company({morePost}) {
                 
                 
                 {/**  */}
-                <HeroVideo />
+                <HeroVideo url="https://www.youtube.com/watch?v=eeL_Yi0n3Kw&mute=0&rel=0" cover="/images/truwin-jay-chapp.jpg"/>
                 {/**  */}
             </div>
     </div>
