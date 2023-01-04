@@ -25,11 +25,11 @@ function Nav() {
 
   return (
     <>
-        <div className="md:flex lg:max-w-6xl lg:mx-auto ">
+        <div className="md:flex lg:max-w-6xl lg:mx-auto my-2">
          
-         <div className="p-4 border-solid border-2 border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
+         <div className="p-4 border-solid border-[1px] border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
              {/** LOGO */}
-             <div className="w-32 md:pt-[19px] md:max-w-36 pt-2" >
+             <div className="w-32 md:pt-[16px] md:min-w-[140px] pt-2" >
                  <Link href="/" >
                     <a >
                         <Image src="/images/truwin.png"
@@ -67,20 +67,20 @@ function Nav() {
                {/** NAV  */}
              <div id="navList" className="w-full pt-3 md:pt-0 md:flex md:justify-end hidden transition ease-in-out duration-500">
                  <ul className="md:flex ">
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/product/windows/" ><a>Windows</a></Link>
                       </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()}>
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()}>
                      <Link href="/product/doors/"  ><a >Doors</a></Link>
                        </li>
 
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/product/siding/"  ><a >Siding</a></Link>
                         </li>
-                    <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                    <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/company"><a >About</a></Link>
                         </li>
-                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-5 md:pr-5 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/post"><a >Blog</a></Link>
                     </li>
                  </ul>

@@ -573,10 +573,6 @@ video {
   left: 1.75rem;
 }
 
-.bottom-7 {
-  bottom: 1.75rem;
-}
-
 .bottom-4 {
   bottom: 1rem;
 }
@@ -663,6 +659,11 @@ video {
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mt-3 {
@@ -785,8 +786,16 @@ video {
   height: 300px;
 }
 
+.h-\[45px\] {
+  height: 45px;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-52 {
+  height: 13rem;
 }
 
 .h-20 {
@@ -795,22 +804,6 @@ video {
 
 .h-\[500px\] {
   height: 500px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[45pd\] {
-  height: 45pd;
-}
-
-.h-\[45px\] {
-  height: 45px;
-}
-
-.h-52 {
-  height: 13rem;
 }
 
 .max-h-\[600px\] {
@@ -923,10 +916,6 @@ video {
 
 .w-\[110px\] {
   width: 110px;
-}
-
-.w-\[20px\] {
-  width: 20px;
 }
 
 .min-w-\[180px\] {
@@ -1089,6 +1078,11 @@ video {
   border-color: rgb(185 194 218 / var(--tw-border-opacity));
 }
 
+.border-\[\#eaeaea\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 234 234 / var(--tw-border-opacity));
+}
+
 .border-\[\#2B50AF\] {
   --tw-border-opacity: 1;
   border-color: rgb(43 80 175 / var(--tw-border-opacity));
@@ -1102,11 +1096,6 @@ video {
 .border-truwinblue-900 {
   --tw-border-opacity: 1;
   border-color: rgb(19 62 172 / var(--tw-border-opacity));
-}
-
-.border-\[\#eaeaea\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(234 234 234 / var(--tw-border-opacity));
 }
 
 .bg-truwinblue-900 {
@@ -1228,6 +1217,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1243,11 +1237,6 @@ video {
   padding-right: 4rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1256,6 +1245,10 @@ video {
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .pb-2 {
@@ -1326,8 +1319,8 @@ video {
   padding-top: 2.5rem;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-left {
@@ -1354,10 +1347,6 @@ video {
   font-family: Cigars;
 }
 
-.font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .font-graphikSemibold {
   font-family: Graphik_Semibold;
 }
@@ -1370,8 +1359,8 @@ video {
   font-family: Cigars-Semibold;
 }
 
-.font-cigar {
-  font-family: Cigar;
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-cigarBold {
@@ -1382,8 +1371,8 @@ video {
   font-family: Cigar-Semibold;
 }
 
-.font-\[Cigars-SemiBol\] {
-  font-family: Cigars-SemiBol;
+.font-cigar {
+  font-family: Cigar;
 }
 
 .text-sm {
@@ -1432,6 +1421,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-medium {
@@ -1655,10 +1648,6 @@ video {
 @media (min-width: 475px) {
   .sx\:left-\[5\%\] {
     left: 5%;
-  }
-
-  .sx\:bottom-7 {
-    bottom: 1.75rem;
   }
 
   .sx\:col-span-2 {
@@ -1981,6 +1970,18 @@ video {
     width: 40%;
   }
 
+  .md\:min-w-\[185px\] {
+    min-width: 185px;
+  }
+
+  .md\:min-w-\[145px\] {
+    min-width: 145px;
+  }
+
+  .md\:min-w-\[140px\] {
+    min-width: 140px;
+  }
+
   .md\:max-w-\[275px\] {
     max-width: 275px;
   }
@@ -2128,6 +2129,14 @@ video {
 
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pt-\[16px\] {
+    padding-top: 16px;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
   }
 
   .md\:text-4xl {
