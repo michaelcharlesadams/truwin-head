@@ -529,9 +529,51 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .inset-x-0 {
   left: 0px;
   right: 0px;
+}
+
+.inset-y-20 {
+  top: 5rem;
+  bottom: 5rem;
+}
+
+.inset-x-20 {
+  left: 5rem;
+  right: 5rem;
+}
+
+.inset-y-40 {
+  top: 10rem;
+  bottom: 10rem;
+}
+
+.inset-x-40 {
+  left: 10rem;
+  right: 10rem;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
+.inset-y-10 {
+  top: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.inset-y-11 {
+  top: 2.75rem;
+  bottom: 2.75rem;
 }
 
 .bottom-0 {
@@ -608,6 +650,26 @@ video {
 
 .top-4 {
   top: 1rem;
+}
+
+.left-\[25\%\] {
+  left: 25%;
+}
+
+.bottom-\[32\%\] {
+  bottom: 32%;
+}
+
+.left-\[32\%\] {
+  left: 32%;
+}
+
+.bottom-\[35\%\] {
+  bottom: 35%;
+}
+
+.left-\[35\%\] {
+  left: 35%;
 }
 
 .z-10 {
@@ -867,6 +929,10 @@ video {
   height: 200px;
 }
 
+.h-\[40\%\] {
+  height: 40%;
+}
+
 .max-h-\[600px\] {
   max-height: 600px;
 }
@@ -1057,6 +1123,14 @@ video {
 
 .w-\[222px\] {
   width: 222px;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .min-w-\[180px\] {
@@ -1428,6 +1502,11 @@ video {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pr-2 {
@@ -2379,6 +2458,10 @@ video {
     border-top-left-radius: 0px;
   }
 
+  .md\:rounded-br-none {
+    border-bottom-right-radius: 0px;
+  }
+
   .md\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -2596,6 +2679,11 @@ video {
   .lg\:py-1 {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pt-12 {

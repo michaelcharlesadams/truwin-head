@@ -335,15 +335,16 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** FEATURED POST    */}
     <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
-            <div className="md:w-2/4 lg:w-3/5">
-                <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/siding-post.png" alt="" />
+            <div className="relative md:w-2/4 lg:w-3/5">
+                <img loading="lazy" className="w-full rounded-t md:rounded-tr md:rounded-br md:rounded-tl-none md:rounded-bl-none  md:h-full object-cover" src="/images/siding-post.png" alt="" />
+                <img className="absolute bottom-[35%] left-[35%] w-[30%] h-auto" src='images/lp-build-smart.png' alt='lb build smart'/>
             </div>
-            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+            <div className="px-10 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br-none md:rounded-tr-none md:rounded-bl md:rounded-tl lg:px-10 lg:w-2/5">
                 <p className="py-2 font-graphikSemibold">Siding</p>
-                <h3 className="font-serif text-3xl py-2">Strong, beautiful siding from LP.</h3>
+                <h3 className="font-[Cigars-Semibold] text-4xl py-3">Strong, beautiful siding from LP.</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 <Link href="/product/siding">
-                   <button className="bg-truwinblue-900 text-white py-4 px-6 rounded-full my-2">Learn More</button>
+                   <button className="bg-truwinblue-900 text-white py-5 px-6 rounded-full my-4">Learn More</button>
                 </Link>
             </div>
         </div>
@@ -354,12 +355,12 @@ const {slug, title, uri, frontPageOptions} = posts;
             <div className="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
             </div>
-            <div className="px-5 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7 lg:w-2/5">
+            <div className="px-10 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-10 lg:w-2/5">
                 <p className="py-2 font-graphikSemibold">Roofing</p>
-                <h3 className="font-serif text-3xl py-2">Hassel Free Roof Replacement</h3>
+                <h3 className="font-[Cigars-Semibold] text-4xl py-3">Hassel Free Roof Replacement</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 <Link href="#">
-                   <button className="bg-truwinblue-500 py-4 px-6 rounded-full my-2">Learn More</button>
+                   <button className="bg-truwinblue-500 py-5 px-6 rounded-full my-4">Learn More</button>
                 </Link>
                
             </div>
