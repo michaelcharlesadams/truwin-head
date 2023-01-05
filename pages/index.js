@@ -197,7 +197,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 
                 <Link href="/product_material/vinyl-doors">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
@@ -209,18 +209,18 @@ const {slug, title, uri, frontPageOptions} = posts;
                 </div>
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 <Link href="/product_material/wood-clad">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clan</p>
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clad</p>
                   
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-clad-n.png" alt="windows and partner " />
                 </div>
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 <Link href="/product_material/fiberglass-windows">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
@@ -231,7 +231,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 </div>
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 <Link href="/product_material/aluminum">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
@@ -242,7 +242,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 </div>
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 <Link href="/product_material/metal">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
@@ -253,7 +253,7 @@ const {slug, title, uri, frontPageOptions} = posts;
                 </div>
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 <Link href="/product/windows">
-                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
@@ -277,29 +277,54 @@ const {slug, title, uri, frontPageOptions} = posts;
   <div id="window-material-section" className="max-w-6xl mx-auto my-20">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
-            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">Keep your home secure with new doors.</h3>
+            <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Keep your home secure with new doors.</h3>
             <p className="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
 
-            <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px]">
+            <div id="window-post-wrapper" className="grid grid-cols-1 sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
+
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[320px]">
+                <Link href="/product_material/wood">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl font-graphikSemibold text-truwinblue-900">Wood</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                    <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-door.jpg" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] ">
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 mt-4 pt-8 sm:mt-4 sm:my-0 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[320px]">
+                <Link href="/product_material/fiberglass">
+                  <svg className="absolute top-4 right-4 cursor-pointer"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                    <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/fiberglass-door.jpg" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] ">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Forged Iron</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[320px]">
+                <Link href="/product_material/forged-iron">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Steel</p>
+                    <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px]">
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 sm:my-0 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[320px]">
+                <Link href="/product_material/solid-panel">
+                  <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Solid Panel</p>
-                    <p className="text-sm font-graphik pt-4">Get thin frames and great weather insulation with this popular material.</p>
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                    <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900">Get thin frames and great weather insulation with this popular material.</p>
+                    <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/solid-panel.jpg" alt="windows and partner " />
                 </div>
             </div>
 
