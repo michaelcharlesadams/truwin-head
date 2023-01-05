@@ -187,44 +187,82 @@ const {slug, title, uri, frontPageOptions} = posts;
 <div id="window-type-section" className="max-w-6xl mx-auto">
         <div id="window-type-wrapper" className="mx-5 mt-24">
             
-            <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
+            <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
             <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u className="cursor-pointer">View all Windows</u></Link></p><br/>
 
             <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
-{/*                
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4"> */}
-              <div className="flex flex-col sx:flex-wrap md:max-h-[1000px] lg:max-h-[700px]">
+               
+              <div className="grid grid-cols-1 ss:grid-cols-2 md:grid-cols-3 gap-4">
+              
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                
+                <Link href="/product_material/vinyl-doors">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
 
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   max-h-[270px]">
                     <p className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
                    
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/vinyl-n.png" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]   ">
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                <Link href="/product_material/wood-clad">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clan</p>
                   
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg" alt="windows and partner " />
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-clad-n.png" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px]  ">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
-                    
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Vinyl</p>
-                   
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png"  alt="windows and partner " />
-                </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] max-h-[270px]">
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                <Link href="/product_material/fiberglass-windows">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
-                    
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/window-double-hung.png" alt="windows and partner " />
+                  
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/fiberglass-n.jpg" alt="windows and partner " />
                 </div>
-                <div className="w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] ">
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                <Link href="/product_material/aluminum">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
                     <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
                     
-                    <img className="w-auto h-auto mx-auto mt-4" src="/images/truwin-double-hung.jpg"  alt="windows and partner " />
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/aluminum-n.jpg"  alt="windows and partner " />
                 </div>
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                <Link href="/product_material/metal">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Metal</p>
+                   
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/metal.png"  alt="windows and partner " />
+                </div>
+                <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
+                <Link href="/product/windows">
+                  <svg className="absolute top-4 right-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
+                    <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
+                  </svg>
+                </Link>
+                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">All Windows</p>
+                    
+                    <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/truwin-n.png" alt="windows and partner " />
+                </div>
+              
                    
               </div>
               
