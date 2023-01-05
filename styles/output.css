@@ -581,6 +581,10 @@ video {
   bottom: 2rem;
 }
 
+.left-4 {
+  left: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1789,6 +1793,14 @@ video {
 .even\:bg-truwinblue-900:nth-child(even) {
   --tw-bg-opacity: 1;
   background-color: rgb(19 62 172 / var(--tw-bg-opacity));
+}
+
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:hidden:hover {
+  display: none;
 }
 
 .hover\:rounded:hover {

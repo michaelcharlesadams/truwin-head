@@ -88,6 +88,17 @@ const {slug, title, uri, frontPageOptions} = posts;
                   </Link>
                   <Link href="/product/windows">
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
+                  </Link>
+
+                  <svg className="absolute bottom-4 left-4 hover:hidden z-10 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#2B50AF"/>
+                    <path d="M16.8672 24.3972C16.3681 24.3972 15.9636 24.8017 15.9636 25.3008C15.9636 25.7998 16.3681 26.2044 16.8672 26.2044V24.3972ZM33.7712 25.9397C34.1241 25.5868 34.1241 25.0147 33.7712 24.6618L28.0206 18.9113C27.6677 18.5584 27.0956 18.5584 26.7427 18.9113C26.3898 19.2641 26.3898 19.8363 26.7427 20.1892L31.8543 25.3008L26.7427 30.4124C26.3898 30.7653 26.3898 31.3374 26.7427 31.6903C27.0956 32.0432 27.6677 32.0432 28.0206 31.6903L33.7712 25.9397ZM16.8672 26.2044H33.1322V24.3972H16.8672V26.2044Z" fill="#FFFCF6"/>
+                    </svg>
+                    <Link href="/product/windows">
+                      <svg className="absolute bottom-4 left-4 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="25" cy="25" r="25" fill="#FFFCF6"/>
+                      <path d="M24.0964 33.4336C24.0964 33.9326 24.5009 34.3372 25 34.3372C25.4991 34.3372 25.9036 33.9326 25.9036 33.4336L24.0964 33.4336ZM25.639 16.5296C25.2861 16.1767 24.7139 16.1767 24.361 16.5296L18.6105 22.2801C18.2576 22.633 18.2576 23.2052 18.6105 23.5581C18.9634 23.9109 19.5355 23.9109 19.8884 23.5581L25 18.4464L30.1116 23.5581C30.4645 23.9109 31.0366 23.9109 31.3895 23.5581C31.7424 23.2052 31.7424 22.633 31.3895 22.2801L25.639 16.5296ZM25.9036 33.4336L25.9036 17.1685L24.0964 17.1685L24.0964 33.4336L25.9036 33.4336Z" fill="#2B50AF"/>
+                    </svg>
 
                   </Link>
               </div>
@@ -103,6 +114,18 @@ const {slug, title, uri, frontPageOptions} = posts;
                   <Link href="/product/doors">
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
                   </Link>
+                  
+                  <svg className="absolute bottom-4 left-4 hover:hidden z-10 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#2B50AF"/>
+                    <path d="M16.8672 24.3972C16.3681 24.3972 15.9636 24.8017 15.9636 25.3008C15.9636 25.7998 16.3681 26.2044 16.8672 26.2044V24.3972ZM33.7712 25.9397C34.1241 25.5868 34.1241 25.0147 33.7712 24.6618L28.0206 18.9113C27.6677 18.5584 27.0956 18.5584 26.7427 18.9113C26.3898 19.2641 26.3898 19.8363 26.7427 20.1892L31.8543 25.3008L26.7427 30.4124C26.3898 30.7653 26.3898 31.3374 26.7427 31.6903C27.0956 32.0432 27.6677 32.0432 28.0206 31.6903L33.7712 25.9397ZM16.8672 26.2044H33.1322V24.3972H16.8672V26.2044Z" fill="#FFFCF6"/>
+                    </svg>
+                    <Link href="/product/doors">
+                      <svg className="absolute bottom-4 left-4 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="25" cy="25" r="25" fill="#FFFCF6"/>
+                      <path d="M24.0964 33.4336C24.0964 33.9326 24.5009 34.3372 25 34.3372C25.4991 34.3372 25.9036 33.9326 25.9036 33.4336L24.0964 33.4336ZM25.639 16.5296C25.2861 16.1767 24.7139 16.1767 24.361 16.5296L18.6105 22.2801C18.2576 22.633 18.2576 23.2052 18.6105 23.5581C18.9634 23.9109 19.5355 23.9109 19.8884 23.5581L25 18.4464L30.1116 23.5581C30.4645 23.9109 31.0366 23.9109 31.3895 23.5581C31.7424 23.2052 31.7424 22.633 31.3895 22.2801L25.639 16.5296ZM25.9036 33.4336L25.9036 17.1685L24.0964 17.1685L24.0964 33.4336L25.9036 33.4336Z" fill="#2B50AF"/>
+                    </svg>
+
+                  </Link>
               </div>
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto " >
               <Link href="/product/siding">
@@ -114,6 +137,17 @@ const {slug, title, uri, frontPageOptions} = posts;
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
                   </Link>
                   
+                  <svg className="absolute bottom-4 left-4 hover:hidden z-10 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#2B50AF"/>
+                    <path d="M16.8672 24.3972C16.3681 24.3972 15.9636 24.8017 15.9636 25.3008C15.9636 25.7998 16.3681 26.2044 16.8672 26.2044V24.3972ZM33.7712 25.9397C34.1241 25.5868 34.1241 25.0147 33.7712 24.6618L28.0206 18.9113C27.6677 18.5584 27.0956 18.5584 26.7427 18.9113C26.3898 19.2641 26.3898 19.8363 26.7427 20.1892L31.8543 25.3008L26.7427 30.4124C26.3898 30.7653 26.3898 31.3374 26.7427 31.6903C27.0956 32.0432 27.6677 32.0432 28.0206 31.6903L33.7712 25.9397ZM16.8672 26.2044H33.1322V24.3972H16.8672V26.2044Z" fill="#FFFCF6"/>
+                    </svg>
+                    <Link href="/product/siding">
+                      <svg className="absolute bottom-4 left-4 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="25" cy="25" r="25" fill="#FFFCF6"/>
+                      <path d="M24.0964 33.4336C24.0964 33.9326 24.5009 34.3372 25 34.3372C25.4991 34.3372 25.9036 33.9326 25.9036 33.4336L24.0964 33.4336ZM25.639 16.5296C25.2861 16.1767 24.7139 16.1767 24.361 16.5296L18.6105 22.2801C18.2576 22.633 18.2576 23.2052 18.6105 23.5581C18.9634 23.9109 19.5355 23.9109 19.8884 23.5581L25 18.4464L30.1116 23.5581C30.4645 23.9109 31.0366 23.9109 31.3895 23.5581C31.7424 23.2052 31.7424 22.633 31.3895 22.2801L25.639 16.5296ZM25.9036 33.4336L25.9036 17.1685L24.0964 17.1685L24.0964 33.4336L25.9036 33.4336Z" fill="#2B50AF"/>
+                    </svg>
+
+                  </Link>
               </div>
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
                   <Link href="/product/siding">
@@ -122,6 +156,19 @@ const {slug, title, uri, frontPageOptions} = posts;
                  
                   <Link href="/product/roofing">
                      <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px]  z-0" src="/images/tr-roofs.png" alt="" />
+                  </Link>
+
+                  
+                  <svg className="absolute bottom-4 left-4 hover:hidden z-10 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#2B50AF"/>
+                    <path d="M16.8672 24.3972C16.3681 24.3972 15.9636 24.8017 15.9636 25.3008C15.9636 25.7998 16.3681 26.2044 16.8672 26.2044V24.3972ZM33.7712 25.9397C34.1241 25.5868 34.1241 25.0147 33.7712 24.6618L28.0206 18.9113C27.6677 18.5584 27.0956 18.5584 26.7427 18.9113C26.3898 19.2641 26.3898 19.8363 26.7427 20.1892L31.8543 25.3008L26.7427 30.4124C26.3898 30.7653 26.3898 31.3374 26.7427 31.6903C27.0956 32.0432 27.6677 32.0432 28.0206 31.6903L33.7712 25.9397ZM16.8672 26.2044H33.1322V24.3972H16.8672V26.2044Z" fill="#FFFCF6"/>
+                    </svg>
+                    <Link href="/product/roofing">
+                      <svg className="absolute bottom-4 left-4 cursor-pointer" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="25" cy="25" r="25" fill="#FFFCF6"/>
+                      <path d="M24.0964 33.4336C24.0964 33.9326 24.5009 34.3372 25 34.3372C25.4991 34.3372 25.9036 33.9326 25.9036 33.4336L24.0964 33.4336ZM25.639 16.5296C25.2861 16.1767 24.7139 16.1767 24.361 16.5296L18.6105 22.2801C18.2576 22.633 18.2576 23.2052 18.6105 23.5581C18.9634 23.9109 19.5355 23.9109 19.8884 23.5581L25 18.4464L30.1116 23.5581C30.4645 23.9109 31.0366 23.9109 31.3895 23.5581C31.7424 23.2052 31.7424 22.633 31.3895 22.2801L25.639 16.5296ZM25.9036 33.4336L25.9036 17.1685L24.0964 17.1685L24.0964 33.4336L25.9036 33.4336Z" fill="#2B50AF"/>
+                    </svg>
+
                   </Link>
               </div>
             
