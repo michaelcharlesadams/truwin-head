@@ -190,7 +190,7 @@ const {slug, title, uri, frontPageOptions} = posts;
             <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
             <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u className="cursor-pointer">View all Windows</u></Link></p><br/>
 
-            <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:my-0">
+            <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:mt-8 ">
                
               <div className="grid grid-cols-1 ss:grid-cols-2 md:grid-cols-3 gap-4">
               
