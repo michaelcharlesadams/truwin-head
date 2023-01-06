@@ -2227,6 +2227,11 @@ video {
     margin-bottom: 0px;
   }
 
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -2485,6 +2490,10 @@ video {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:gap-4 {
+    gap: 1rem;
   }
 
   .md\:rounded-tl {
