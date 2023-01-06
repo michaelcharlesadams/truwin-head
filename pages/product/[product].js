@@ -68,7 +68,7 @@ export default function Product({post, morePost}) {
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
             
-            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-[Cigars]">We carry {title.toLowerCase()} materials.</h3>
+            <h3 className="text-3xl sm:text-4xl text-truwinblue-900 font-[Cigars-SemiBold]">We carry {title.toLowerCase()} materials.</h3>
 
             <div id="window-post-wrapper" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
                 
