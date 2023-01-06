@@ -26,17 +26,17 @@ export default function Product({post, morePost}) {
       {/* * HERO ***/}
       <div id="hero-author-section" className="max-w-6xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[480px] md:min-h-[375px] md:max-h-[580px]">
-          <div className="bg-truwinblue-900 rounded text-left px-10 py-10 md:w-5/12 md:h-auto">
+          <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
                   <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
               </span>
-                / All {title} / {title}</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-3">{heroSection.productPageHeroTitle}</h3>
+                / {title}</p>
+              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-Semibold] mt-6">{heroSection.productPageHeroTitle}</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.productPageHeroBlurp}</p>
               <Link href="/pricing">
                 <a>
-                    <button className="block mt-8 py-5 px-10 bg-truwinblue-500 rounded text-white">
+                    <button className="block mt-8 py-5 px-10 bg-truwinblue-700 rounded text-white">
                         Get a free estimate 
                     </button>
                 </a>
@@ -45,13 +45,12 @@ export default function Product({post, morePost}) {
           </div>
             
             
-          <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
+          <div className="relative mt-4 w-full  h-auto md:w-6/12 md:ml-2 md:mt-0 ">
               <img className="w-full max-h-46 md:object-cover md:h-full rounded" src={heroFeaturedImage?.sourceUrl} alt="truwin builder video" />
               
             
-            <div className="absolute bottom-0 left-0 w-16 hidden">
-            <p className="font-graphikSemibold text-white text-2xl">The Exterior
-                Experts</p>
+            <div className="">
+            <img className="absolute bottom-0 right-0 w-[50%] h-auto bg-white p-5 rounded-tl rounded-br " src='/images/energy-star.png'/>
           </div>
                 
             </div>

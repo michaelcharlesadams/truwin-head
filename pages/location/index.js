@@ -16,7 +16,7 @@ function LocationList({locations, morePost}) {
   {/** */}
   <div id="hero-company-section" className="max-w-6xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
-          <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
+          <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
                   <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
@@ -28,7 +28,7 @@ function LocationList({locations, morePost}) {
           
           
           {/**  */}
-          <div className="relative mt-4 w-full  h-auto md:w-7/12 md:ml-2 md:mt-0 ">
+          <div className="relative mt-4 w-full  h-auto md:w-6/12 md:ml-2 md:mt-0 ">
           <img className="w-full md:min-h-[375px] md:max-h-[375px] md:object-cover rounded" src="/images/truwin-locations.jpg" alt="truwin Locations" />
           </div>
           {/**  */}
