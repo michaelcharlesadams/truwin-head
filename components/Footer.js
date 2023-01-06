@@ -28,7 +28,7 @@ function Footer() {
             <div id="footer-wrapper" className="px-5 bg-truwinblue-900 text-white lg:flex lg:flex-wrap">
                 <div id="footer-header" className="text-center w-36 mx-auto py-16 lg:w-2/5">
                     <img src="/images/truwin-w-logo.png" className="lg:mx-auto py-2" alt="Truwin logo" />
-                    <p className="text-[11px]">THE EXTERIOR EXPERTS</p>
+                    <p className="text-[11px] lg:text-lg lg:pt-1">THE EXTERIOR EXPERTS</p>
                     <div id="social-footer" className="flex w-auto mx-auto justify-evenly mt-10 lg:hidden">
                         <span className="w-6"><Image 
                         width={46}
@@ -53,9 +53,9 @@ function Footer() {
                     </div>
                 </div>
     
-            <div id="footer-content" className="flex flex-wrap mx-auto text-xs w-11/12 pl-[10%] sm:flex-nowrap sm:pl-0 lg:w-3/5 lg:pt-12">
+            <div id="footer-content" className="flex flex-wrap mx-auto text-sm w-11/12 pl-[10%] sm:flex-nowrap sm:pl-0 lg:w-3/5 lg:pt-12">
                 <div id="footer-col-1" className="w-2/4 mb-12 lg:mb-5">
-                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Services</h4>
+                    <h4 className="font-graphikSemibold text-truwinblue-300 pb-4">Services</h4>
                     <p>
                     <Link href="/product/windows"><a >Windows</a></Link>
                     </p>
@@ -68,12 +68,12 @@ function Footer() {
                     <p><Link href="/product/roofing"><a >Roofing</a></Link></p>
                 </div>
                 <div id="footer-col-2" className="w-2/4 mb-12 lg:mb-5">
-                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">About Truwin</h4>     
+                    <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">About Truwin</h4>     
                     <p><Link href="/company"><a >Company</a></Link></p>
                     <p><Link href="/post"><a >Blog</a></Link></p>
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
-                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Service Area</h4>
+                    <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Service Area</h4>
                     <p><Link href="/location"><a className="cursor-pointer" >Houston Area</a></Link></p>
                     <p><Link href="/location"><a className="cursor-pointer" >Kingwood</a></Link></p>
                     <p><Link href="/location"><a className="cursor-pointer">Bryan</a></Link></p>
@@ -86,7 +86,7 @@ function Footer() {
                     
                 </div>
                 <div id="footer-col-4" className="w-2/4 mb-12 lg:mb-5">
-                    <h4 className="font-graphikSemibold text-truwingray-primary pb-4">Contact Us</h4>
+                    <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Contact Us</h4>
                     <div>
                         <p>(832) 777-3681</p>
                         <p>info@truwin.com</p>
