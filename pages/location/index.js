@@ -9,7 +9,6 @@ import Image from "next/image";
 function LocationList({locations, morePost}) {
 
   
-  console.log(locations);
   return (
     <>
   

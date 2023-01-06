@@ -11,7 +11,6 @@ import Banner from '../../components/Banner';
 
 export default function Siding({post, morePost}) {
 
-  console.log(post);
   const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productBenefits} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
   const heroSection = productPage.productPageHeroSection;

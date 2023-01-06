@@ -13,8 +13,7 @@ export default function Post({post}){
     const postAuthor = post.rel_people_con_post.people?.[0].title; 
     const postAuthorAvatar = post.rel_people_con_post.people?.[0].people_avatar.truwinAvatar.sourceUrl
     const postAuthorSocial = post.rel_people_con_post.people?.[0].people_avatar.socialMediaLinks;
-    console.log(post);
-    console.log(postAuthorSocial);
+
  
     return (
     <>

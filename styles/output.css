@@ -1765,6 +1765,14 @@ video {
   line-height: 1.25rem;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-truwingray-primary {
   --tw-text-opacity: 1;
   color: rgb(195 200 211 / var(--tw-text-opacity));
