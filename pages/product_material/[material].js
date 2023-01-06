@@ -141,7 +141,7 @@ export default function Product({post}) {
   <div id="onethird-info-section" className="lg:max-w-6xl mx-auto my-28 ">
     <div id="onethird-info-wrapper" className="mx-5 mt-10">
         <div className="text-center" >
-            <p className="text-sm text-truwinblue-900">{postBenefits.productMaterialBenefitsSectionHeadliner}</p>
+            <p className="text-lg text-truwinblue-300 pb-4">{postBenefits.productMaterialBenefitsSectionHeadliner}</p>
             <h3 className="font-serif text-5xl py-2 text-truwinblue-900">{postBenefits.productMaterialBenefitsSectionTitle}</h3>
         </div>
         <div className="grid gap-4 grid-cols-1 sx:grid-cols-2  md:grid-cols-3 mt-14">
@@ -152,7 +152,7 @@ export default function Product({post}) {
                 <div key={index} className="mt-5">
                   <img  src={benefit.productMaterialBenefitsListIcon.sourceUrl} className="w-auto pb-2" alt="Transparent Prices icon" />
                   <p className="text-2xl font-serif text-truwinblue-900 py-2">{benefit.productMaterialBenefitsListTitle}</p>
-                  <p className="text-truwinblue-900">{benefit.productMaterialBenefitsListDescription}</p>
+                  <p className="text-truwinblue-900 text-[15px]">{benefit.productMaterialBenefitsListDescription}</p>
                 </div>
 
               ))}
