@@ -70,9 +70,10 @@ export default function Siding({post, morePost}) {
             <div className="md:w-1/2">
                 <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard.productsProductServicesImage?.sourceUrl} alt="" />
             </div>
-            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-14">
+
+            <div className="px-5 py-6  text-truwinblue-900 rounded-b md:p-12 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none">
                 <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
-                <h3 className="font-[Cigar-Semibold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
+                <h3 className="font-[Cigars-SemiBold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
                 <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
                 {contentCard.productServicesCardDecriptionList && 
                     <>
@@ -97,9 +98,11 @@ export default function Siding({post, morePost}) {
                 <p className="font-graphikSemibold ">Call (832) 777-3681</p>
 
             </div>
-        </div> . 
+        </div>
       </div>
       {/**  END PRODUCT CONTENT SECTION **/}
+
+      
 
       {/** HERO VIDEO SECTION  **/}
       <ProductSidingVideo />

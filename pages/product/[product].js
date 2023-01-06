@@ -13,12 +13,17 @@ import Banner from '../../components/Banner';
 export default function Product({post, morePost}) {
 
   
-  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage} = post.data.productBy;
+  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productPage_2} = post.data.productBy;
+
+  console.log(productPage_2);
+
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
   const heroSection = productPage.productPageHeroSection
   const heroFeaturedImage = featuredImage?.node
   const contentCard = productPage.productProductServicesCard
+  const contentCard2 = productPage_2.productProductServicesCard2
 
+  
 
 
   return (
@@ -128,24 +133,70 @@ export default function Product({post, morePost}) {
       :
       
       <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
-        <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
-            <div className="md:w-1/2">
-                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard.productsProductServicesImage?.sourceUrl} alt="" />
-            </div>
-            <div className="px-5 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
-                <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
-                <h3 className="font-[Cigars-Semibold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
-                <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
-                {contentCard.productServicesCardDecriptionList && 
+      <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
+          
+          <div className="md:w-1/2">
+              <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard.productsProductServicesImage?.sourceUrl} alt="" />
+          </div>
+
+          <div className="px-5 py-6  text-truwinblue-900 rounded-b md:p-12 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none">
+              <p className="py-2 font-graphik text-truwingray-primary">{contentCard.productServicesCardHeadline}</p>
+              <h3 className="font-[Cigars-SemiBold] text-4xl py-2">{contentCard.productServicesCardTitle}</h3>
+              <p className="py-2 font-graphik">{contentCard.productServicesCardDescription}</p>
+              {contentCard.productServicesCardDecriptionList && 
+                  <>
+                    <hr className="mt-4 mb-4" />
+                    <ul className="ml-4">
+                        
+                          {contentCard.productServicesCardDecriptionList?.map((item, index) => 
+                              {
+                                return(
+                                  <li key={index} className="p-2 list-disc">
+                                    {item.productDescriptionListItem}
+                                  </li>
+                                )
+                              }
+                          )}
+                      
+                    </ul>
+                  </>
+              }
+               
+
+              {slug === "windows" &&
+              <>
+              <hr className="mt-4 mb-2" />
+               <p className="pt-4 font-graphik text-[#8598C4]">Questions about single hung windows?</p>
+               <p className="font-graphikSemibold">Call (832) 777-3681</p>
+              </>
+              }
+             
+
+          </div>
+      </div>
+    </div>
+      }
+      {/**  END PRODUCT CONTENT SECTION **/}
+
+      {/**  PRODUCT CONTENT SECTION REVERSE (FOR WINDOWS ONLY) **/}
+      {slug === "windows" &&
+      <div id="card-onethird-session-r" className="lg:max-w-6xl mx-auto">
+        <div id="card-onethrid-wrapper-r" className="mx-5 mt-10 flex flex-col-reverse  md:flex md:flex-row md:min-h-[390px]">
+            
+            <div className="px-5 py-6  text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none">
+                <p className="py-2 font-graphik text-truwingray-primary">{contentCard2.productServicesCardHeadline2}</p>
+                <h3 className="font-[Cigars-Semibold] text-4xl py-2">{contentCard2.productServicesCardTitle2}</h3>
+                <p className="py-2 font-graphik">{contentCard2.productServicesCardDescription2}</p>
+                {contentCard2.productServicesCardDecriptionList2 && 
                     <>
                       <hr className="mt-4 mb-4" />
                       <ul className="ml-4">
                           
-                            {contentCard.productServicesCardDecriptionList?.map((item, index) => 
+                            {contentCard2.productServicesCardDecriptionList2?.map((item, index) => 
                                 {
                                   return(
                                     <li key={index} className="p-2 list-disc">
-                                      {item.productDescriptionListItem}
+                                      {item.productDescriptionListItem2}
                                     </li>
                                   )
                                 }
@@ -160,10 +211,14 @@ export default function Product({post, morePost}) {
                 <p className="font-graphikSemibold ">Call (832) 777-3681</p> */}
 
             </div>
-        </div> . 
+
+            <div className="md:w-1/2">
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={contentCard2.productsProductServicesImage2?.sourceUrl} alt="" />
+            </div>
+        </div>
       </div>
-      }
-      {/**  END PRODUCT CONTENT SECTION **/}
+      } 
+      {/**  END PRODUCT CONTENT SECTION REVERSE **/}
 
       {/**  COMPARISON **/}
       <div id="comparison-session" className="lg:max-w-6xl mx-auto">
@@ -318,6 +373,23 @@ query: gql`
                             width
                           }
                           sourceUrl
+                        }
+                      }
+                    }
+                    productPage_2 {
+                      productProductServicesCard2 {
+                        productServicesCardHeadline2
+                        productServicesCardTitle2
+                        productServicesCardDescription2
+                        productsProductServicesImage2 {
+                          sourceUrl
+                          mediaDetails {
+                            height
+                            width
+                          }
+                        }
+                        productServicesCardDecriptionList2 {
+                          productDescriptionListItem2
                         }
                       }
                     }
