@@ -7,6 +7,7 @@ import { useRef } from "react";
 import ProductSidingVideo from "../../components/ProductSidingVideo";
 import Vendor from '../../components/Vendor';
 import MoreServices from '../../components/MoreServices';
+import Banner from '../../components/Banner';
 
 export default function Siding({post, morePost}) {
 
@@ -132,19 +133,7 @@ export default function Siding({post, morePost}) {
     {/**  END MATERIAL BENEFITS   */}
 
       {/** BANNER - ENJOY A BETTER PRODUCT */}
-      <div id="banner-type-section" className="max-w-6xl mx-auto">
-          <div id="banner-type-wrapper" className="mx-5 my-16">
-            
-            <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-around py-12 px-16">
-
-                  <h3 className="text-white font-[Cigar-Semibold]  py-5 text-3xl sx:text-left sx:text-3xl">It’s time to enjoy better Siding.</h3>
-                  <Link href="/pricing">
-                    <button className="bg-white rounded-full py-4 px-5 sm:mx-6 min-w-[180px] max-h-20 mx-auto">Get a free estimate</button>
-                  </Link>
-            </div>
-
-          </div>
-      </div>
+      <Banner title="siding" />
       {/** END BANNER - ENJOY A BETTER PRODUCT */}
 
       {/**  MORE  WAYS  */}
