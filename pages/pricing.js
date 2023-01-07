@@ -9,7 +9,7 @@ function Pricing({morePost}) {
   return (
   <>
         
-    <div id="hero-author-section" className="max-w-6xl mx-auto ">
+    <div id="hero-author-section" className="max-w-7xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
                 
                 <div className="relative bg-truwinsoftblue-primary rounded text-left px-10 py-8 md:w-1/2 md:h-auto">
@@ -44,7 +44,7 @@ function Pricing({morePost}) {
 
     
    
-    <div id="pricing-top-content-session" className="lg:max-w-6xl mx-auto">
+    <div id="pricing-top-content-session" className="lg:max-w-7xl mx-auto">
         <div id="pricing-top-content-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
 
             <div className="p-10 md:p-20 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded md:w-1/2">
@@ -66,7 +66,7 @@ function Pricing({morePost}) {
     </div>
    
 
-    <div id="pricing-bottom-content-session" className="lg:max-w-6xl mx-auto">
+    <div id="pricing-bottom-content-session" className="lg:max-w-7xl mx-auto">
         <div id="pricing-bottom-content-wrapper" className="mx-5 mt-10 md:mt-2 md:flex md:min-h-[390px]">
 
             {/** desktop view */}
