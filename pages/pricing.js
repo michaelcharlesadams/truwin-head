@@ -47,14 +47,14 @@ function Pricing({morePost}) {
     <div id="pricing-top-content-session" className="lg:max-w-6xl mx-auto">
         <div id="pricing-top-content-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
 
-            <div className="px-5 py-6 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded lg:px-7 md:w-1/2">
+            <div className="p-10 md:p-20 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded md:w-1/2">
                 <p className="py-2 font-graphik text-truwinblue-900">Quality and Cost Savings</p>
                 <h3 className="font-[Cigars-Semibold] text-3xl py-4">What To Expect From Truwin:</h3>
                 <ul className="ml-4">
             
-                    <li className="list-disc">A phone call from one of our consultants.</li>
-                    <li className="list-disc">An in-person review of your needs and our product offerings including comparisons and product samples.</li>
-                    <li className="list-disc">A free cost estimate for your project.</li>
+                    <li className="list-disc"><span className="font-graphikSemibold">A phone call</span> from one of our consultants.</li>
+                    <li className="list-disc"><span className="font-graphikSemibold">An in-person review</span> of your needs and our product offerings including comparisons and product samples.</li>
+                    <li className="list-disc"><span className="font-graphikSemibold">A free cost estimate</span> for your project.</li>
                 </ul>
             </div>
 
@@ -74,7 +74,7 @@ function Pricing({morePost}) {
                 <img className="w-full rounded md:h-full object-cover" src="/images/Framestaed-3.jpg" alt="" />
             </div>
 
-            <div className="px-5 py-6 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded md:p-10 md:w-1/2  lg:px-7">
+            <div className="p-10 md:p-20 text-truwinblue-900 bg-truwinsoftblue-primary m-2 rounded md:w-1/2">
                 <p className="py-2 text-truwinblue-900 font-bold">Privacy</p>
                 <p className="py-2 font-graphik text-truwinblue-900">We take your privacy very seriously. None of your contact info will be shared with a third party for any reason whatsoever nore will we pester you for a sale. Review our core values for more.</p>
 
