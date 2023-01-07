@@ -77,7 +77,7 @@ const vidStyle = {
                 playing={playing} 
                 url={url}
                 width='100%'
-                height='300px'
+                height='500px'
                 controls='false'
             />
         </div>
