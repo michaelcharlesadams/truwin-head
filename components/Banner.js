@@ -8,7 +8,7 @@ function Banner({title}) {
   return (
     <>
      {/** BANNER - ENJOY A BETTER PRODUCT */}
-     <div id="banner-type-section" className="max-w-6xl mx-auto">
+     <div id="banner-type-section" className="max-w-7xl mx-auto">
           <div id="banner-type-wrapper" className="mx-5 my-16">
             
             <div id="banner-container" className="bg-truwinblue-900 sm:flex justify-between py-12 px-16">

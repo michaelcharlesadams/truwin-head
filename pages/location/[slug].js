@@ -18,7 +18,7 @@ export default function Post({post}){
         
         {/** BLOG FEATURED IMAGE **/}
         { postHeaderImage &&  
-        <div id="blog-feature-hero-section" className="mx-auto md:max-w-6xl">
+        <div id="blog-feature-hero-section" className="mx-auto md:max-w-7xl">
             <div id="blog-feature-hero-wrapper" className="mx-5 mt-5 text-white md:max-h-[450px] relative mx-auto">
                 <div id="blog-feature-hero-info" className="absolute bottom-10 left-10 w-4/5 md:w-full">
                     <h2 className="font-serif text-2xl md:text-4xl lg:text-center py-2">{title}</h2>
@@ -51,7 +51,7 @@ export default function Post({post}){
             }
         `}
         </style>
-        <div id="blog-section" className="mx-auto md:max-w-6xl">
+        <div id="blog-section" className="mx-auto md:max-w-7xl">
             <div id="blog-wrapper" className="px-5 my-8 text-white md:mx-5 rounded">
                 <div id="blog-author-wrap" className="flex p-4 mb-2 border-b-[1px] border-truwinblue-50 max-w-[625px] mx-auto ">
                     <div id="blog-author" className="flex">

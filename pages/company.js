@@ -18,8 +18,8 @@ function Company({morePost, companyPost}) {
   return (
   <>
         
-    <div id="hero-company-section" className="max-w-6xl mx-auto ">
-            <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
+    <div id="hero-company-section" className="max-w-7xl mx-auto ">
+            <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
                 <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-5/12 md:h-auto">
                 
                     <p className="text-sm text-truwingray-primary mb-3">
@@ -39,7 +39,7 @@ function Company({morePost, companyPost}) {
     </div>
        
 
-    <div id="onethird-info-section" className="lg:max-w-6xl mx-auto md:block my-28 ">
+    <div id="onethird-info-section" className="lg:max-w-7xl mx-auto md:block my-28 ">
         <div id="onethird-info-wrapper" className="mx-5 mt-10">
             <div className="text-center" >
                 <p className="text-lg text-truwinblue-300 pb-4">{threeColumn.companyThreeColumnSectionHeadline}
@@ -89,7 +89,7 @@ function Company({morePost, companyPost}) {
         </div>
     </div>
    
-    <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+    <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
                 <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={twoColumn.companyTwoColumnSectionImage.sourceUrl} alt="" />
@@ -106,7 +106,7 @@ function Company({morePost, companyPost}) {
     </div>
    
    {/** AUTHOR */}
-    <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+    <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className=" mx-5 sm:mx-auto mt-10 md:min-h-[390px] max-w-[600px] md:hidden">
             <div className="mt-5 sx:flex sx:min-h-[300px]">
                 

@@ -5,7 +5,7 @@ function Comparison() {
   return (
     <>
      {/**  COMPARISON **/}
-     <div id="comparison-session" className="lg:max-w-6xl mx-auto">
+     <div id="comparison-session" className="lg:max-w-7xl mx-auto">
         <div id="comparison-wrapper" className="mx-5 my-20 ">
 
             <h3 className="text-2xl md:text-4xl text-center font-[Cigars-Semibold] text-truwinblue-900">Compare our windows to competitors</h3>

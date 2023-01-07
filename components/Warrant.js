@@ -6,7 +6,7 @@ function Warranty() {
     return (
   
       <>
-      <div id="warranty-section" className="lg:max-w-6xl mx-auto">
+      <div id="warranty-section" className="lg:max-w-7xl mx-auto">
         <div id="warranty-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
 
             <div className="px-5 py-5 mb-5 md:mr-5 md:mb-0 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-20  md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none md:w-3/5">

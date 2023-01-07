@@ -13,7 +13,7 @@ function LocationList({locations, morePost}) {
     <>
   
   {/** */}
-  <div id="hero-company-section" className="max-w-6xl mx-auto ">
+  <div id="hero-company-section" className="max-w-7xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
@@ -36,7 +36,7 @@ function LocationList({locations, morePost}) {
   {/** */}
 
   {/** BLOG POSTS */}
-    <div id="location-section" className="lg:max-w-6xl mx-auto">
+    <div id="location-section" className="lg:max-w-7xl mx-auto">
         <div id="location-wrapper" className="mx-5 mt-20">
             <p className="text-2xl md:text-5xl text-truwinblue-700 py-2 font-[Cigars-SemiBold] text-center">Choose your service area:</p>
             <p className="text-sm text-truwinblue-900 font-graphik text-center pt-2">Need more than just windows? Our team can help with all of it.</p>

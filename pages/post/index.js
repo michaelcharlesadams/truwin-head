@@ -21,7 +21,7 @@ function PostList({posts}) {
     <>
   
   {/** */}
-  <div id="hero-company-section" className="max-w-6xl mx-auto ">
+  <div id="hero-company-section" className="max-w-7xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
@@ -44,7 +44,7 @@ function PostList({posts}) {
   {/** */}
 
   {/** BLOG POSTS */}
-    <div id="blog-posts-section" className="lg:max-w-6xl mx-auto">
+    <div id="blog-posts-section" className="lg:max-w-7xl mx-auto">
         <div id="blog-posts-wrapper" className="mx-5 mt-8">
             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Recent Blog Posts</p>
             <div id="blog-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">

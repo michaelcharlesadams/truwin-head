@@ -24,7 +24,7 @@ export default function Siding({post, morePost}) {
     <>
 
       {/* * HERO **/}
-      <div id="hero-author-section" className="max-w-6xl mx-auto ">
+      <div id="hero-author-section" className="max-w-7xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
@@ -63,7 +63,7 @@ export default function Siding({post, morePost}) {
       {/** VENDOR LOGOS */}
 
      {/**  PRODUCT CONTENT SECTION **/}
-     <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+     <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             
             <div className="md:w-1/2">
@@ -108,7 +108,7 @@ export default function Siding({post, morePost}) {
       {/**  END HERO VIDEO SECTION **/}
 
     {/**  MATERIAL BENEFITS   */}
-    <div id="onethird-info-section" className="lg:max-w-6xl mx-auto my-28 ">
+    <div id="onethird-info-section" className="lg:max-w-7xl mx-auto my-28 ">
         <div id="onethird-info-wrapper" className="mx-5 mt-10">
             <div className="text-center" >
                 <p className="text-sm text-truwinblue-900">We have partnered with the best</p>
