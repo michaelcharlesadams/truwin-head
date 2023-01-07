@@ -2651,6 +2651,11 @@ video {
     font-size: 12px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .md\:leading-7 {
     line-height: 1.75rem;
   }

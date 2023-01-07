@@ -7,21 +7,29 @@ import Image from "next/image";
 
 function PostList({posts}) {
 
+  // console.log(posts);
+  // const [category, setCategory] = useState(posts.nodes);
+  // const [index, setPost] = useState(0);
   
-  
+  // console.log(category);
+  // const filtered = category.filter(post => post.categories.nodes[0].name === "Events");
+  // //setCategory(["red"]);
+
+  // console.log(filtered);
+
   return (
     <>
   
   {/** */}
   <div id="hero-company-section" className="max-w-6xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
-          <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-5/12 md:h-auto">
+          <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
                   <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
               </span>
                 / Blog</p>
-              <h3 className="text-white text-3xl sm:text-4xl font-cigarBold mt-3">A Truwin customer is an informed customer.</h3>
+              <h3 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-6">A Truwin customer is an informed customer.</h3>
               <p className="text-white text-sm mt-3 font-graphik font-medium">The transparent window & door company.™ A Truwin customer is an informed customer.</p>
           </div>
           
@@ -60,8 +68,8 @@ function PostList({posts}) {
                 {/* <p className="absolute text-sm t-0 left-0 odd:text-truwinblue-900 font-graphik pl-5 pt-5 ">{post.categories.nodes.map((cat) => cat[0].name )}</p> */}
 
 
-                <p className="absolute text-sm t-0 left-0 odd:text-truwinblue-900 font-graphik pl-5 pt-5 ">{post.categories.nodes[0].name}</p>
-                <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphik px-5 pt-20 md:text-lg">{post.title}</p>
+                <p className="absolute text-sm t-0 left-0 odd:text-truwinblue-900 font-graphik pl-5 pt-5 ">{post.categories.nodes[0].name.toUpperCase()}</p>
+                <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphikSemibold px-5 pt-20 md:text-2xl">{post.title}</p>
                 <Link href={`/post${post.uri}`}><a>
                     <button className="px-5 py-2 bg-truwinblue-700 text-white rounded-full absolute bottom-5 left-5">Read More</button></a>
                 </Link>
@@ -128,7 +136,8 @@ export default PostList;
     return {
         props: { 
           posts: get_all_posts_query.data.posts 
-        }
+        },
+        revalidate: 10
     }
 
 }
