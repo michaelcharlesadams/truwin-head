@@ -6,7 +6,7 @@ function MoreServices() {
   return (
     <>
     
-<div id="more-posts-section" className="lg:max-w-6xl mx-auto">
+<div id="more-posts-section" className="lg:max-w-7xl mx-auto">
         <div id="more-posts-wrapper" className="mx-5 mt-20">
 
              <h3 className="w-[290px] mx-auto pb-2 sx:w-auto  text-3xl text-center sm:text-4xl text-truwinblue-900 font-[Cigars-Semibold]">More ways to improve your exterior:</h3>

@@ -25,7 +25,7 @@ export default function Product({post}) {
  {/** FEATURED IMAGE **/}
  { postHeaderImage &&  
         
-      <div id="hero-author-section" className="max-w-6xl mx-auto ">
+      <div id="hero-author-section" className="max-w-7xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
@@ -66,7 +66,7 @@ export default function Product({post}) {
   {/** VENDOR LOGOS */}
 
   {/**  PRODUCT TYPE **/}
-  <div id="window-type-section" className="max-w-6xl mx-auto">
+  <div id="window-type-section" className="max-w-7xl mx-auto">
     <div id="window-type-wrapper" className="mx-5 mt-16">
         
         {postMaterialTypes && 
@@ -107,7 +107,7 @@ export default function Product({post}) {
   {/** END OF PRODUCT TYPE */}
 
  {/**  MATERIAL INFO SECTION  */}
- <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+ <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
                 <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={postGeneral.productMaterialGeneralImage.sourceUrl} alt="" />
@@ -138,7 +138,7 @@ export default function Product({post}) {
 
   {/**  MATERIAL BENEFITS   */}
   {postBenefits.productMaterialBenefitsSectionList &&
-  <div id="onethird-info-section" className="lg:max-w-6xl mx-auto my-28 ">
+  <div id="onethird-info-section" className="lg:max-w-7xl mx-auto my-28 ">
     <div id="onethird-info-wrapper" className="mx-5 mt-10">
         <div className="text-center" >
             <p className="text-lg text-truwinblue-300 pb-4">{postBenefits.productMaterialBenefitsSectionHeadliner}</p>

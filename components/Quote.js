@@ -6,7 +6,7 @@ function Quote() {
     return (
   
       <>
-      <div id="quote-section" className="lg:max-w-6xl mx-auto">
+      <div id="quote-section" className="lg:max-w-7xl mx-auto">
         <div id="quote-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
 
             <div className="px-8 py-14 mb-5 bg-truwinblue-700 text-white rounded">
