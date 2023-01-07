@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import ReactPlayer from 'react-player/youtube'
 
-function HeroVideo({url, cover}) {  
+function HeroVideo({url, cover}) {
 
     console.log(url);
     console.log(cover);
@@ -19,9 +19,9 @@ const vidStyle = {
 
   return (
     <>
-    
-    <div className="relative mt-4 w-full h-auto md:ml-2 md:mt-0 ">
-                    
+    {/* className="relative mt-4 w-full h-auto md:ml-2 md:mt-0" */}
+    <div>
+
 
         <button id="myBtn" onClick={() => {
             display === 'none' ? setDisplay('block') : setDisplay('none');
@@ -30,11 +30,11 @@ const vidStyle = {
         }}  >
 
             {/** PLACE HOLDER IMAGE */}
-            <img className="cursor-pointer w-full md:min-h-[400px] max-h-[480px] md:object-cover rounded" src={cover} alt="truwin president" />
+            <img className="cursor-pointer w-full md:min-h-[420px] max-h-[480px] md:object-cover rounded" src={cover} alt="truwin president" />
         </button>
-       
+
         {/** VIDEO CONTAINER */}
-        <div id="video-container" className="" 
+        <div id="video-container" className=""
             style={{
                     display: display,
                     height : '100%',
@@ -46,46 +46,46 @@ const vidStyle = {
                     backgroundColor: 'black', /* Black fallback color */
                     /* Black w/opacity */
                     overflowX: 'hidden' /* Disable horizontal scroll */
-                    
+
             }}
             >
-        
+
          {/** STOP BUTTON */}
         <p id="stop-vid" className="closebtn cursor-pointer"  onClick={() => {
             display === 'none' ? setDisplay('block') : setDisplay('none');
             //stop video
             playing === true ? setPlaying(false) : setPlaying(true);
 
-            
-        
+
+
         }}
 
             style={{
                 position: 'absolute',
-                fontSize: '25px', 
-                color: 'white', 
+                fontSize: '25px',
+                color: 'white',
                 display: 'inline-block',
                 top: '10px',
                 right: '35px'
-                }}>X</p> 
-        
-        
+                }}>X</p>
+
+
         {/*** REACT PLAYER */}
         <div className="player-wrapper ">
-            <ReactPlayer 
+            <ReactPlayer
                 className='react-player'
-                playing={playing} 
+                playing={playing}
                 url={url}
                 width='100%'
                 height='300px'
                 controls='true'
             />
         </div>
-       
+
 
         </div>
-        
-     
+
+
     </div>
     <style jsx>{`
     .closebtn:hover, .closebtn:focus {
@@ -93,9 +93,9 @@ const vidStyle = {
       }
       .player-wrapper {
         position: relative;
-        margin-top: 15.25% 
+        margin-top: 15.25%
     }
-    
+
     .react-player {
         position: absolute;
         top: 0;

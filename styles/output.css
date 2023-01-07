@@ -2102,6 +2102,10 @@ video {
     min-height: 400px;
   }
 
+  .md\:min-h-\[420px\] {
+    min-height: 420px;
+  }
+
   .md\:w-5\/12 {
     width: 41.666667%;
   }

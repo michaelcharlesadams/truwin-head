@@ -22,8 +22,9 @@ const {slug, title, uri, frontPageOptions} = posts;
 
     {/** HERO - FRONT PAGE */}
     <div id="hero-section" className="max-w-7xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
-      <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
-          <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:min-w-5/12 md:h-auto">
+      <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
+
+          <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:w-5/12 md:h-auto">
               <div className="w-12 mx-auto">
                 <Image
                 src="/images/truwin-shield.png"
@@ -40,8 +41,8 @@ const {slug, title, uri, frontPageOptions} = posts;
           </div>
           
           
-          <div className="relative mt-4 w-full h-auto md:min-w-7/12 md:ml-2 md:mt-0 ">
-              <div className="w-full max-h-46 md:object-cover md:h-full rounded " >
+          <div className="relative mt-4 w-full h-auto md:w-7/12 md:ml-2 md:mt-0 ">
+              <div className="w-full  md:object-cover md:h-full rounded " >
 
               {/* <img className="w-full max-h-46 md:object-cover md:h-full rounded" 
               src={frontPageOptions.homeHeroImage.sourceUrl} alt="truwin builder video"/> */}
@@ -50,7 +51,8 @@ const {slug, title, uri, frontPageOptions} = posts;
                     url="https://www.youtube.com/watch?v=eeL_Yi0n3Kw&mute=0&rel=0" 
                     cover={frontPageOptions.homeHeroImage.sourceUrl}
                 />
-              </div>
+            
+             </div>
               
                 
               <div className="absolute bottom-8 left-10 w-16 z-1 ">
