@@ -29,7 +29,7 @@ export default function Product({post, morePost}) {
 
       {/* * HERO ***/}
       <div id="hero-author-section" className="max-w-7xl mx-auto ">
-        <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[480px] md:min-h-[375px] md:max-h-[580px]">
+        <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
           <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
