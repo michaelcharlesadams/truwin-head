@@ -38,8 +38,8 @@ function LocationList({locations, morePost}) {
   {/** BLOG POSTS */}
     <div id="location-section" className="lg:max-w-6xl mx-auto">
         <div id="location-wrapper" className="mx-5 mt-20">
-            <p className="text-2xl md:text-4xl text-truwinblue-700 py-2 font-[Cigars-SemiBold] text-center">Choose your service area:</p>
-            <p className="text-sm text-truwinblue-900 font-graphik text-center">Need more than just windows? Our team can help with all of it.</p>
+            <p className="text-2xl md:text-5xl text-truwinblue-700 py-2 font-[Cigars-SemiBold] text-center">Choose your service area:</p>
+            <p className="text-sm text-truwinblue-900 font-graphik text-center pt-2">Need more than just windows? Our team can help with all of it.</p>
 
             
             <div id="locations-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-3 gap-6 mt-20 mx-auto">
@@ -49,8 +49,8 @@ function LocationList({locations, morePost}) {
               <div key={index} id="blog-post-card " className="my-4 w-full text-truwinblue-900">
 
 
-                <p className="text-2xl  font-[Cigars] underline">{post.title}</p>
-                <p className="text-sm font-graphik mb-4" dangerouslySetInnerHTML={ {__html: post.content} }></p>
+                <p className="text-2xl font-[Cigars-SemiBold] border-b-2 border-truwinblue-900 w-full inline">{post.title}</p>
+                <p className="text-sm font-graphik my-4" dangerouslySetInnerHTML={ {__html: post.content} }></p>
 
                 {post.locationProducts.locationServicesSection[0].locationProductsSection &&
 
@@ -58,7 +58,10 @@ function LocationList({locations, morePost}) {
 
                     {post.locationProducts.locationServicesSection[0].locationProductsSection?.map((locpro, index) => (
                       
-                        <span key={index} className="py-2 pr-5 text-truwinblue-900 bottom-5 text-sm">{locpro.locationProduct}</span>
+                      <Link key={index} href={`/product/${locpro.locationProduct.toLowerCase()}`}><a>
+                        <span className="py-2 pr-5 text-truwinblue-900 bottom-5 text-sm underline cursor-pointer">{locpro.locationProduct}</span></a>
+                      </Link>
+                        
                       
 
                     ))}
