@@ -21,7 +21,7 @@ const {slug, title, uri, frontPageOptions} = posts;
   <div>
 
     {/** HERO - FRONT PAGE */}
-    <div id="hero-section" className="max-w-6xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
+    <div id="hero-section" className="max-w-7xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
       <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
           <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:min-w-5/12 md:h-auto">
               <div className="w-12 mx-auto">
@@ -70,7 +70,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** VENDOR LOGOS */}
 
     {/** Categories */}
-    <div id="post-title-section" className="lg:max-w-6xl mx-auto" >
+    <div id="post-title-section" className="lg:max-w-7xl mx-auto" >
       <div id="post-title-wrapper" className="mx-5 mt-20">
           <div className="mx-2 mb-11">
               <h2 className="text-[28px] text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Add beauty and security to your home</h2>
@@ -184,7 +184,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** END Get Started Form */}
 
 {/** PRODUCT TYPES */}
-<div id="window-type-section" className="max-w-6xl mx-auto">
+<div id="window-type-section" className="max-w-7xl mx-auto">
         <div id="window-type-wrapper" className="mx-5 mt-24">
             
             <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
@@ -274,7 +274,7 @@ const {slug, title, uri, frontPageOptions} = posts;
 {/** END PRODUCT TYPES */}
 
   {/** PRODUCT MATERIALS **/}
-  <div id="window-material-section" className="max-w-6xl mx-auto my-20">
+  <div id="window-material-section" className="max-w-7xl mx-auto my-20">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
             <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Keep your home secure with new doors.</h3>
@@ -333,7 +333,7 @@ const {slug, title, uri, frontPageOptions} = posts;
   {/** END PRODUCT MATERIALS */}
 
     {/** FEATURED POST    */}
-    <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
+    <div id="card-onethird-session-reverse" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div className="relative md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tr md:rounded-br md:rounded-tl-none md:rounded-bl-none  md:h-full object-cover" src="/images/siding-post.png" alt="" />
@@ -350,7 +350,7 @@ const {slug, title, uri, frontPageOptions} = posts;
         </div>
     </div>
 
-    <div id="card-onethird-session" className="lg:max-w-6xl mx-auto">
+    <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
@@ -369,7 +369,7 @@ const {slug, title, uri, frontPageOptions} = posts;
     {/** END FEATURED  */}
 
     {/**  WHY TRUWIN   */}
-    <div id="onethird-info-section" className="lg:max-w-6xl mx-auto hidden md:block my-28 ">
+    <div id="onethird-info-section" className="lg:max-w-7xl mx-auto hidden md:block my-28 ">
       <div id="onethird-info-wrapper" className="mx-5 mt-10">
           <div className="text-center" >
               <p className="text-lg text-truwinblue-300 pb-4">The Exteriors Experts™</p>

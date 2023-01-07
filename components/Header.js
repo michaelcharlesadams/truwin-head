@@ -12,7 +12,7 @@ function Header() {
         </div>
     </div>
 
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto">
         <div className="lg:flex md:hidden hidden bg-softblue-primary rounded justify-between px-4 py-2 mx-5">
             <div className="flex">
                 <p className="text-truwinblue-900 text-[12px]"><span className="font-graphikSemibold text-[10px]">Current Special Rate:</span> <span className="font-graphik text-[10px]">20% OFF All Windows. Available until August 15th.</span></p> 

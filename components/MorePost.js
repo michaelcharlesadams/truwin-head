@@ -6,7 +6,7 @@ function MorePost({posts}) {
   return (
     <>
     
-<div id="more-posts-section" className="lg:max-w-6xl mx-auto">
+<div id="more-posts-section" className="lg:max-w-7xl mx-auto">
         <div id="more-posts-wrapper" className="mx-5 mt-20">
             <p className="text-2xl font-graphik text-truwinblue-900">Keep Browsing</p>
             <div id="more-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">

@@ -4,7 +4,7 @@ function Vendor() {
 
     <>
     {/** VENDOR LOGOS */}
-    <div id="vendor-section" className="lg:max-w-6xl lg:mx-auto">
+    <div id="vendor-section" className="lg:max-w-7xl lg:mx-auto">
       <div id="vendor-wrapper" className="flex justify-between mx-5 mt-8 h-6 sx:h-8">
           <img className="max-w-[105px] sm:w-auto h-auto object-contain" src="/images/smartside_logo.png" alt="smartside_logo" />
           <img className="max-w-[80px] md:max-w-[127px] h-auto object-contain" src="/images/Jeldwen.png" alt="Jeldwen" />

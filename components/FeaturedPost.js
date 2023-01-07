@@ -21,7 +21,7 @@ const image_1 = posts[1].featuredImage.node.sourceUrl
 
   return (    
     <>
-    <div id="card-onethird-session-reverse" className="lg:max-w-6xl mx-auto">
+    <div id="card-onethird-session-reverse" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div className="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tr  md:rounded-br md:rounded-tl-none md:h-full object-cover" src={image_0} alt=""/> 
