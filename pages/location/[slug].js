@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Date from '../../components/date';
+import GetStartForm from '../../components/GetStartForm';
 
 export default function Post({post}){
     //deconstruct the posts contents
@@ -30,7 +31,7 @@ export default function Post({post}){
                             backgroundBlendMode: 'multiply', 
                             backgroundSize: 'cover', 
                             backgroundImage: 'url("'+ postHeaderImage +'")',
-                            height: '300px',
+                            height: '450px',
                             borderRadius: '5px'
                             }} >
                 </div>
@@ -61,7 +62,7 @@ export default function Post({post}){
                         {/** AUTHOR INFO **/}
                         <div id="blog-author-info">
                             <p className="text-truwinblue-900 font-graphikSemibold">{postAuthor}</p>
-                            <div className="text-truwinblue-900 text-sm">
+                            <div className="text-white text-2xl">
                                 <Date dateString={date} />
                             </div>
                             
@@ -81,7 +82,8 @@ export default function Post({post}){
             </div>
         </div>
         {/** END BLOG CONTENT */}  
-
+        
+        <GetStartForm />
        
     </>
         

@@ -69,9 +69,9 @@ function GetPricingForm() {
 
                 <input id="zip" name="zip" placeholder="Zip Code" type="text" className="rounded p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
 
-                <input id="message" name="message" placeholder="Message" type="textarea" className="rounded p-2  col-span-2 h-20 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <textarea id="message" name="message" placeholder="Message" rows="6" type="textarea" className="rounded p-2 col-span-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300"></textarea>
 
-                <button type="submit" className="bg-truwinblue-300 py-5 rounded text-white">Book a Service</button>
+                <button type="submit" className="bg-truwinblue-500 py-5 rounded text-white">Book a Service</button>
             </form>
             
         </div>

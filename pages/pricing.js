@@ -12,14 +12,19 @@ function Pricing({morePost}) {
     <div id="hero-author-section" className="max-w-6xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
                 
-                <div className="bg-truwinsoftblue-primary rounded text-left px-10 py-8 md:w-1/2 md:h-auto">
+                <div className="relative bg-truwinsoftblue-primary rounded text-left px-10 py-8 md:w-1/2 md:h-auto">
                     <p className="text-sm text-truwinblue-900 mb-3">
                     <span className='pr-2'>
                         <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} />
                     </span>
                         / Get Pricing</p>
                     <h3 className="text-truwinblue-900 text-3xl sm:text-5xl font-[Cigars-SemiBold] mt-6">Schedule your hassle-free estimate.</h3>
-                    <p className="text-truwinblue-900 text-sm mt-3 font-graphik font-medium">(832) 777-3681   |   Sales@Truwin.com</p>
+                    <p className="text-truwinblue-900 text-lg mt-3 font-[Cigars] font-medium">(832) 777-3681   |   Sales@Truwin.com</p>
+                
+                <div className="md:absolute w-2/5 text-sm bottom-10 left-10 mt-16">
+                    <p className="text-truwinblue-900 font-graphikSemibold ">QUESTIONS?</p>
+                    <p className="text-truwinblue-900">Our team is always available to guide you through the process.</p>
+                </div>
                 </div>
                 
                 
