@@ -25,7 +25,7 @@ export default function Post({post, morePost}){
         <div id="blog-feature-hero-section" className="mx-auto md:max-w-7xl">
             <div id="blog-feature-hero-wrapper" className="mx-5 mt-5 text-white md:max-h-[450px] relative mx-auto">
                 <div id="blog-feature-hero-info" className="absolute bottom-10 left-10 w-4/5 md:w-full">
-                    <h2 className="font-serif text-2xl md:text-4xl lg:text-center py-2">{title}</h2>
+                    <h2 className="font-[Cigars-SemiBold] text-2xl md:text-4xl lg:text-center py-2">{title}</h2>
                     <p className="lg:text-center hidden md:block text-md">Learn how we turned this Kingwood house into a modern home.</p>
                 </div>
                 <div //HEADER IMAGE
