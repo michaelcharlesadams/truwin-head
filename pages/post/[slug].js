@@ -3,11 +3,13 @@ import { client } from '../_app';
 import { useQuery, gql } from '@apollo/client';
 import Date from '../../components/date';
 import Link from 'next/link';
+import MorePost from '../../components/MorePost';
+import GetStartForm from '../../components/GetStartForm';
 
-export default function Post({post}){
+export default function Post({post, morePost}){
     //deconstruct the posts contents
     
-  
+    
     const {title, date, slug, content } = post;
     const postHeaderImage = post.featuredImage.node?.sourceUrl;
     const postAuthor = post.rel_people_con_post.people?.[0].title; 
@@ -33,9 +35,26 @@ export default function Post({post}){
                             backgroundBlendMode: 'multiply', 
                             backgroundSize: 'cover', 
                             backgroundImage: 'url("'+ postHeaderImage +'")',
-                            height: '300px',
-                            borderRadius: '5px'
+                            height: '450px',
+                            borderRadius: '5px',
+                            backgroundPosition: "center",
                             }} >
+                            
+                    {/*** BREAD CRUMB */}
+                    <div className="px-8 pt-8 font-graphik md:px-10 md:pt-12">
+                        <span className='pr-2'>
+                            <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+                        </span>
+                        <span>
+                            / <Link href="/post">
+                                <a className="underline px-2">Blog</a>
+                            </Link> 
+                        </span>
+                        <span className='pr-2'>
+                            / {title}
+                        </span>
+                    </div>
+                
                 </div>
                 
                 {/* <img className="object-cover w-full h-[300px] rounded bg-blend-overlay" src={postHeaderImage} alt="blog featured image" /> */}
@@ -65,7 +84,7 @@ export default function Post({post}){
                         {/** AUTHOR INFO **/}
                         <div id="blog-author-info">
                             <p className="text-truwinblue-900 font-graphikSemibold">{postAuthor}</p>
-                            <div className="text-truwinblue-900 text-sm">
+                            <div className="text-[#8598C4] text-sm">
                                 <Date dateString={date} />
                             </div>
                             
@@ -104,7 +123,7 @@ export default function Post({post}){
                 <div id="blog-container" className="my-10 max-w-[625px] mx-auto text-truwinblue-900 ">
                     <h3 className="text-2xl font-graphikSemibold py-2">{title}</h3>
                     <div id="blog-content" dangerouslySetInnerHTML={
-                        {__html: "<style>#blog-content h2, #blog-content p{padding-top: 8px !important;padding-bottom: 8px !important;line-height: 24px !important;} #blog-content a{text-decoration:underline;} #blog-content h2{font-size:22px;}</style>" + content }
+                        {__html: "<style>#blog-content h2, #blog-content p{padding-top: 8px !important;padding-bottom: 8px !important;line-height: 25px !important; font-family: 'Graphik';} #blog-content a{text-decoration:underline;} #blog-content h2{font-size:22px;}</style>" + content }
                         
                     } 
                         style={ {paddingTop: '8px'} }>
@@ -117,6 +136,13 @@ export default function Post({post}){
         </div>
         {/** END BLOG CONTENT */}  
        
+       {/** Get Started Form */}
+        <GetStartForm />
+        {/** END Get Started Form */}
+
+         {/**  MORE POSTS   */}
+        <MorePost  posts={morePost}/>
+        {/**  END MORE POSTS   */}
     </>
         
     )
@@ -167,7 +193,7 @@ export async function getStaticProps({params}) {
     const { slug } = params;
    
      //1.2 Define a query: posts
-    const get_post_slug_query = await client.query({
+    const get_post_query = await client.query({
         query: gql`
             query SinglePostQuery($slug: String){
                 postBy(slug: $slug) {
@@ -218,10 +244,44 @@ export async function getStaticProps({params}) {
         variables: { slug }
     });
 
-   
+    //1.3 Define a query: posts
+    const more_posts_query = await client.query({
+        query: gql`
+            query morePostQuery {
+              posts(first: 10) {
+                nodes {
+                  id
+                  uri
+                  title
+                  slug
+                  featuredImage {
+                    node {
+                      sourceUrl
+                      mediaDetails {
+                        width
+                        height
+                      }
+                    }
+                  }
+                  categories {
+                    nodes {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+            `,
+      });
+
+    //filter the current post
+    const morePostMinusOne = more_posts_query.data.posts.nodes.filter( s => s.slug !== slug );
 
     return {
-        props: { post: get_post_slug_query.data.postBy },
+        props: { 
+            post: get_post_query.data.postBy,
+            morePost: morePostMinusOne
+        },
         revalidate: 10
     }
 

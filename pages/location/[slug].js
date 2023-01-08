@@ -31,7 +31,7 @@ export default function Post({post}){
                             backgroundBlendMode: 'multiply', 
                             backgroundSize: 'cover', 
                             backgroundImage: 'url("'+ postHeaderImage +'")',
-                            height: '450px',
+                            height: '300px',
                             borderRadius: '5px'
                             }} >
                 </div>
@@ -62,8 +62,8 @@ export default function Post({post}){
                         {/** AUTHOR INFO **/}
                         <div id="blog-author-info">
                             <p className="text-truwinblue-900 font-graphikSemibold">{postAuthor}</p>
-                            <div className="text-white text-2xl">
-                                <Date dateString={date} />
+                            <div className="text-[#8598C4] text-2xl">
+                                {/* <Date dateString={date} /> */}
                             </div>
                             
                             <p className="text-truwinblue-900 text-sm"></p>
@@ -185,8 +185,8 @@ export async function getStaticProps({params}) {
    
 
     return {
-        props: { post: get_post_slug_query.data.postBy },
-        revalidate: 10
+        props: { post: get_post_slug_query.data.postBy }
+        // add a comma before, revalidate: 10
     }
 
 }
