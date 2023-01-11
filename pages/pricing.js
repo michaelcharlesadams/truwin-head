@@ -21,7 +21,7 @@ function Pricing({morePost}) {
                     <h3 className="text-truwinblue-900 text-3xl sm:text-5xl font-[Cigars-SemiBold] mt-6">Schedule your hassle-free estimate.</h3>
                     <p className="text-truwinblue-900 text-lg mt-3 font-[Cigars] font-medium">(832) 777-3681   |   Sales@Truwin.com</p>
                 
-                <div className="md:absolute w-2/5 text-sm bottom-10 left-10 mt-16">
+                <div className="md:absolute sm:w-2/5 w-3/5 text-sm bottom-10 left-10 mt-16">
                     <p className="text-truwinblue-900 font-graphikSemibold ">QUESTIONS?</p>
                     <p className="text-truwinblue-900">Our team is always available to guide you through the process.</p>
                 </div>
