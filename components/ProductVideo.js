@@ -20,7 +20,7 @@ const vidStyle = {
       <div id="hero-video-wrapper" className="mt-20 relative">
 
 
-        <button id="myBtn" onClick={() => {
+        <button className="w-full" id="myBtn" onClick={() => {
             display === 'none' ? setDisplay('block') : setDisplay('none');
             //start video
             playing === false ? setPlaying(true) : setPlaying(false);
