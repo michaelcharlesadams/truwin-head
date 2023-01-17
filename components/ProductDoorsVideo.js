@@ -15,7 +15,7 @@ const vidStyle = {
 
   return (
     <>
-    
+    {/* Adding a commit to staging */}
     <div id="hero-video-section" className="mx-auto">
       <div id="hero-video-wrapper" className="mt-20 relative">
 
