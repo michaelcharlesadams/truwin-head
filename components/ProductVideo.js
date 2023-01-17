@@ -28,7 +28,7 @@ const vidStyle = {
 
             {/** PLACE HOLDER IMAGE */}
             {slug === 'windows'
-            ?<img className="cursor-pointer" src="/images/video-windows-th.png" alt="truwin windows video showcase" />
+            ?<img className="cursor-pointer w-full" src="/images/video-windows-th.png" alt="truwin windows video showcase" />
             :<img className="cursor-pointer" src="/images/truwin-doors-video.jpg" alt="truwin windows video showcase" />
             }
         

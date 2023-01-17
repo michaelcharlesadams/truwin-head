@@ -27,7 +27,7 @@ const vidStyle = {
         }}  >
 
             {/** PLACE HOLDER IMAGE */}
-            <img className="cursor-pointer" src="/images/siding-video-cover.jpg" alt="truwin windows video showcase" />
+            <img className="cursor-pointer w-full" src="/images/siding-video-cover.jpg" alt="truwin windows video showcase" />
         
         </button>
        
