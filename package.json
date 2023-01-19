@@ -1,0 +1,28 @@
+{
+  "name": "truwin-head",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@sendgrid/mail": "^7.7.0",
+    "aos": "^2.3.4",
+    "date-fns": "^2.29.3",
+    "graphql": "^16.6.0",
+    "lightgallery": "^2.7.0",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-player": "^2.11.0"
+  },
+  "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "12.3.1",
+    "tailwindcss": "^3.2.4"
+  }
+}

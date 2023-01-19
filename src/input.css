@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Graphik";
+    src: url('../public/fonts/Graphik/Graphik-Regular.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Graphik_Bold";
+    src: url('../public/fonts/Graphik/Graphik-Bold.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Graphik_Super";
+    src: url('../public/fonts/Graphik/Graphik-Super.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Graphik_Medium";
+    src: url('../public/fonts/Graphik/Graphik-Medium.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Graphik_Semibold";
+    src: url('../public/fonts/Graphik/Graphik-Semibold.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Graphik_Light";
+    src: url('../public/fonts/Graphik/Graphik-Light.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cigars";
+    src: url('../public/fonts/hw-cigars/hw-cigars-regular.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cigars_Bold";
+    src: url('../public/fonts/hw-cigars/hw-cigars-bold.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cigars_Semibold";
+    src: url('../public/fonts/hw-cigars/hw-cigars-semibold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Cigars_Light";
+    src: url('../public/fonts/hw-cigars/hw-cigars-light.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cigars_Strong";
+    src: url('../public/fonts/hw-cigars/hw-cigars-strong.otf');
+    font-style: normal;
+}

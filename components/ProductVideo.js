@@ -1,0 +1,110 @@
+import React from 'react';
+import { useState, useEffect } from "react";
+import ReactPlayer from 'react-player/youtube'
+
+function ProductVideo({slug}) {  
+
+//toggle video modal
+const [display, setDisplay] = useState('none');
+const [playing, setPlaying] = useState(false);
+
+const vidStyle = {
+    width: '100%',
+    height: '640px'
+}
+
+  return (
+    <>
+    
+    <div id="hero-video-section" className="mx-auto">
+      <div id="hero-video-wrapper" className="mt-20 relative">
+
+
+        <button className="w-full" id="myBtn" onClick={() => {
+            display === 'none' ? setDisplay('block') : setDisplay('none');
+            //start video
+            playing === false ? setPlaying(true) : setPlaying(false);
+        }}  >
+
+            {/** PLACE HOLDER IMAGE */}
+            {slug === 'windows'
+            ?<img className="cursor-pointer w-full" src="/images/video-windows-th.png" alt="truwin windows video showcase" />
+            :<img className="cursor-pointer" src="/images/truwin-doors-video.jpg" alt="truwin windows video showcase" />
+            }
+        
+        </button>
+       
+        {/** VIDEO CONTAINER */}
+        <div id="video-container" className="" 
+            style={{
+                    display: display,
+                    height : '100%',
+                    width: '100%',
+                    position: 'fixed', /* Stay in place */
+                    zIndex: 10, /* Sit on top */
+                    left: 0,
+                    top: 0,
+                    backgroundColor: 'black', /* Black fallback color */
+                    /* Black w/opacity */
+                    overflowX: 'hidden' /* Disable horizontal scroll */
+                    
+            }}
+            >
+        
+         {/** STOP BUTTON */}
+        <p id="stop-vid" className="closebtn cursor-pointer"  onClick={() => {
+            display === 'none' ? setDisplay('block') : setDisplay('none');
+            //stop video
+            playing === true ? setPlaying(false) : setPlaying(true);
+
+            
+        
+        }}
+
+            style={{
+                position: 'absolute',
+                fontSize: '25px', 
+                color: 'white', 
+                display: 'inline-block',
+                top: '10px',
+                right: '35px'
+                }}>X</p> 
+        
+        
+        {/*** REACT PLAYER */}
+        <div className="player-wrapper ">
+            <ReactPlayer 
+                className='react-player'
+                playing={playing} 
+                url='https://www.youtube.com/watch?v=eeL_Yi0n3Kw&mute=0&rel=0'
+                width='100%'
+                height='300px'
+                controls='true'
+            />
+        </div>
+       
+
+        </div>
+        
+      </div>
+    </div>
+    <style jsx>{`
+    .closebtn:hover, .closebtn:focus {
+        color: #f1f1f1;
+      }
+      .player-wrapper {
+        position: relative;
+        margin-top: 15.25% 
+    }
+    
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    `}</style>
+    </>
+  )
+}
+
+export default ProductVideo
