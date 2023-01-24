@@ -74,10 +74,21 @@ function GetStartForm() {
                 onSubmit={handleOnSubmit}
                 >
                 <input id="name" required name="yname" placeholder="Your Name" type="text" className="rounded col-span-2 p-4 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" />
+
                 <input id="email"  required name="email" placeholder="Email Address" type="text" className="rounded p-4 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" />
-                <input id="projecttype"  required name="projecttype" placeholder="Project Type" type="text" className="rounded p-4 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" />
+
+               
+
+                <select id="projecttype" name="projecttype" className="rounded p-4 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" style={{"color": "#7B8EBE"}}>
+                    <option value="" disabled selected className="text-truwinblue-300">Project Type</option>
+                    <option value="Replacement">Replacement</option>
+                    <option value="New Construction">New Construction</option>
+                </select>
+
                 <input id="phone" name="phone" placeholder="Phone Number" type="text" className="rounded p-2 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" />
+
                 <input id="zip" name="zip" placeholder="Zip Code" type="text" className="rounded p-4 text-truwinblue-700 text-sm placeholder:text-truwinblue-700" />
+                
                 <button type="submit" className="bg-truwinblue-300 px-8 py-5 col-span-2 rounded">Request Free Consultation</button>
             </form>
         

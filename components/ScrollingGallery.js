@@ -33,7 +33,7 @@ const onInit = () => {
                         onInit={onInit}
                         speed={500}
                         plugins={[lgThumbnail, lgZoom]}
-                        elementClassNames="flex overflow-scroll w-full"
+                        elementClassNames="flex overflow-scroll w-full justify-center"
                     >
                         {postGallery?.map((photo, index) =>
 

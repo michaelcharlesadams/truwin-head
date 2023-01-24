@@ -57,9 +57,20 @@ function GetPricingForm() {
                 className="grid gap-3 grid-cols-2 my-10 md:my-0"
                 onSubmit={handleOnSubmit}
                 >
-                <input id="interest" required name="interest" placeholder="What are you interested in?" type="text" className="rounded col-span-2 p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
+                <select id="interest" required name="interest" className="rounded col-span-2 p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" style={{"color": "#7B8EBE"}}>
+                    <option value="" disabled selected className="text-truwinblue-300">What are you interested in?</option>
+                    <option value="Windows">Windows</option>
+                    <option value="Doors">Doors</option>
+                    <option value="Siding"> Siding</option>
+                    <option value="Roofing">Roofing</option>
+                    <option value="Exterior Remodeling">Exterior Remodeling</option>
+                </select>
 
-                <input id="projecttype" required name="projecttype" placeholder="Project Type" type="text" className="rounded p-2 text-truwinblue-500 text-sm  col-span-2 placeholder:text-truwinblue-300" />
+                <select id="projecttype" name="projecttype" className="rounded col-span-2 p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" style={{"color": "#7B8EBE"}}>
+                    <option value="" disabled selected className="text-truwinblue-300">Project Type</option>
+                    <option value="Replacement">Replacement</option>
+                    <option value="New Construction">New Construction</option>
+                </select>
 
                 <input id="fullname" required name="fullname" placeholder="Full Name" type="text" className="rounded col-span-2 p-2 text-truwinblue-500 text-sm placeholder:text-truwinblue-300" />
 
