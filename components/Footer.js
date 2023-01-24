@@ -21,11 +21,11 @@ function Footer() {
 
                     <Link href="https://www.bbb.org/us/tx/humble/profile/windows/truwin-enterprises-llc-0915-90051142">
                         <a target="_blank">
-                            <img className="m-4 mx-auto w-1/2" src="/images/bbb.png" width='50%' height='100%' />
+                            <img className="m-3 mx-auto" src="/images/bbb.png" width='100px' height='100%' />
                         </a>
                     </Link>
                    
-
+                    
                     <Link  href="https://web.lakehouston.org/list/member/truwin-windows-doors-15750">
                         <a target="_blank">
                             <img className="m-4 mx-auto" src="/images/lake-houston-chamber.jpg" width='165px' height='59px' />
