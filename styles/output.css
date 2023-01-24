@@ -1074,6 +1074,10 @@ video {
   overflow: scroll;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1391,6 +1395,14 @@ video {
 
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-8 {
+  padding-right: 2rem;
 }
 
 .text-left {

@@ -14,14 +14,14 @@ import Comparison from '../../components/Comparison';
 export default function Product({post, morePost}) {
 
   
-  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productPage_2} = post.data.productBy;
+  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productPage_2, vendorIcons} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
-  const heroSection = productPage.productPageHeroSection
-  const heroFeaturedImage = featuredImage?.node
-  const contentCard = productPage.productProductServicesCard
-  const contentCard2 = productPage_2.productProductServicesCard2
+  const heroSection = productPage.productPageHeroSection;
+  const heroFeaturedImage = featuredImage?.node;
+  const contentCard = productPage.productProductServicesCard;
+  const contentCard2 = productPage_2.productProductServicesCard2;
 
-  
+  console.log(vendorIcons)
 
 
   return (
@@ -62,8 +62,8 @@ export default function Product({post, morePost}) {
       </div>
       {/** END HERO */}
 
-      {/** VENDOR LOGOS    ***/}
-      <Vendor />
+      {/** VENDOR LOGOS   ***/}
+      <Vendor vendorIcons={vendorIcons}/> 
       {/** VENDOR LOGOS */}
 
       {/** PRODUCT MATERIALS **/}
@@ -362,6 +362,17 @@ query: gql`
                         }
                         productServicesCardDecriptionList2 {
                           productDescriptionListItem2
+                        }
+                      }
+                    }
+                    vendorIcons {
+                      vendorIcons {
+                        vendorIcon {
+                          sourceUrl
+                          mediaDetails {
+                            height
+                            width
+                          }
                         }
                       }
                     }
