@@ -35,7 +35,7 @@ const {slug, title, uri, frontPageOptions} = posts;
               </div>
               
             
-              <h3 className="text-white text-4xl mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-[Cigars-Semibold]">Protect your staging assets</h3>
+              <h3 className="text-white text-4xl mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-[Cigars-Semibold]">Protect your family assets</h3>
 
               <p className="text-white text-sm mt-3 sx:w-80 sm:w-80 md:w-auto mx-auto lg:w-[305px] font-graphik font-medium">Improve and secure your home with new windows, doors, siding and roofing from the trusted source in exteriors.</p>
           </div>
