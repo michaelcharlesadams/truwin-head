@@ -906,6 +906,10 @@ video {
   width: 30%;
 }
 
+.w-3\/5 {
+  width: 60%;
+}
+
 .w-4\/5 {
   width: 80%;
 }
@@ -960,10 +964,6 @@ video {
 
 .w-\[110px\] {
   width: 110px;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .min-w-\[180px\] {
@@ -1040,6 +1040,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {

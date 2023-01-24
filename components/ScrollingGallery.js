@@ -18,6 +18,11 @@ const onInit = () => {
 
   return (
     <>
+    <style jsx>{`
+        .removeMaxImage{
+            max-width: none;
+        }
+    `}</style>
     {postGallery && 
         <div id="gallery-section" className="mx-auto">
             <div id="gallery-wrapper" className=" mx-auto mt-20">
@@ -34,7 +39,9 @@ const onInit = () => {
                         speed={500}
                         plugins={[lgThumbnail, lgZoom]}
                         elementClassNames="flex overflow-scroll w-full justify-center"
+                        //
                     >
+                       
                         {postGallery?.map((photo, index) =>
 
                             <a key={index} href={photo.productTypeGalleryImage.sourceUrl}>
@@ -42,17 +49,12 @@ const onInit = () => {
                             </a>
                         
                         )}
-                        
+                       
                     </LightGallery>
 
                 </div>
             </div>
-                <style jsx>{`
-                .removeMaxImage{
-                    max-width: none
-                }
-               
-                `}</style>
+                
             </div>
         </div>
         
