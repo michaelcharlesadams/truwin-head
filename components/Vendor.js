@@ -40,8 +40,8 @@ function Vendor({vendorIcons}) {
 
           {/** First three */}
           {firstThree &&
-            firstThree.map(photor1 => (
-              <img className="w-auto h-auto object-contain pr-10" src={photor1.vendorIcon.sourceUrl}
+            firstThree.map(photor1, index => (
+              <img key={index} className="w-auto h-auto object-contain pr-10" src={photor1.vendorIcon.sourceUrl}
               width={photor1.vendorIcon.mediaDetails.width}  height={photor1.vendorIcon.mediaDetails.height} alt="vendor icon" />
                 )
             )
@@ -49,16 +49,16 @@ function Vendor({vendorIcons}) {
 
           {/** Fourth Image */}
           {fourthImg &&
-            fourthImg.map(photor2 => (
-              <img className="w-auto h-auto object-contain hidden sm:block pr-10" src={photor2.vendorIcon.sourceUrl}  width={photor2.vendorIcon.mediaDetails.width}  height={photor2.vendorIcon.mediaDetails.height} alt="vendor icon" />
+            fourthImg.map(photor2, index => (
+              <img key={index} className="w-auto h-auto object-contain hidden sm:block pr-10" src={photor2.vendorIcon.sourceUrl}  width={photor2.vendorIcon.mediaDetails.width}  height={photor2.vendorIcon.mediaDetails.height} alt="vendor icon" />
                 )
             )
           }
 
            {/** Fourth Image */}
            {moreImg &&
-            moreImg.map(photor3 => (
-              <img className="w-auto h-auto object-contain hidden sm:block pr-10" src={photor3.vendorIcon.sourceUrl}  width={photor3.vendorIcon.mediaDetails.width}  height={photor3.vendorIcon.mediaDetails.height} alt="vendor icon" />
+            moreImg.map(photor3, index => (
+              <img key={index} className="w-auto h-auto object-contain hidden sm:block pr-10" src={photor3.vendorIcon.sourceUrl}  width={photor3.vendorIcon.mediaDetails.width}  height={photor3.vendorIcon.mediaDetails.height} alt="vendor icon" />
                 )
             )
           }
