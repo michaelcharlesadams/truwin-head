@@ -11,7 +11,7 @@ import Image from 'next/image';
 export default function Product({post}) {
 
   
-  const {content, title, slug, uri, product_Materials} = post.data.productMaterialBy;
+  const {content, title, slug, uri, product_Materials, vendorIcons} = post.data.productMaterialBy;
   const postHeaderImage = post.data.productMaterialBy.featuredImage.node.sourceUrl;
   const postMaterialTypes = product_Materials.materialProductTypes;
   const postGallery = product_Materials.productTypeGallery;
@@ -62,7 +62,7 @@ export default function Product({post}) {
   {/** END BLOG FEATURED IMAGE */}
 
   {/** VENDOR LOGOS  <Vendor />  **/}
-  <Vendor />
+  
   {/** VENDOR LOGOS */}
 
   {/**  PRODUCT TYPE **/}

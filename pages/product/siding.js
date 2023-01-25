@@ -11,14 +11,14 @@ import Banner from '../../components/Banner';
 
 export default function Siding({post, morePost}) {
 
-  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productBenefits} = post.data.productBy;
+  const {content, title, slug, uri, rel_productMaterials_con_product, productPage, featuredImage, productBenefits, vendorIcons} = post.data.productBy;
   const productMaterials = rel_productMaterials_con_product.associateProductMaterial;
   const heroSection = productPage.productPageHeroSection;
   const heroFeaturedImage = featuredImage?.node;
   const contentCard = productPage.productProductServicesCard;
   const postBenefits = productBenefits.productBenefits;
 
-
+  console.log(vendorIcons)
 
   return (
     <>
@@ -59,7 +59,7 @@ export default function Siding({post, morePost}) {
       {/** END HERO */}
 
       {/** VENDOR LOGOS    **/}
-      <Vendor />
+      <Vendor vendorIcons={vendorIcons}/>
       {/** VENDOR LOGOS */}
 
      {/**  PRODUCT CONTENT SECTION **/}
@@ -266,6 +266,17 @@ export default function Siding({post, morePost}) {
                                 height
                                 width
                               }
+                            }
+                          }
+                        }
+                      }
+                      vendorIcons {
+                        vendorIcons {
+                          vendorIcon {
+                            sourceUrl
+                            mediaDetails {
+                              height
+                              width
                             }
                           }
                         }
