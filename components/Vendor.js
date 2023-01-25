@@ -13,13 +13,13 @@ function Vendor({vendorIcons}) {
   const VendorClass = vendorIcons.vendorIcons?.length <= 5? "justify-center" : "justify-between";
 
   //the modified length if larger than 3
-  console.log(firstThree);
+  //console.log(firstThree);
 
   //the modified length
-  console.log(fourthImg);
+  //console.log(fourthImg);
 
   //the modified length
-  console.log(moreImg);
+  //console.log(moreImg);
 
   
  

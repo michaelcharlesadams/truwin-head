@@ -21,7 +21,7 @@ export default function Product({post, morePost}) {
   const contentCard = productPage.productProductServicesCard;
   const contentCard2 = productPage_2.productProductServicesCard2;
 
-  console.log(vendorIcons)
+  //console.log(vendorIcons)
 
 
   return (
