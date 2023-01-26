@@ -1,36 +1,6 @@
 
 function VendorHome() {
 
-  const yimages = [
-    {0: "/images/smartside_logo.png"},
-    {0: "/images/smartside_logo.png"},
-    {0: "/images/smartside_logo.png"},
-    {0: "/images/softlite.png"},
-    {0: "/images/marvin_windows_doors.png"},
-    {0: "/images/marvin_windows_doors.png"},
-    {0: "/images/marvin_windows_doors.png"},
-    {0: "/images/marvin_windows_doors.png"},
-    {0: "/images/marvin_windows_doors.png"},
-  ]
-
-  //if the array is greater than 4 members, extract the first three
-  const firstThree = yimages.length > 3 ? yimages.slice(0, 3): "Less than 3";
-  const fourthImg = yimages.length > 3 ? yimages.slice(3, 4): "Less than 3";
-  const moreImg = yimages.length > 4 ? yimages.slice(4): "Less than 4";
-  
-  
-  //the original array length
-  console.log(yimages);
-
-  //the modified length if larger than 3
-  console.log(firstThree);
-
-  //the modified length 
-  console.log(fourthImg);
-
-  //the modified length 
-  console.log(moreImg);
-
  
   return (
 

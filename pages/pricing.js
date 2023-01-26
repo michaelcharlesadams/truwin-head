@@ -4,6 +4,7 @@ import { useQuery, gql } from '@apollo/client';
 import GetPricingForm from '../components/GetPricingForm';
 import Vendor from '../components/Vendor';
 import Image from 'next/image';
+import VendorHome from '../components/VendorHome';
 
 function Pricing({morePost}) {
   return (
@@ -39,7 +40,7 @@ function Pricing({morePost}) {
     </div>
        
     {/** */}
-    <Vendor />
+    <VendorHome />
     {/** */}
 
     
