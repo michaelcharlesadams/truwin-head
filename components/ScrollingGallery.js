@@ -44,8 +44,8 @@ const onInit = () => {
                        
                         {postGallery?.map((photo, index) =>
 
-                            <a key={index} href={photo.productTypeGalleryImage.sourceUrl}>
-                                <img className="w-auto removeMaxImage h-[500px] ml-2" alt={photo.productTypeGalleryTitle} src={photo.productTypeGalleryImage.sourceUrl} />
+                            <a key={index} href={photo.productTypeGalleryImage?.sourceUrl}>
+                                <img className="w-auto removeMaxImage h-[500px] ml-2" alt={photo.productTypeGalleryTitle} src={photo.productTypeGalleryImage?.sourceUrl} />
                             </a>
                         
                         )}
