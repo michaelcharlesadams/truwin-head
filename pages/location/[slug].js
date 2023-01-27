@@ -336,7 +336,7 @@ export async function getStaticProps({params}) {
             post: get_location_slug_query.data.locationBy,
             morePost: more_posts_query.data.posts.nodes,
         },
-        revalidate: 2
+        revalidate: 1
     }
 
 }

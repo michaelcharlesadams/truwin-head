@@ -77,7 +77,7 @@ export async function getStaticProps({params}) {
 
     return {
         props: { post: get_single_page_query.data.pageBy },
-        revalidate: 10
+        revalidate: 1
         //props: { post: page }
     }
 

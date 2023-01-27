@@ -290,7 +290,7 @@ const {slug, title, uri, frontPageOptions, vendorIcons} = posts;
             </div>
 
         </div>
-    </div>
+</div>
 {/** END PRODUCT TYPES */}
 
   {/** PRODUCT MATERIALS **/}
@@ -558,7 +558,7 @@ export async function getStaticProps(){
         morePost: more_posts_query.data.posts.nodes
 
     },
-    revalidate: 10
+    revalidate: 1
   }
 }
 

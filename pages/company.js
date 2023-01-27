@@ -271,6 +271,6 @@ export default Company
           morePost: more_posts_query.data.posts.nodes,
           companyPost: company_page_query.data.pageBy.page_companypage
       },
-      revalidate: 10
+      revalidate: 1
     }
   }

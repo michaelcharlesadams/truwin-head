@@ -322,7 +322,7 @@ export default function Siding({post, morePost}) {
             post: get_single_product_query,
             morePost: more_posts_query.data.posts.nodes
           },
-          revalidate: 10
+          revalidate: 1
           
       }
   

@@ -282,7 +282,7 @@ export async function getStaticProps({params}) {
             post: get_post_query.data.postBy,
             morePost: morePostMinusOne
         },
-        revalidate: 10
+        revalidate: 1
     }
 
 }

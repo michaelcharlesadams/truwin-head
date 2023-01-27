@@ -165,7 +165,7 @@ export default LocationList;
           locations: get_all_locations_query.data.locations,
           morePost: more_posts_query.data.posts.nodes
         },
-        revalidate: 10
+        revalidate: 1
     }
 
 }

@@ -137,7 +137,7 @@ export default PostList;
         props: { 
           posts: get_all_posts_query.data.posts 
         },
-        revalidate: 10
+        revalidate: 1
     }
 
 }
