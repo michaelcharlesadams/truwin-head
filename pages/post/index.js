@@ -109,7 +109,7 @@ export default PostList;
     const get_all_posts_query = await client.query({
         query: gql`
           query getAllBlogPosts {
-            posts {
+            posts(first: 100)  {
               nodes {
                 title
                 uri
