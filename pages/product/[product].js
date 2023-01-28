@@ -80,7 +80,7 @@ export default function Product({post, morePost}) {
                     
                     return (
                         
-                        <div key={index} className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[320px]">
+                        <div key={index} className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[350px]">
                           <Link href={material.uri}>
                              <a><img src='/images/arrow-circle.png' className='absolute top-8 right-4 w-6 h-6'/></a>
                           </Link>
@@ -89,7 +89,7 @@ export default function Product({post, morePost}) {
                                 <Link href={material.uri}><a>{material.title}</a></Link>
                               </p>
                             <p className="text-sm font-[Cigars]  text-truwinblue-900 pt-4">{material.product_Materials.materialBlurp}</p>
-                           <div className="w-auto h-auto mx-auto absolute px-5 bottom-[-5px] left-[15%] sx:left-[5%]">
+                           <div className="w-auto h-auto mx-auto absolute px-5 bottom-[-5px] left-[5%] sx:left-[5%]">
                                 <Image 
                                     src={material.product_Materials.materialImage.sourceUrl}
                                     width={material.product_Materials.materialImage.mediaDetails.width}

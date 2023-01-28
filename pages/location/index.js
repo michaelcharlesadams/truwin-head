@@ -48,7 +48,7 @@ function LocationList({locations, morePost}) {
 
               <div key={index} id="blog-post-card " className="my-4 w-full text-truwinblue-900">
 
-                <Link href={`/location/${post.title.toLowerCase()}`}><a>
+                <Link href={`/location/${post.slug.toLowerCase()}`}><a>
                 <p className="text-2xl font-[Cigars-SemiBold] border-b-2 border-truwinblue-900 w-full inline">{post.title}</p>
                 </a>
                 </Link>
@@ -61,7 +61,7 @@ function LocationList({locations, morePost}) {
 
                     {post.locationProducts.locationServicesSection[0].locationProductsSection?.map((locpro, index) => (
                       
-                      <Link key={index} href={`/location/${post.title.toLowerCase()}`}><a>
+                      <Link key={index} href={`/location/${post.slug.toLowerCase()}`}><a>
                         <span className="py-2 pr-5 text-truwinblue-900 bottom-5 text-sm underline cursor-pointer">{locpro.locationProduct}</span></a>
                       </Link>
                         
@@ -118,6 +118,7 @@ export default LocationList;
             nodes {
               title
               content
+              slug
               locationProducts {
                 locationServicesSection {
                   locationProductsSection {

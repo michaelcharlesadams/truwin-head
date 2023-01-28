@@ -606,6 +606,10 @@ video {
   left: 1.75rem;
 }
 
+.left-\[5\%\] {
+  left: 5%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -2069,6 +2073,10 @@ video {
 
   .md\:min-h-\[420px\] {
     min-height: 420px;
+  }
+
+  .md\:min-h-\[350px\] {
+    min-height: 350px;
   }
 
   .md\:w-5\/12 {
