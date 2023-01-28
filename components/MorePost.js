@@ -20,7 +20,7 @@ function MorePost({posts}) {
                     backgroundColor : '#777777', 
                     backgroundBlendMode: 'multiply', 
                     backgroundSize: 'cover', 
-                    backgroundImage: 'url("'+ post.featuredImage.node.sourceUrl +'")',
+                    backgroundImage: 'url("'+ post.featuredImage?.node.sourceUrl +'")',
                     height: '300px',
                     borderRadius: '5px'
                     }} 
