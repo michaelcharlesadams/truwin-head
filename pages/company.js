@@ -107,31 +107,61 @@ function Company({morePost, companyPost}) {
    
    {/** AUTHOR */}
     <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
-        <div id="card-onethrid-wrapper" className=" mx-5 sm:mx-auto mt-10 md:min-h-[390px] max-w-[600px] md:hidden">
-            <div className="mt-5 sx:flex sx:min-h-[300px]">
-                
-                    <img src="/images/Jay Chapp - President.png" className="w-full max-h-[600px] sx:max-h-[300px]" alt="" />
-                
-                <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
-                    <p className="font-graphikSemibold">Jay Chappell</p>
-                    <p className="font-graphikLight">President</p>
+        <div id="card-onethrid-wrapper" className="mx-10 my-20 text-truwinblue-900">
 
-                    <p className="mt-4 sx:text-sm">Jay Chappell, our founder and president, believes we’re selling an experience, not just windows. And he believes so strongly in being a transparent company that he likes customers to ask him anything, day or night.</p>
-                </div>
+    <p className="text-2xl font-graphikSemibold">True, transparent leadership.</p>
+
+    <div className="grid sm:grid-cols-2 gap-8">
+      {/* Person 1 */}
+      <div className="my-10">
+          
+          {/* Author section */}
+          <div className="my-5 flex">
+              
+              <div className="w-20 h-20 flex">
+                <img src="/images/Jay Chapp - President.png" className="w-full h-auto object-cover" alt="" />
+              </div>
+              
+              <div className="mx-4">
+                  <p className="font-graphikSemibold">Jay Chappell</p>
+                  <p className="font-graphikLight">President</p>
+              </div>
+
+          </div>
+
+          {/* Author description */}
+            <div className="">
+                <p className="">Jay Chappell, our founder and president, believes we’re selling an experience, not just windows. And he believes so strongly in being a transparent company that he likes customers to ask him anything, day or night.</p>
             </div>
-            
-            <div className="mt-5 sx:flex sx:min-h-[300px]">
-                
-                    <img src="/images/Tom Harrin.png" className="w-full max-h-[600px] sx:w-auto sx:max-h-[300px]"  alt="" />
-                
-                <div className="bg-softblue-primary p-4 mt-2 sx:mt-0">
+
+      </div>
+
+      {/* Person 2 */}
+      <div className="my-10">
+          
+          {/* Author section */}
+          <div className="my-5 flex">
+              
+              <div className="w-20 h-20 flex">
+                <img src="/images/Tom Harrin.png" className="w-full h-auto object-cover" alt="" />
+              </div>
+              
+              <div className="mx-4">
                     <p className="font-graphikSemibold">Tom Harrigan</p>
                     <p className="font-graphikLight">Senior Consultant</p>
+              </div>
 
-                    <p className="mt-4 sx:text-sm">Tom, our resident expert, believes that the best thing to ask a customer is what is important to them. He helps lead the team with his decades of window, door and siding experience.</p>
-                </div>
-                
+          </div>
+
+          {/* Author description */}
+            <div className="">
+                <p className="">Tom, our resident expert, believes that the best thing to ask a customer is what is important to them. He helps lead the team with his decades of window, door and siding experience.</p>
             </div>
+
+      </div> 
+
+    </div>
+       
 
         </div>
     </div>

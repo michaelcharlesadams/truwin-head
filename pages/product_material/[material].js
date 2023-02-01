@@ -110,7 +110,7 @@ export default function Product({post}) {
  <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-1/2">
-                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src={postGeneral.productMaterialGeneralImage.sourceUrl} alt="" />
+                <img className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:max-h-[575px] object-cover" src={postGeneral.productMaterialGeneralImage.sourceUrl} alt="" />
             </div>
             <div className="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
                 <p className="py-2 font-graphik text-truwinblue-900">{postGeneral.productMaterialGeneralHeadline}</p>
