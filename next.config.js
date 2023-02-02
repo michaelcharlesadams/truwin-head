@@ -6,6 +6,6 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ['localhost:8888', 'truwin.flywheelstaging.com'],
+    domains: ['truwin.flywheelsites.com'],
   },
 }

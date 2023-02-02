@@ -89,16 +89,14 @@ export default function Product({post, morePost}) {
                                 <Link href={material.uri}><a>{material.title}</a></Link>
                               </p>
                             <p className="text-sm font-[Cigars]  text-truwinblue-900 pt-4">{material.product_Materials.materialBlurp}</p>
-                           <div className="w-auto h-auto mx-auto absolute px-5 bottom-[-5px] left-[5%] sx:left-[5%]">
-                                <Image 
-                                    src={material.product_Materials.materialImage.sourceUrl}
+                           <div className="w-auto h-auto mx-auto absolute px-5  left-[5%] sx:left-[5%]">
+                            <img src={material.product_Materials.materialImage.sourceUrl}
                                     width={material.product_Materials.materialImage.mediaDetails.width}
                                     height={material.product_Materials.materialImage.mediaDetails.height} 
-                                   
-                                />
+                                    alt="windows and partner " />
                            </div>
                                 
-                            {/* <img  src={material.product_Materials.materialImage.sourceUrl} alt="windows and partner " /> */}
+                         
 
                         </div>
                       
