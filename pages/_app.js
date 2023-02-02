@@ -4,10 +4,9 @@ import Layout from '../components/Layout';
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 
 export const client = new ApolloClient({
-  uri: 'http://truwin.flywheelstaging.com/graphql',
+  uri: 'https://truwin.flywheel.com/graphql',
   cache: new InMemoryCache(),
 });
-
 
 function MyApp({ Component, pageProps }) {
   return  (<>
