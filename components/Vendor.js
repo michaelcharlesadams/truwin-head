@@ -126,7 +126,7 @@ const sliderPrevious = (e) => {
           {/** Fourth Image */}
           {fourthImg &&
             fourthImg.map( (photor2, index) => (
-              <img key={index} className="w-auto h-auto object-contain hidden sm:block pr-10" 
+              <img key={index} className="w-auto h-auto object-contain  sm:block pr-10" 
               style={{"transform" : "translate(0px)","transition": "transform 1s"}} src={photor2.vendorIcon.sourceUrl}  width={photor2.vendorIcon.mediaDetails.width}  height={photor2.vendorIcon.mediaDetails.height} alt="vendor icon" />
                 )
             )
@@ -135,7 +135,7 @@ const sliderPrevious = (e) => {
            {/** Fourth Image */}
            {moreImg &&
             moreImg.map( (photor3, index) => (
-              <img key={index} className="w-auto h-auto object-contain hidden sm:block pr-10" 
+              <img key={index} className="w-auto h-auto object-contain sm:block pr-10" 
               style={{"transform" : "translate(0px)", "transition": "transform 1s"}} src={photor3.vendorIcon.sourceUrl}  width={photor3.vendorIcon.mediaDetails.width}  height={photor3.vendorIcon.mediaDetails.height} alt="vendor icon" />
                 )
             )
