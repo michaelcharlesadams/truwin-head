@@ -389,9 +389,9 @@ const {slug, title, uri, frontPageOptions, vendorIcons} = posts;
                 <p className="py-2 font-graphikSemibold">Roofing</p>
                 <h3 className="font-[Cigars-Semibold] text-4xl py-3">Hassel Free Roof Replacement</h3>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
-                <Link href="#">
-                   <button className="bg-truwinblue-500 py-5 px-6 rounded-full my-4">Learn More</button>
-                </Link>
+                
+                <button className="bg-truwinblue-500 py-5 px-6 rounded-full my-4">Coming Soon</button>
+                
                
             </div>
         </div>

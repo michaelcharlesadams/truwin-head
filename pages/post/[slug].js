@@ -121,11 +121,13 @@ export default function Post({post, morePost}){
                     }           
                 </div>
                 <div id="blog-container" className="my-10 max-w-[625px] mx-auto text-truwinblue-900 ">
-                    <h3 className="text-2xl font-graphikSemibold py-2">{title}</h3>
-                    <div id="blog-content" dangerouslySetInnerHTML={
-                        {__html: "<style>#blog-content h2, #blog-content p{padding-top: 8px !important;padding-bottom: 8px !important;line-height: 25px !important; font-family: 'Graphik';} #blog-content a{text-decoration:underline;} #blog-content h2{font-size:22px;}</style>" + content }
-                        
-                    } 
+                    <h1 className="text-[28px] font-graphikSemibold py-2">{title}</h1>
+                    <div id="blog-content" 
+                    dangerouslySetInnerHTML={
+                        {__html: 
+                          "<style>#blog-content h2,#blog-content h1, #blog-content h3, #blog-content p{padding-top: 8px !important;padding-bottom: 8px !important; font-family: 'Graphik';} #blog-content a{text-decoration:underline;} #blog-content h3{font-size:22px !important; line-height: 28px !important;} #blog-content h2{font-size:24px !important; line-height: 27px !important;} #blog-content h1{font-size:26px; line-height: 32px !important;} #blog-content .wp-block-image {padding: 1.5rem 0rem;} .wp-block-embed {    margin-top: 20px; margin-bottom: 20px;} #blog-content ul {margin-top: 25px!important;} #blog-content ul li {margin-bottom: 15px;} #blog-content ul li:before {content: '- '}#blog-content ul li{content: '- '} .wp-block-embed__wrapper iframe {width: 100%;}</style>" 
+                          + content }}
+                       
                         style={ {paddingTop: '8px'} }>
                    
                     </div>
