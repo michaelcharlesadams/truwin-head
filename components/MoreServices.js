@@ -76,12 +76,9 @@ function MoreServices() {
                 >
                     <p className="absolute text-3xl t-0 left-0 text-truwinsoftblue-primary font-semibold pl-5 pt-5 ">Replace Roofing</p>
                     <p className="absolute text-2xl t-0 left-0 text-truwinsoftblue-primary  font-graphik px-5 pt-20 md:text-lg"></p>
-                    <Link href='/product/roofing'> 
-                    <a>
-                        <button className="px-4 py-2 bg-truwinblue-700 text-white rounded-full absolute bottom-5 left-5">&#8594;</button>
-                    </a>
-                    </Link>
                     
+                    <button className="px-4 py-2 bg-truwinblue-700 text-white rounded-full absolute bottom-5 left-5">Coming Soon</button>
+                   
                 </div>
 
                
