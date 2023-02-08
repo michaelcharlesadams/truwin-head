@@ -17,7 +17,7 @@ function Layout({ children }) {
         `}
       
         </style>
-        <link rel="icon" href="/truwin-favicon.png" />
+        <link rel="icon" href="/truwin-favicon-blue.png" />
       </Head>
       <Header />
       <Nav />
