@@ -15,7 +15,9 @@ function Layout({ children }) {
             background-color: white;
           }
         `}
+      
         </style>
+        <link rel="icon" href="/truwin-favicon.png" />
       </Head>
       <Header />
       <Nav />
