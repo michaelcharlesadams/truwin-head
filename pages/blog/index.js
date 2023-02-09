@@ -70,7 +70,7 @@ function PostList({posts}) {
 
                 <p className="absolute text-sm t-0 left-0 odd:text-truwinblue-900 font-graphik pl-5 pt-5 ">{post.categories.nodes[0].name.toUpperCase()}</p>
                 <p className="absolute text-2xl t-0 left-0 text-truwinblue-900 font-graphikSemibold px-5 pt-20 md:text-2xl">{post.title}</p>
-                <Link href={`/post${post.uri}`}><a>
+                <Link href={`/blog${post.uri}`}><a>
                     <button className="px-5 py-2 bg-truwinblue-700 text-white rounded-full absolute bottom-5 left-5">Read More</button></a>
                 </Link>
               </div>

@@ -94,7 +94,7 @@ function Footer() {
                 <div id="footer-col-2" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">About Truwin</h4>     
                     <p><Link href="/company"><a >Company</a></Link></p>
-                    <p><Link href="/post"><a >Blog</a></Link></p>
+                    <p><Link href="/blog"><a >Blog</a></Link></p>
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Service Areas</h4>

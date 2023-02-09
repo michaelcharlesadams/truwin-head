@@ -46,7 +46,7 @@ export default function Post({post, morePost}){
                             <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
                         </span>
                         <span>
-                            / <Link href="/post">
+                            / <Link href="/blog">
                                 <a className="underline px-2">Blog</a>
                             </Link> 
                         </span>

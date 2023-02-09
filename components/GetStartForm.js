@@ -1,7 +1,9 @@
 import React from 'react';
-
+import { useState } from 'react';
 function GetStartForm() {
 
+    const [selectedProjectType, setSelectedProjectType] = useState('Project Type');
+    
     async function handleOnSubmit(e){
    
     e.preventDefault();
