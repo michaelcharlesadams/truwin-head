@@ -38,7 +38,7 @@ const hideTip = (e) => {
   <div>
 
     {/** HERO - FRONT PAGE */}
-    <div id="hero-section" className="max-w-7xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
+    <section id="hero-section" className="max-w-7xl mx-auto " data-aos="fade-up" data-aos-duration="1000">
       <div id="hero-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
 
           <div className="bg-truwinblue-900 rounded text-center px-10 py-12 sm:py-20 md:w-5/12 md:h-auto">
@@ -52,7 +52,7 @@ const hideTip = (e) => {
               </div>
               
             
-              <h3 className="text-white text-4xl mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-[Cigars-Semibold]">Protect your family assets</h3>
+              <h1 className="text-white text-4xl mt-3 w-64 mx-auto md:w-auto md:max-w-[275px] font-[Cigars-Semibold]">Protect your family assets</h1>
 
               <p className="text-white text-sm mt-3 sx:w-80 sm:w-80 md:w-auto mx-auto lg:w-[305px] font-graphik font-medium">Improve and secure your home with new windows, doors, siding and roofing from the trusted source in exteriors.</p>
           </div>
@@ -81,7 +81,7 @@ const hideTip = (e) => {
               
           </div>
       </div>
-    </div>
+    </section>
     {/** END HERO */}
 
     {/** VENDOR LOGOS */}
@@ -89,21 +89,21 @@ const hideTip = (e) => {
     {/** VENDOR LOGOS */}
 
     {/** Categories */}
-    <div id="post-title-section" className="lg:max-w-7xl mx-auto" >
+    <section id="post-title-section" className="lg:max-w-7xl mx-auto" >
       <div id="post-title-wrapper" className="mx-5 mt-20">
           <div className="mx-2 mb-11">
-              <h2 className="text-[28px] text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Add beauty and security to your home</h2>
+              <h1 className="text-[28px] text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Add beauty and security to your home</h1>
               <p className="font-graphikLight text-truwinblue-900 text-center">We believe window, door, and siding companies can do better for customers. </p>
           </div>
           <div id="post-title-wrapper-content" className="sm:flex flex-wrap" data-aos="fade-up" data-aos-duration="1000">
             
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5">
               <Link href="/product/windows">
-                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h1 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Windows</a>
                   
-                  </h3>
+                  </h1>
                   </Link>
                   <Link href="/product/windows">
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-windows.png" alt="" />
@@ -125,11 +125,11 @@ const hideTip = (e) => {
               
               <div className="relative my-4 sm:w-1/2 md:w-1/4 md:pr-5 md:h-auto">
                 <Link href="/product/doors">
-                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h1 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Doors</a>
       
-                  </h3>
+                  </h1>
                   </Link>
                   <Link href="/product/doors">
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-doors.png" alt="" />
@@ -151,10 +151,10 @@ const hideTip = (e) => {
               </div>
               <div className="relative my-4 sm:w-1/2 sm:pr-5 md:w-1/4 md:pr-5 md:h-auto " >
               <Link href="/product/siding">
-                  <h3 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
+                  <h1 className="absolute cursor-pointer text-xl t-0 left-0 text-white font-graphikSemibold pl-5 pt-5 z-10">
                   
                     <a>Siding</a>
-                  </h3></Link>
+                  </h1></Link>
                   <Link href="/product/siding">
                   <img className="w-full cursor-pointer max-h-44 object-cover rounded md:max-h-[370px] z-0" src="/images/tr-siding.png" alt="" />
                   </Link>
@@ -199,7 +199,7 @@ const hideTip = (e) => {
             
           </div>
       </div>
-    </div>
+    </section>
     {/** Categories */}
 
 
@@ -209,11 +209,11 @@ const hideTip = (e) => {
     {/** END Get Started Form */}
 
 {/** PRODUCT TYPES */}
-<div id="window-type-section" className="max-w-7xl mx-auto">
+<section id="window-type-section" className="max-w-7xl mx-auto">
         <div id="window-type-wrapper" className="mx-5 mt-24">
             
             <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Find quality windows in any material</h3>
-            <p className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u className="cursor-pointer">View all Windows</u></Link></p><br/>
+            <h1 className="text-center text-truwinblue-900 font-graphik">Truwin offers great windows and great prices.  <Link href="/product/windows"><u className="cursor-pointer">View all Windows</u></Link></h1><br/>
 
             <div id="window-type-post-wrapper" className="mt-8 mx-auto sm:mt-8 ">
                
@@ -229,7 +229,7 @@ const hideTip = (e) => {
                   </svg>
                 </Link>
 
-                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
+                    <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</h1>
                    
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/vinyl-n.png" alt="windows and partner " />
                 </div>
@@ -242,7 +242,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</h1>
                     
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/aluminum-n.jpg"  alt="windows and partner " />
                 </div>
@@ -255,7 +255,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</h1>
                   
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/fiberglass-n.jpg" alt="windows and partner " />
                 </div>
@@ -268,7 +268,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clad</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clad</h1>
                   
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-clad-n.png" alt="windows and partner " />
                 </div>
@@ -281,7 +281,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Metal</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Metal</h1>
                    
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/metal.png"  alt="windows and partner " />
                 </div>
@@ -294,7 +294,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">All Windows</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">All Windows</h1>
                     
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/truwin-n.png" alt="windows and partner " />
                 </div>
@@ -306,15 +306,15 @@ const hideTip = (e) => {
             </div>
 
         </div>
-</div>
+</section>
 {/** END PRODUCT TYPES */}
 
   {/** PRODUCT MATERIALS **/}
-  <div id="window-material-section" className="max-w-7xl mx-auto my-20">
+  <section id="window-material-section" className="max-w-7xl mx-auto my-20">
         <div id="window-material-wrapper" className="mx-5 mt-16">
             
             <h3 className="w-[290px] mx-auto pb-4 sx:w-auto  text-3xl text-center sm:text-5xl text-truwinblue-900 font-[Cigars-Semibold]">Keep your home secure with new doors.</h3>
-            <p className="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></p>
+            <h1 className="text-center text-truwinblue-900 font-graphik ">Increase beauty AND security with new doors in a variety of materials. <Link href="product/doors"><u className='cursor-pointer font-bold'>View all Doors</u></Link></h1>
 
             <div id="window-post-wrapper" className="grid grid-cols-1 sx:grid-cols-2 md:grid-cols-4 gap-4 mt-8 mx-auto">
 
@@ -340,7 +340,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Iron</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Iron</h1>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900">Get thin frames and great weather insulation with this popular material.</p>
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/solid-panel.jpg" alt="windows and partner " />
                 </div>
@@ -354,7 +354,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Steel</p>
+                    <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Steel</h1>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/truwin-doors-.jpg" alt="windows and partner " />
                 </div>
@@ -367,7 +367,7 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                    <p className="text-2xl font-graphikSemibold text-truwinblue-900">Wood</p>
+                    <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Wood</h1>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-door.jpg" alt="windows and partner " />
                 </div>
@@ -375,11 +375,11 @@ const hideTip = (e) => {
             </div>
 
         </div>
-    </div>
+    </section>
   {/** END PRODUCT MATERIALS */}
 
     {/** FEATURED POST    */}
-    <div id="card-onethird-session-reverse" className="lg:max-w-7xl mx-auto">
+    <section id="card-onethird-session-reverse" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
             <div className="relative md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tr md:rounded-br md:rounded-tl-none md:rounded-bl-none  md:h-full object-cover" src="/images/siding-post.png" alt="" />
@@ -387,23 +387,23 @@ const hideTip = (e) => {
             </div>
             <div className="px-10 py-6 bg-truwinsoftblue-primary text-truwinblue-900 rounded-b md:p-10 md:w-2/4 md:rounded-br-none md:rounded-tr-none md:rounded-bl md:rounded-tl lg:px-10 lg:w-2/5">
                 <p className="py-2 font-graphikSemibold">Siding</p>
-                <h3 className="font-[Cigars-Semibold] text-4xl py-3">Strong, beautiful siding from LP.</h3>
+                <h1 className="font-[Cigars-Semibold] text-4xl py-3">Strong, beautiful siding from LP.</h1>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 <Link href="/product/siding">
                    <button className="bg-truwinblue-900 text-white py-5 px-6 rounded-full my-4">Learn More</button>
                 </Link>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="card-onethird-session" className="lg:max-w-7xl mx-auto">
+    <section id="card-onethird-session" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
             <div className="md:w-2/4 lg:w-3/5">
                 <img loading="lazy" className="w-full rounded-t md:rounded-tl md:rounded-bl md:rounded-tr-none md:h-full object-cover" src="/images/Hassel-free.png" alt="" />
             </div>
             <div className="px-10 py-6 bg-truwinblue-900 text-white rounded-b md:p-10 md:w-2/4 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-10 lg:w-2/5">
                 <p className="py-2 font-graphikSemibold">Roofing</p>
-                <h3 className="font-[Cigars-Semibold] text-4xl py-3">Hassel Free Roof Replacement</h3>
+                <h1 className="font-[Cigars-Semibold] text-4xl py-3">Hassel Free Roof Replacement</h1>
                 <p className="py-2 font-graphik">Siding can transform your home’s curb appeal and make it look brand new again. It’s also an opportunity to properly seal the envelope of your home and protect it from the elements.</p>
                 
                 <button className="bg-truwinblue-500 py-5 px-6 rounded-full my-4">Coming Soon</button>
@@ -411,15 +411,15 @@ const hideTip = (e) => {
                
             </div>
         </div>
-    </div>
+    </section>
     {/** END FEATURED  */}
 
     {/**  WHY TRUWIN   */}
-    <div id="onethird-info-section" className="lg:max-w-7xl mx-auto hidden md:block my-28 ">
+    <section id="onethird-info-section" className="lg:max-w-7xl mx-auto hidden md:block my-28 ">
       <div id="onethird-info-wrapper" className="mx-5 mt-10">
           <div className="text-center" >
               <p className="text-lg text-truwinblue-300 pb-4">The Exteriors Experts™</p>
-              <h3 className="font-[Cigars-Semibold] text-5xl py-2 text-truwinblue-900">Why trust Truwin Exteriors?</h3>
+              <h1 className="font-[Cigars-Semibold] text-5xl py-2 text-truwinblue-900">Why trust Truwin Exteriors?</h1>
           </div>
           <div className="1/3-column-wrap md:flex mt-14">
               <div className="mr-8">
@@ -453,7 +453,7 @@ const hideTip = (e) => {
               </div>
           </div>
       </div>
-    </div>
+    </section>
     {/**  WHY TRUWIN   */}
 
 

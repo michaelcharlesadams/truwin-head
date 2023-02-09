@@ -8,7 +8,7 @@ function MorePost({posts}) {
     
 <div id="more-posts-section" className="lg:max-w-7xl mx-auto">
         <div id="more-posts-wrapper" className="mx-5 mt-20">
-            <p className="text-2xl font-graphikSemibold text-truwinblue-900">Keep Browsing</p>
+            <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Keep Browsing</h1>
             <div id="more-posts-wrapper-content" className="grid sx:grid-cols-2 md:grid-cols-4 gap-4 mt-4 mx-auto">
 
                 {posts.slice(-4).map((post) => 
