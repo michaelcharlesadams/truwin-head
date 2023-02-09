@@ -25,7 +25,7 @@ function Nav() {
 
   return (
     <>
-        <div className="md:flex lg:max-w-7xl lg:mx-auto mt-2 mb-3">
+        <nav className="md:flex lg:max-w-7xl lg:mx-auto mt-2 mb-3">
          
          <div className="p-3 border-solid border-[1px] border-truwinblue-700 rounded-md mx-5 mt-2 flex flex-wrap justify-between md:flex-nowrap md:w-2/3 md:grow">
              {/** LOGO */}
@@ -106,7 +106,7 @@ function Nav() {
         {/**  */}
  
  
-        </div>
+        </nav>
     </>
     );
 }
