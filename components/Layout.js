@@ -17,6 +17,7 @@ function Layout({ children }) {
         `}
       
         </style>
+        <title>Truwin Windows, Doors, & Siding</title>
         <link rel="icon" href="/truwin-favicon-blue.png" />
       </Head>
       <Header />
