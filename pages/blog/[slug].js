@@ -5,6 +5,7 @@ import Date from '../../components/date';
 import Link from 'next/link';
 import MorePost from '../../components/MorePost';
 import GetStartForm from '../../components/GetStartForm';
+import Head from 'next/head';
 
 export default function Post({post, morePost}){
     //deconstruct the posts contents
@@ -19,7 +20,11 @@ export default function Post({post, morePost}){
  
     return (
     <>
-        
+        <Head>
+        <title>Truwin Blog | {title}</title>
+        <link rel="icon" href="/truwin-favicon-blue.png" />
+        <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
+        </Head>
         {/** BLOG FEATURED IMAGE **/}
         { postHeaderImage &&  
         <div id="blog-feature-hero-section" className="mx-auto md:max-w-7xl">

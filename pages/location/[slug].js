@@ -9,7 +9,7 @@ import Link from 'next/link';
 import MoreServices from '../../components/MoreServices';
 import MorePost from '../../components/MorePost';
 import VendorHome from '../../components/VendorHome';
-
+import Head from 'next/head';
 
 export default function Post({post, morePost}){
     //deconstruct the posts contents
@@ -21,7 +21,10 @@ export default function Post({post, morePost}){
  
     return (
     <>
-        
+        <Head>
+        <title>{title} TX | Truwin Windows, Doors, & Siding</title>
+        <meta name="description" content={`We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the ${title} area.`}></meta>
+        </Head>
         {/** LOCATION HEADER **/}
         <div id="hero-author-section" className="max-w-7xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">

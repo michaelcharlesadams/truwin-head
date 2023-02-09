@@ -8,6 +8,7 @@ import ProductSidingVideo from "../../components/ProductSidingVideo";
 import Vendor from '../../components/Vendor';
 import MoreServices from '../../components/MoreServices';
 import Banner from '../../components/Banner';
+import Head from 'next/head';
 
 export default function Siding({post, morePost}) {
 
@@ -22,7 +23,10 @@ export default function Siding({post, morePost}) {
 
   return (
     <>
-
+        <Head>
+        <title>{title} - Truwin | Replacement Windows, Doors & Siding</title>
+        <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
+        </Head>
       {/* * HERO **/}
       <div id="hero-author-section" className="max-w-7xl mx-auto ">
         <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex lg:max-h-[420px] md:min-h-[375px] md:max-h-[580px]">
