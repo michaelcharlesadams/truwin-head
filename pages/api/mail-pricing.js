@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
     const message = `
     
-    Name: ${body.fname}\r\n
+    Name: ${body.fullname}\r\n
     Email: ${body.email}\r\n
     Project Type: ${body.projecttype}\r\n
     Phone: ${body.phone}\r\n
