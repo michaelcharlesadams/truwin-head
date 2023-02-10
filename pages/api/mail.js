@@ -3,7 +3,7 @@ const mail = require('@sendgrid/mail');
 
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
     const body = JSON.parse(req.body);
 
     const message = `
@@ -13,7 +13,6 @@ export default function handler(req, res) {
     Project Type: ${body.projecttype}\r\n
     Phone: ${body.phone}\r\n
     Zip Code: ${body.zip}
-
     `;
 
     const data = {
@@ -24,7 +23,7 @@ export default function handler(req, res) {
         html: message.replace(/\r\n/g, '<br/>')
     }
 
-    mail.send(data);
+    await mail.send(data);
 
     res.status(200).json({ status: 'Okay' });
   }
