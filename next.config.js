@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         source: '/siding',
-        destination: '/product/doors',
+        destination: '/product/siding',
         permanent: true,
       },
       {

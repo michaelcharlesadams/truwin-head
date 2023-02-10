@@ -17,6 +17,13 @@ function Layout({ children }) {
         `}
       
         </style>
+        <script
+            src="https://www.googletagmanager.com/gtag/js?id=UA-125406422-1"
+        />
+        <div id="google-analytics" dangerouslySetInnerHTML={{ 
+        __html: "<script>window.dataLayer = window.data Layer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-125406422-1');</script>" }} >
+          </div>
+
         <title>Truwin Windows, Doors, & Siding</title>
         <link rel="icon" href="/truwin-favicon-blue.png" />
         <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
