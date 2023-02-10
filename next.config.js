@@ -91,7 +91,7 @@ module.exports = {
         permanent: true,
       },
       { 
-        //I added this page, not sure if you serve this area
+        //Send this to a blog post
         source: '/healthy-home',
         destination: '/blog/15-off-windows-for-a-healthy-home-economy',
         permanent: true,
