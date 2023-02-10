@@ -72,6 +72,35 @@ module.exports = {
         destination: '/location/houston',
         permanent: true,
       },
+      { 
+        //pointed this one to houston
+        source: '/design-windows',
+        destination: '/location/houston',
+        permanent: true,
+      },
+      { 
+        //sent to home because the contact for is there
+        source: '/contact',
+        destination: '/',
+        permanent: true,
+      },
+      { 
+        //I added this page, not sure if you serve this area
+        source: '/san-antonio',
+        destination: '/location/san-antonio',
+        permanent: true,
+      },
+      { 
+        //I added this page, not sure if you serve this area
+        source: '/healthy-home',
+        destination: '/blog/15-off-windows-for-a-healthy-home-economy',
+        permanent: true,
+      },
+      { 
+        source: '/author/truwin',
+        destination: '/company',
+        permanent: true,
+      },
     ]
   }
 }
