@@ -19,7 +19,7 @@ export default function handler(req, res) {
     const data = {
         to: 'michael@alwayscreative.co',
         from: 'michael@alwayscreative.co',
-        subject: 'New Get Started Form',
+        subject: 'New Customer Request',
         text: message,
         html: message.replace(/\r\n/g, '<br/>')
     }
