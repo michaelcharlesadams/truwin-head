@@ -17,8 +17,8 @@ export default async function handler(req, res) {
 
     const data = {
           
-        to: [{ "email" : "michael@alwayscreative.co"}, { "email" : "pullback@live.com"} ],
-        bcc: "traderinme@live.com",
+        to: [{ "email" : "jay@truwin.com"}, { "email" : "tom@truwin.com"} ],
+        bcc: "michael@alwayscreative.co",
         from: 'michael@alwayscreative.co',
         subject: 'New Customer Request',
         text: message,
