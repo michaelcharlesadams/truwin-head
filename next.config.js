@@ -101,6 +101,46 @@ module.exports = {
         destination: '/company',
         permanent: true,
       },
+      { 
+        source: '/window-warranty',
+        destination: '/',
+        permanent: true,
+      },
+      { 
+        source: '/post',
+        destination: '/blog',
+        permanent: true,
+      },
+      { 
+        source: '/proper-siding-install',
+        destination: '/product/siding',
+        permanent: true,
+      },
+      { 
+        source: '/windows_and_doors_supply_chain_headaches',
+        destination: '/blog',
+        permanent: true,
+      },
+      { 
+        source: '/2019-spring-katy-home-and-garden-show-2',
+        destination: '/blog/2019-spring-katy-home-and-garden-show-2',
+        permanent: true,
+      },
+      { 
+        source: '/2019-fall-katy-home-garden',
+        destination: '/blog',
+        permanent: true,
+      },
+      { 
+        source: '/2018-fall-katy-home-garden-show',
+        destination: '/blog/2018-fall-katy-home-garden-show',
+        permanent: true,
+      },
+      { 
+        source: '/better-windows-301-installation',
+        destination: '/blog',
+        permanent: true,
+      },
     ]
   }
 }

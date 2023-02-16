@@ -228,10 +228,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-
+                <Link href="/product_material/vinyl-doors">
                     <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</h1>
-                   
+                  </Link>
+                  <Link href="/product_material/vinyl-doors">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/vinyl-n.png" alt="windows and partner " />
+                    </Link>
                 </div>
 
                 {/** Aluminum */}
@@ -242,9 +244,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/aluminum">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</h1>
-                    
+                    </Link>
+                    <Link href="/product_material/aluminum">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/aluminum-n.jpg"  alt="windows and partner " />
+                    </Link>
                 </div>
                 
                 {/** Fiberglass */}
@@ -255,9 +260,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/fiberglass-windows">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</h1>
-                  
+                    </Link>
+                    <Link href="/product_material/fiberglass-windows">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/fiberglass-n.jpg" alt="windows and partner " />
+                    </Link>
                 </div>
 
                 {/** Woodclad */}
@@ -268,9 +276,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/wood-clad">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clad</h1>
-                  
+                    </Link>
+                    <Link href="/product_material/wood-clad">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-clad-n.png" alt="windows and partner " />
+                    </Link>
                 </div>
 
                 {/** Metal */}
@@ -281,9 +292,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/metal">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Metal</h1>
-                   
+                    </Link>
+                    <Link href="/product_material/metal">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/metal.png"  alt="windows and partner " />
+                    </Link>
                 </div>
 
                 {/** All windows */}
@@ -294,9 +308,12 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product/windows">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">All Windows</h1>
-                    
+                    </Link>
+                    <Link href="/product/windows">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/truwin-n.png" alt="windows and partner " />
+                    </Link>
                 </div>
               
                    
@@ -340,9 +357,13 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/solid-panel">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Iron</h1>
+                    </Link>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900">Get thin frames and great weather insulation with this popular material.</p>
+                    <Link href="/product_material/solid-panel">
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/solid-panel.jpg" alt="windows and partner " />
+                    </Link>
                 </div>
 
 
@@ -354,9 +375,13 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/solid-panel">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Steel</h1>
+                    </Link>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
+                    <Link href="/product_material/solid-panel">
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/truwin-doors-.jpg" alt="windows and partner " />
+                    </Link>
                 </div>
 
                 {/** Wood */}
@@ -367,9 +392,13 @@ const hideTip = (e) => {
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
+                <Link href="/product_material/solid-panel">
                     <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Wood</h1>
+                    </Link>
                     <p className="text-sm font-[Cigars] pt-4 text-truwinblue-900 ">Get thin frames and great weather insulation with this popular material.</p>
+                    <Link href="/product_material/solid-panel">
                     <img className="absolute bottom-0 inset-x-0 px-8 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-door.jpg" alt="windows and partner " />
+                    </Link>
                 </div>
 
             </div>
