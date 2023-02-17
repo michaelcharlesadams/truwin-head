@@ -135,8 +135,9 @@ export default function Post({post, morePost}){
                         </Link>
 
                             <p className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</p>
-                        
+                            <Link href="/product_material/vinyl-doors">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/vinyl-n.png" alt="windows and partner " />
+                            </Link>
                         </div>
 
                         {/** Aluminum */}
@@ -148,8 +149,9 @@ export default function Post({post, morePost}){
                         </svg>
                         </Link>
                             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</p>
-                            
+                            <Link href="/product_material/aluminum">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/aluminum-n.jpg"  alt="windows and partner " />
+                            </Link>
                         </div>
                         
                         {/** Fiberglass */}
@@ -162,7 +164,9 @@ export default function Post({post, morePost}){
                         </Link>
                             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Fiberglass</p>
                         
+                            <Link href="/product_material/fiberglass-windows">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/fiberglass-n.jpg" alt="windows and partner " />
+                            </Link>
                         </div>
 
                         {/** Woodclad */}
@@ -175,7 +179,9 @@ export default function Post({post, morePost}){
                         </Link>
                             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Wood-clad</p>
                         
+                            <Link href="/product_material/wood-clad">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/wood-clad-n.png" alt="windows and partner " />
+                            </Link>
                         </div>
 
                         {/** Metal */}
@@ -187,8 +193,9 @@ export default function Post({post, morePost}){
                         </svg>
                         </Link>
                             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">Metal</p>
-                        
+                            <Link href="/product_material/metal">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/metal.png"  alt="windows and partner " />
+                            </Link>
                         </div>
 
                         {/** All windows */}
@@ -200,8 +207,9 @@ export default function Post({post, morePost}){
                         </svg>
                         </Link>
                             <p className="text-2xl text-truwinblue-900 font-graphikSemibold">All Windows</p>
-                            
+                            <Link href="/product/windows">
                             <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/truwin-n.png" alt="windows and partner " />
+                            </Link>
                         </div>
                     
                         
