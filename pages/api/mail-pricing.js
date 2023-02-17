@@ -21,7 +21,7 @@ export default async function handler(req, res) {
     const data = {
         to: [{ "email" : "jay@truwin.com"}, { "email" : "tom@truwin.com"} ],
         bcc: "michael@alwayscreative.co",
-        from: 'michael@alwayscreative.co',
+        from: 'jay@truwin.com',
         subject: 'New Customer Request',
         text: message,
         html: message.replace(/\r\n/g, '<br/>')
