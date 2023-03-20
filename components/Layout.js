@@ -26,7 +26,7 @@ function Layout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'UA-125406422-1');
+          gtag('config', 'G-W31V2ZX08W');
         `}} />
       </Head>
       <Header />
