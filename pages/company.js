@@ -5,6 +5,7 @@ import MorePost from "../components/MorePost";
 import MoreServices from '../components/MoreServices';
 import HeroVideo from '../components/HeroVideo';
 import Image from 'next/image';
+import Head from 'next/head';
 
 function Company({morePost, companyPost}) {
 

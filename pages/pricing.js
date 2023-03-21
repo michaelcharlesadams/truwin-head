@@ -5,6 +5,7 @@ import GetPricingForm from '../components/GetPricingForm';
 import Vendor from '../components/Vendor';
 import Image from 'next/image';
 import VendorHome from '../components/VendorHome';
+import Head from 'next/head';
 
 function Pricing({morePost}) {
   return (
