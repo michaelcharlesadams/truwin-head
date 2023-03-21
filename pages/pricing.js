@@ -9,7 +9,9 @@ import VendorHome from '../components/VendorHome';
 function Pricing({morePost}) {
   return (
   <>
-        
+    <Head>
+        <title> - Truwin | Pricing</title>
+    </Head>  
     <div id="hero-author-section" className="max-w-7xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
                 
