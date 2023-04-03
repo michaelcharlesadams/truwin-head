@@ -118,7 +118,7 @@ export default function Product({post}) {
                 <div className="py-2 font-graphik prod_p" dangerouslySetInnerHTML={{__html: postGeneral.productMaterialGeneralDescription}}></div>
                
                 <p className="pt-6 font-graphik">Questions about {product_Materials.productMaterialHeroSection.heroSectionTitle}?</p>
-                <p className="font-graphikSemibold ">Call (832) 777-3681</p>
+                <p className="font-graphikSemibold ">Call <a href="tel:832-777-3681">(832) 777-3681</a></p>
 
             <style jsx>{`
             .prod_p p{

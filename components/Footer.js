@@ -33,7 +33,7 @@ function Footer() {
                     </Link>
                     
 
-                    <Link href="https://web.lakehouston.org/list/member/truwin-windows-doors-15750">
+                    <Link href="https://www.houzz.com/pro/truwin/truwin-windows-doors">
                         <a target="_blank">
                             <img className="m-4 mx-auto" src="/images/houzz.jpg" width='165px' height='44px'/>
                         </a>
@@ -89,12 +89,12 @@ function Footer() {
                     <p>
                     <Link href="/product/siding"><a >Siding</a></Link>
                     </p>
-                    
+                    <p><Link href="/product/roofing"><a >Roofing</a></Link></p>
                 </div>
                 <div id="footer-col-2" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">About Truwin</h4>     
                     <p><Link href="/company"><a >Company</a></Link></p>
-                    <p><Link href="/blog"><a >Blog</a></Link></p>
+                    <p><Link href="/post"><a >Blog</a></Link></p>
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Service Areas</h4>
@@ -113,8 +113,8 @@ function Footer() {
                 <div id="footer-col-4" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Contact Us</h4>
                     <div>
-                        <p>(832) 777-3681</p>
-                        <p>info@truwin.com</p>
+                        <p><a href="tel:832-777-3681">(832) 777-3681</a></p>
+                        <p><a href="mailto:info@truwin.com">info@truwin.com</a></p>
                     </div>
                     <div>
                         <p><a href=""></a></p>
@@ -131,27 +131,38 @@ function Footer() {
                 <div id="footer-bottom" className="mx-auto text-xs w-11/12 pb-14 lg:w-full lg:pl-[40%] flex">
                     <p>© Truwin, Windows, Doors, and Siding • All Rights Reserved • Site by AC</p>
                     <div id="social-footer" className="w-2/5 mx-auto justify-evenly hidden lg:flex">
-                        
-                    <span className="w-6"><Image 
+                    
+
+                    <span className="w-6">
+                        <a href="https://www.facebook.com/truwinwindowsanddoors" target="_blank">
+                        <Image 
                         width={46}
                         height={46}
                         src="/images/Facebook - truwin.png" 
                         alt="Facebook logp" />
+                        </a>
                         </span>
 
-                        <span className="w-6"><Image
+                        <span className="w-6">
+                        <a href="https://twitter.com/TruwinWindows" target="_blank">
+                        <Image
                         width={46}
                         height={46} 
                         src="/images/twitter - truwin.png" 
                         alt="Twitter Log" />
+                        </a>
                         </span>
 
-                        <span className="w-6"><Image 
+                        <span className="w-6">
+                        <a href="https://www.instagram.com/truwinwindows" target="_blank">
+                        <Image 
                         className="w-6" 
                         width={46}
                         height={46}
                         src="/images/instagram - truwin.png" 
-                        alt="Instagram Logo" /></span>
+                        alt="Instagram Logo" />
+                        </a>
+                        </span>
                         </div>
                     </div>
             </div>

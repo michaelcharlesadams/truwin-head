@@ -98,7 +98,7 @@ export default function Siding({post, morePost}) {
                 }
                  <hr className="mt-4 mb-2" />
                 <p className="pt-4 font-graphik">Questions about Siding?</p>
-                <p className="font-graphikSemibold ">Call (832) 777-3681</p>
+                <p className="font-graphikSemibold ">Call <a href="tel:832-777-3681">(832) 777-3681</a></p>
 
             </div>
         </div>
