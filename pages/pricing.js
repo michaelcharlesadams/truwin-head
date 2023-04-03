@@ -11,7 +11,7 @@ function Pricing({morePost}) {
   return (
   <>
     <Head>
-        <title> - Truwin | Pricing</title>
+        <title>Truwin | Pricing</title>
     </Head>  
     <div id="hero-author-section" className="max-w-7xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
@@ -46,8 +46,6 @@ function Pricing({morePost}) {
     <VendorHome />
     {/** */}
 
-    
-   
     <div id="pricing-top-content-session" className="lg:max-w-7xl mx-auto">
         <div id="pricing-top-content-wrapper" className="mx-5 mt-10 md:flex md:min-h-[390px]">
 

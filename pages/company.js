@@ -19,7 +19,7 @@ function Company({morePost, companyPost}) {
   return (
   <>
      <Head>
-        <title> - Truwin | About Us | Company</title>
+        <title>Truwin | About Us | Company</title>
     </Head>     
     <div id="hero-company-section" className="max-w-7xl mx-auto ">
             <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[420px]">
