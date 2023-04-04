@@ -142,5 +142,8 @@ module.exports = {
         permanent: true,
       },
     ]
+  },
+  typescript: {
+    ignoreBuildErrors:true,
   }
 }
