@@ -11,7 +11,7 @@ export default function Post({post, morePost}){
     //deconstruct the posts contents
     
     
-    const {title, date, slug, content } = post;
+    const {title, date, slug, content, excerpt} = post;
     const postHeaderImage = post.featuredImage.node?.sourceUrl;
     const postAuthor = post.rel_people_con_post.people?.[0].title; 
     const postAuthorAvatar = post.rel_people_con_post.people?.[0].people_avatar.truwinAvatar.sourceUrl
@@ -21,8 +21,8 @@ export default function Post({post, morePost}){
     return (
     <>
         <Head>
-        <title>Truwin Blog | {title}</title>
-        <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
+        <title>{title} | Truwin Windows & Doors</title>
+        <meta name="description" content={excerpt}></meta>
         </Head>
         {/** BLOG FEATURED IMAGE **/}
         { postHeaderImage &&  
@@ -244,6 +244,7 @@ export async function getStaticProps({params}) {
                         }
                       }
                     }
+                    excerpt
                 }
             }
         `,
