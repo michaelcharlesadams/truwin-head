@@ -23,7 +23,7 @@ export default function Product({post}) {
   return (
     <>
       <Head>
-        <title>{title} | Truwin Replacement Windows & Doors</title>
+      <title>{product_Materials.productMaterialHeroSection.heroSectionTitle} | Truwin Replacement Windows & Doors</title>
         <meta name="description" 
         content={product_Materials.productMaterialHeroSection.heroSectionBlurp}
         ></meta>

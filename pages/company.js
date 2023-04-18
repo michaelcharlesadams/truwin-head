@@ -19,7 +19,7 @@ function Company({morePost, companyPost}) {
   return (
   <>
      <Head>
-        <title>Truwin | About Us | Company</title>
+        <title>About Us | Truwin | Company</title>
         <meta name="description" content="Why choose Truwin? We're Houston's most transparent Window, Doors, and Siding Company. We pride ourselves in our transparency across the board. 832-777-3681"></meta>
     </Head>      
     <div id="hero-company-section" className="max-w-7xl mx-auto ">
