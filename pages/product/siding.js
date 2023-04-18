@@ -19,7 +19,7 @@ export default function Siding({post, morePost}) {
   const contentCard = productPage.productProductServicesCard;
   const postBenefits = productBenefits.productBenefits;
 
-  console.log(vendorIcons)
+ 
 
   return (
     <>

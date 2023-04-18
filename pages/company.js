@@ -9,7 +9,7 @@ import Head from 'next/head';
 
 function Company({morePost, companyPost}) {
 
-    console.log(companyPost);
+   
 
     const heroSection = companyPost.companyHeroSection;
     const threeColumn = companyPost.companyThreeColumnSection;

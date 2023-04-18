@@ -4,9 +4,7 @@ import ReactPlayer from 'react-player/youtube'
 
 function HeroVideo({url, cover}) {
 
-    console.log(url);
-    console.log(cover);
-
+  
 
 //toggle video modal
 const [display, setDisplay] = useState('none');
