@@ -5,13 +5,17 @@ import { useState } from "react";
 import GetStartForm from "../../components/GetStartForm";
 import MorePost from "../../components/MorePost";
 import Image from "next/image";
+import Head from "next/head";
 
 function LocationList({locations, morePost}) {
 
   
   return (
     <>
-  
+    <Head>
+        <title>Texas Replacement Windows | Windows Texas | Truwin </title>
+        <meta name="description" content={`For all your Houston, TX replacement window needs, call (832) 777-3681 today! Call Truwin for a free consultation.`}></meta>
+    </Head>
   {/** */}
   <div id="hero-company-section" className="max-w-7xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">

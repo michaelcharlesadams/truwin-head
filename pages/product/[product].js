@@ -23,7 +23,20 @@ export default function Product({post, morePost}) {
   const contentCard2 = productPage_2.productProductServicesCard2;
 
   //console.log(vendorIcons)
-
+  let descriptionToggle = "" 
+  switch(slug) {
+     case "windows":
+       descriptionToggle = "Specializing in premier Houston, TX windows replacement services. Truwin is your transparent windows company servicing all of Houston & surrounding areas.";
+       break;
+     case "doors":
+       descriptionToggle = "Truwin is your experienced Houston, TX replacement doors contractors. We offer the best brands made in the US at transparent prices. Call Us! 832-777-3681";
+       break;
+     case "siding":
+       descriptionToggle = "Whole home siding replacement at transparent prices.We're proud to provide Houston TX siding services. Replace your siding with us! 832-777-3681";
+       break;
+     default:
+       descriptionToggle = "We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area.";
+   }
 
   return (
     <>

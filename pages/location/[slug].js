@@ -21,9 +21,9 @@ export default function Post({post, morePost}){
  
     return (
     <>
-        <Head>
-        <title>{title} TX | Truwin Windows, Doors, & Siding</title>
-        <meta name="description" content={`We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the ${title} area.`}></meta>
+       <Head>
+        <title>{title} TX Replacement Windows | Windows {title} TX | Truwin </title>
+        <meta name="description" content={`For all your ${title}, TX replacement window needs, call (832) 777-3681 today! Call Truwin for a free consultation.`}></meta>
         </Head>
         {/** LOCATION HEADER **/}
         <div id="hero-author-section" className="max-w-7xl mx-auto ">

@@ -22,7 +22,7 @@ export default function Post({post, morePost}){
     <>
         <Head>
         <title>{title} | Truwin Windows & Doors</title>
-        <meta name="description" content={excerpt}></meta>
+        <meta name="description" content={excerpt.replace("<p>", "").replace("</p>", "")}></meta>
         </Head>
         {/** BLOG FEATURED IMAGE **/}
         { postHeaderImage &&  

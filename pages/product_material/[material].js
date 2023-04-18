@@ -7,6 +7,7 @@ import ScrollingGallery from '../../components/ScrollingGallery';
 import MoreServices from '../../components/MoreServices';
 import Quote from '../../components/Quote';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function Product({post}) {
 
@@ -21,6 +22,12 @@ export default function Product({post}) {
 
   return (
     <>
+      <Head>
+        <title>{title} | Truwin Replacement Windows & Doors</title>
+        <meta name="description" 
+        content={product_Materials.productMaterialHeroSection.heroSectionBlurp}
+        ></meta>
+      </Head>
 
  {/** FEATURED IMAGE **/}
  { postHeaderImage &&  
