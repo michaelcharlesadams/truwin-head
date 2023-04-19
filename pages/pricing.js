@@ -20,7 +20,7 @@ function Pricing({morePost}) {
                 <div className="relative bg-truwinsoftblue-primary rounded text-left px-10 py-8 md:w-1/2 md:h-auto">
                     <p className="text-sm text-truwinblue-900 mb-3">
                     <span className='pr-2'>
-                        <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} />
+                        <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14}  alt="Truwin brand mark" />
                     </span>
                         / Get Pricing</p>
                     <h1 className="text-truwinblue-900 text-3xl sm:text-5xl font-[Cigars-SemiBold] mt-6">Schedule your hassle-free estimate.</h1>

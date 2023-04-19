@@ -47,7 +47,7 @@ export default function Post({post, morePost}){
                     {/*** BREAD CRUMB */}
                     <div className="px-8 pt-8 font-graphik md:px-10 md:pt-12">
                         <span className='pr-2'>
-                            <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+                            <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} alt="Truwin brand mark"/>
                         </span>
                         <span>
                             / <Link href="/blog">

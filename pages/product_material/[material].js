@@ -37,7 +37,7 @@ export default function Product({post}) {
           <div className="bg-truwinblue-900 rounded text-left px-10 py-8 md:w-5/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
-                <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+                <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14}  alt="Truwin brand mark" />
               </span>
                 / {title}</p>
               <h1 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-SemiBold] mt-6">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h1>

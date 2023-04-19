@@ -32,7 +32,7 @@ export default function Post({post, morePost}){
                 <div className="relative text-truwinblue-900 bg-truwinsoftblue-primary rounded text-left px-10 py-8 md:w-1/2 md:h-auto">
                     <p className="text-sm  mb-3">
                     <span className='pr-2'>
-                        <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} />
+                        <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} alt="Truwin brand mark" />
                     </span>
                         / Location / {title}</p>
                     <h1 className=" text-2xl sm:text-5xl font-[Cigars-SemiBold] mt-6">{heroCard.locationHeroSectionTitle}</h1>
