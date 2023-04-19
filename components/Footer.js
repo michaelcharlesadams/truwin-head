@@ -21,27 +21,47 @@ function Footer() {
 
                     <Link href="https://www.bbb.org/us/tx/humble/profile/windows/truwin-enterprises-llc-0915-90051142">
                         <a target="_blank">
-                            <img className="m-3 mx-auto" src="/images/bbb.png" width='100px' height='100%' />
+                            <img 
+                            className="m-3 mx-auto" 
+                            src="/images/bbb.png" 
+                            width='100px' 
+                            height='100%' 
+                            alt="Truwin on better business bureau"
+                            />
                         </a>
                     </Link>
                    
                     
                     <Link  href="https://web.lakehouston.org/list/member/truwin-windows-doors-15750">
                         <a target="_blank">
-                            <img className="m-4 mx-auto" src="/images/lake-houston-chamber.jpg" width='165px' height='59px' />
+                            <img className="m-4 mx-auto" 
+                            src="/images/lake-houston-chamber.jpg" width='165px' 
+                            height='59px' 
+                            alt="Truwin partners with Lake Houston Chamber"
+                            />
                         </a>
                     </Link>
                     
 
                     <Link href="https://www.houzz.com/pro/truwin/truwin-windows-doors">
                         <a target="_blank">
-                            <img className="m-4 mx-auto" src="/images/houzz.jpg" width='165px' height='44px'/>
+                            <img className="m-4 mx-auto" 
+                            src="/images/houzz.jpg" 
+                            width='165px' 
+                            height='44px'
+                            alt="Truwin on Houzz"
+                            />
                         </a>
                     </Link>
                     
                     <Link href="https://g.page/r/CWA1WqW6HKBlEBM/review">
                         <a target="_blank">
-                            <img className="m-4 mx-auto"  src="/images/google.jpg" width='131px' height='58px' />
+                            <img className="m-4 mx-auto"  
+                            src="/images/google.jpg" 
+                            width='131px' 
+                            height='58px' 
+                            alt="Truwin on Google Business"
+                            />
                         </a>
                     </Link>
                    
