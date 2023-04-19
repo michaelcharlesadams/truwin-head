@@ -98,7 +98,7 @@ function Footer() {
                 </div>
                 <div id="footer-col-3" className="w-2/4 mb-12 lg:mb-5">
                     <h4 className="font-graphikSemibold text-truwinblue-300  pb-4">Service Areas</h4>
-                    <p><Link href="/location/houston"><a className="cursor-pointer" >Houston</a></Link></p>
+                    <p><Link href="/location/houston-replacement-windows"><a className="cursor-pointer" >Houston</a></Link></p>
                     <p><Link href="/location/kingwood"><a className="cursor-pointer" >Kingwood</a></Link></p>
                     <p><Link href="/location/bryan"><a className="cursor-pointer">Bryan</a></Link></p>
                     <p><Link href="/location/college-station"><a className="cursor-pointer">College Station</a></Link></p>

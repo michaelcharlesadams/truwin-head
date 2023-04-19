@@ -42,7 +42,17 @@ export default function Product({post, morePost}) {
     <>
         <Head>
         <title>{title} - Truwin | Replacement Windows, Doors & Siding</title>
-        <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
+        <meta name="description" 
+        content={
+          slug === "windows"
+          ? "Specializing in premier Houston, TX windows replacement services. Truwin is your transparent windows company servicing all of Houston & surrounding areas."
+          : slug === "doors" 
+          ? "Truwin is your experienced Houston, TX replacement doors contractors. We offer the best brands made in the US at transparent prices. Call Us! 832-777-3681"
+          : slug === "siding"
+          ? "Whole home siding replacement at transparent prices.We're proud to provide Houston TX siding services. Replace your siding with us! 832-777-3681" 
+          : "We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."
+        }
+        ></meta>
         </Head>
       {/* * HERO ***/}
       <div id="hero-author-section" className="max-w-7xl mx-auto ">

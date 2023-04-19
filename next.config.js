@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         source: '/window-pricing-guide',
-        destination: '/location/houston',
+        destination: '/location/houston-replacement-windows',
         permanent: true,
       },
       {
@@ -64,18 +64,18 @@ module.exports = {
       },
       {
         source: '/replacement-windows-houston',
-        destination: '/location/houston',
+        destination: '/location/houston-replacement-windows',
         permanent: true,
       },
       {
         source: '/rockport-replacement-windows',
-        destination: '/location/houston',
+        destination: '/location/houston-replacement-windows',
         permanent: true,
       },
       { 
         //pointed this one to houston
         source: '/design-windows',
-        destination: '/location/houston',
+        destination: '/location/houston-replacement-windows',
         permanent: true,
       },
       { 
