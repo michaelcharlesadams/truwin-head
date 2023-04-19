@@ -13,7 +13,7 @@ module.exports = {
     domains: ['truwin.flywheelsites.com'],
   },
   redirects: async() => {
-    return [
+    return [ 
       {
         //Redirected to home page
         source: '/landing',
