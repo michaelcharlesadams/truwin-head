@@ -25,7 +25,7 @@ export default function Product({post}) {
       <Head>
       <title>{product_Materials.productMaterialHeroSection.heroSectionTitle} | Truwin Replacement Windows & Doors</title>
         <meta name="description" 
-        content={product_Materials.productMaterialHeroSection.heroSectionBlurp}
+        content={postGeneral.productMaterialGeneralTitle}
         ></meta>
       </Head>
 
