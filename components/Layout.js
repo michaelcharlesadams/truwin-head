@@ -17,7 +17,7 @@ function Layout({ children }) {
         `}
       
         </style>
-        <html lang = "en"></html>
+        
         <title>Truwin Windows, Doors, & Siding</title>
         <link rel="icon" href="/truwin-favicon-blue.png" />
         <meta name="description" content="We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area."></meta>
