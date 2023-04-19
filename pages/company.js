@@ -31,7 +31,7 @@ function Company({morePost, companyPost}) {
                         <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
                     </span>
                      / Company</p>
-                    <h3 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-6">{heroSection.companyHeroSectionTitle}</h3>
+                    <h1 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-6">{heroSection.companyHeroSectionTitle}</h1>
                     <p className="text-white text-sm mt-3 font-graphik font-medium">{heroSection.companyHeroSectionDescription}</p>
                 </div>
                 

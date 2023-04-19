@@ -35,7 +35,7 @@ export default function Post({post, morePost}){
                         <Image src="/images/truwin-breadcrumbs-blue-icon.png" width={14} height={14} />
                     </span>
                         / Location / {title}</p>
-                    <h3 className=" text-2xl sm:text-5xl font-[Cigars-SemiBold] mt-6">{heroCard.locationHeroSectionTitle}</h3>
+                    <h1 className=" text-2xl sm:text-5xl font-[Cigars-SemiBold] mt-6">{heroCard.locationHeroSectionTitle}</h1>
                     <p className=" text-lg mt-3 font-[Cigars] font-medium">{heroCard.locationHeroSectionDescription}</p>
                 
                 </div>

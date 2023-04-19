@@ -40,7 +40,7 @@ export default function Product({post}) {
                 <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
               </span>
                 / {title}</p>
-              <h3 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-SemiBold] mt-6">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h3>
+              <h1 className="text-white text-3xl sm:text-4xl md:text-4xl font-[Cigars-SemiBold] mt-6">{product_Materials.productMaterialHeroSection.heroSectionTitle}</h1>
               <p className="text-white text-sm mt-3 font-graphik font-medium">{product_Materials.productMaterialHeroSection.heroSectionBlurp}</p>
               <Link href="/pricing">
                 <a>
