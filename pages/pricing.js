@@ -12,7 +12,7 @@ function Pricing({morePost}) {
   <>
     <Head>
         <title> Pricing | Truwin</title>
-        <meta name="description" content="Why choose Truwin? We're Houston's most transparent Window, Doors, and Siding Company. We pride ourselves in our transparency across the board. 832-777-3681"></meta>
+        <meta name="description" content="Truwin's windows and door is your go-to destination for top-quality home renovation solutions. With their excellent reputation for craftsmanship and attention to detail, you can rest assured that you're getting the best value for your money.  832-777-3681"></meta>
     </Head>   
     <div id="hero-author-section" className="max-w-7xl mx-auto ">
             <div id="hero-author-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px]">
