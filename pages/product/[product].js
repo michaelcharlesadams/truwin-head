@@ -34,6 +34,9 @@ export default function Product({post, morePost}) {
      case "siding":
        descriptionToggle = "Whole home siding replacement at transparent prices.We're proud to provide Houston TX siding services. Replace your siding with us! 832-777-3681";
        break;
+    case "roofing":
+        descriptionToggle = "Roofing replacement at transparent prices. We're proud to provide Houston TX roofing services. Replace your roofing with us! 832-777-3681";
+        break;
      default:
        descriptionToggle = "We are the transparent windows, doors, and siding company. Offering better windows and doors throughout the Houston and surrounding metropolitan area.";
    }

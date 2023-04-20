@@ -19,7 +19,10 @@ function PostList({posts}) {
 
   return (
     <>
-  
+      <Head>
+        <title>Keep up with Truwin | Truwin Windows & Doors</title>
+        <meta name="description" content="Read up on tips and best practices for Windows, Doors, & Siding. We are always excited to share helpful windows, door, and siding information & resources."></meta>
+      </Head>
   {/** */}
   <div id="hero-company-section" className="max-w-7xl mx-auto ">
       <div id="hero-company-wrapper" className="mx-5 mt-3 md:flex md:min-h-[375px] md:max-h-[400px]">
