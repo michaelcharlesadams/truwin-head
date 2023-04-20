@@ -13,7 +13,8 @@ module.exports = {
     domains: ['truwin.flywheelsites.com'],
   },
   redirects: async() => {
-    return [ 
+    return [
+      /** 
       {
         //Redirected to home page
         source: '/landing',
@@ -35,6 +36,7 @@ module.exports = {
         destination: '/product/windows',
         permanent: true,
       },
+      
       {
         source: '/categories/pricing',
         destination: '/pricing',
@@ -51,6 +53,7 @@ module.exports = {
         destination: '/company',
         permanent: true,
       },
+      
       {
         source: '/window-pricing-guide',
         destination: '/location/houston-replacement-windows',
@@ -94,6 +97,7 @@ module.exports = {
         destination: '/location/san-antonio',
         permanent: true,
       },
+      
       { 
         //Send this to a blog post
         source: '/healthy-home',
@@ -144,7 +148,7 @@ module.exports = {
         source: '/better-windows-301-installation',
         destination: '/blog',
         permanent: true,
-      },
+      },*/
     ]
   },
   typescript: {
