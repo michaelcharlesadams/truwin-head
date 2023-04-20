@@ -22,7 +22,7 @@ function LocationList({locations, morePost}) {
           <div className="bg-truwinblue-900 rounded text-left px-10 py-12 md:w-6/12 md:h-auto">
               <p className="text-sm text-truwingray-primary mb-3">
               <span className='pr-2'>
-                  <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} />
+                  <Image src="/images/truwin-breadcrumb-icon.png" width={14} height={14} alt="Truwin brand mark" />
               </span>
                 / Locations</p>
               <h3 className="text-white text-3xl sm:text-4xl font-[Cigars-SemiBold] mt-3">A Truwin customer is an informed customer.</h3>

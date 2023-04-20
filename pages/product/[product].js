@@ -70,7 +70,7 @@ export default function Product({post, morePost}) {
               
             
             <div className="">
-            <img className="absolute bottom-0 right-0 w-[50%] h-auto bg-white p-5 rounded-tl rounded-br " src='/images/energy-star.png'/>
+            <img className="absolute bottom-0 right-0 w-[50%] h-auto bg-white p-5 rounded-tl rounded-br " src='/images/energy-star.png' alt="Energy Star"/>
           </div>
                 
             </div>
@@ -98,7 +98,7 @@ export default function Product({post, morePost}) {
                         
                         <div key={index} className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 mt-4 sm:mt-4 max-w-[400px] min-h-[390px] sx:min-h-[350px] md:min-h-[350px]">
                           <Link href={material.uri}>
-                             <a><img src='/images/arrow-circle.png' className='absolute top-8 right-4 w-6 h-6'/></a>
+                             <a><img src='/images/arrow-circle.png' className='absolute top-8 right-4 w-6 h-6' alt="arrow"/></a>
                           </Link>
                          
                             <p className="text-2xl font-graphikSemibold text-truwinblue-900">

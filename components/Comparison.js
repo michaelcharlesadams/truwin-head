@@ -22,6 +22,7 @@ function Comparison() {
                   src="/images/comparison–windows.jpg"
                   width={862}
                   height={608}
+                  alt="Compare Truwin"
                   />
                 </div>
                 <div id="comparison-content" className="my-5 sm:pl-14 md:pl-20 sm:pr-5 ss:max-w-[430px] md:max-w-lg">
