@@ -104,7 +104,7 @@ function Footer() {
                     <Link href="/product/windows"><a >Windows</a></Link>
                     </p>
                     <p>
-                    <Link href="/product/doors"><a >Doors</a></Link>
+                    <Link href="/product/doors"><a>Doors</a></Link>
                     </p>
                     <p>
                     <Link href="/product/siding"><a >Siding</a></Link>
