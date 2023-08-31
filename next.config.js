@@ -144,6 +144,31 @@ const nextConfig = {
 }
 
 module.exports = {
+  redirects: async() => {
+    return [
+      {
+        source: '/doors',
+        destination: '/product/doors',
+        permanent: true,
+      },
+      {
+        source: '/siding',
+        destination: '/product/siding',
+        permanent: true,
+      },
+      {
+        source: '/windows',
+        destination: '/product/windows',
+        permanent: true,
+      },
+      { 
+        //sent to home because the contact for is there
+        source: '/contact',
+        destination: '/pricing',
+        permanent: true,
+      },
+    ]
+  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
