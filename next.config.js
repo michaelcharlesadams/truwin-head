@@ -43,7 +43,6 @@ const nextConfig = {
         destination: '/company',
         permanent: true,
       },
-      
       {
         source: '/window-pricing-guide',
         destination: '/location/houston-replacement-windows',
@@ -165,6 +164,52 @@ module.exports = {
         //sent to home because the contact for is there
         source: '/contact',
         destination: '/pricing',
+        permanent: true,
+      },
+      //Locations
+      {
+        source: '/location/san-antonio',
+        destination: '/location/replacement-windows-san-antonio',
+        permanent: true,
+      },
+      {
+        source: '/location/college-station',
+        destination: '/location/replacement-windows-college-station',
+        permanent: true,
+      },
+      {
+        source: '/location/bryan',
+        destination: '/location/replacement-windows-bryan',
+        permanent: true,
+      },
+      {
+        source: '/location/humble',
+        destination: '/location/replacement-windows-humble',
+        permanent: true,
+      },
+      {
+        source: '/location/kingwood',
+        destination: '/location/replacement-windows-kingwood',
+        permanent: true,
+      },
+      {
+        source: '/location/katy',
+        destination: '/location/replacement-windows-katy',
+        permanent: true,
+      },
+      {
+        source: '/location/woodlands',
+        destination: '/location/replacement-windows-woodlands',
+        permanent: true,
+      },
+      {
+        source: '/location/conroe',
+        destination: '/location/replacement-windows-conroe',
+        permanent: true,
+      },
+      {
+        source: '/location/richmond',
+        destination: '/location/replacement-windows-richmond',
         permanent: true,
       },
     ]
