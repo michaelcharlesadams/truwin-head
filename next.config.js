@@ -144,7 +144,12 @@ const nextConfig = {
 
 module.exports = {
   redirects: async() => {
-    return [
+    return [ 
+    {
+      source: '/better-vinyl-windows-101-201',
+      destination: '/blog/better-vinyl-windows-101-201',
+      permanent: true,
+    },
       {
         source: '/doors',
         destination: '/product/doors',
@@ -185,6 +190,11 @@ module.exports = {
       {
         source: '/location/humble',
         destination: '/location/replacement-windows-humble',
+        permanent: true,
+      },
+      {
+        source: '/kingwood-replacement-windows',
+        destination: '/location/replacement-windows-kingwood',
         permanent: true,
       },
       {
