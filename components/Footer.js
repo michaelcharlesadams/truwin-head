@@ -32,7 +32,7 @@ function Footer() {
                     </Link>
                    
                     
-                    <Link  href="https://web.lakehouston.org/list/member/truwin-windows-doors-15750">
+                    <Link  href="https://www.lakehouston.org/member-directory/truwin-windows--doors">
                         <a target="_blank">
                             <img className="m-4 mx-auto" 
                             src="/images/lake-houston-chamber.jpg" width='165px' 
