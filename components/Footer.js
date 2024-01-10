@@ -16,14 +16,37 @@ function Footer() {
             </style>
             <div id="sub-footer-wrapper" className="p-10 mt-20 bg-truwinsoftblue-primary">
 
-                <div className="grid grid-cols-1 sx:grid-cols-2 md:grid-cols-4 ">
+                <div className="grid grid-cols-1 sx:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:items-center lg:max-w-7xl mx-auto ">
 
-
-                    <Link href="https://www.bbb.org/us/tx/humble/profile/windows/truwin-enterprises-llc-0915-90051142">
+                <Link href="https://www.bbb.org/us/tx/humble/profile/windows/truwin-enterprises-llc-0915-90051142">
                         <a target="_blank">
                             <img 
                             className="m-3 mx-auto" 
                             src="/images/bbb.png" 
+                            width='100px' 
+                            height='100%' 
+                            alt="Truwin on better business bureau"
+                            />
+                        </a>
+                    </Link>
+
+                    <Link href="https://bcschamber.chambermaster.com/mic/members/details/truwin-windows-doors-10529?memId=10529&repId=22796">
+                        <a target="_blank">
+                            <img 
+                            className="m-3 mx-auto" 
+                            src="/images/chamber_of_commerce_bryan_college_station_truwin_doors.png" 
+                            width='100px' 
+                            height='100%' 
+                            alt="Truwin on better business bureau"
+                            />
+                        </a>
+                    </Link>
+
+                    <Link href="https://www.navasotagrimeschamber.com/directory#!biz/id/64a58dfdca2b255cf211e1c7">
+                        <a target="_blank">
+                            <img 
+                            className="m-3 mx-auto" 
+                            src="/images/navasota_grimes_county_truwin_doors.png" 
                             width='100px' 
                             height='100%' 
                             alt="Truwin on better business bureau"
@@ -42,6 +65,16 @@ function Footer() {
                         </a>
                     </Link>
                     
+                    <Link href="https://g.page/r/CWA1WqW6HKBlEBM/review">
+                        <a target="_blank">
+                            <img className="m-4 mx-auto"  
+                            src="/images/google.jpg" 
+                            width='131px' 
+                            height='58px' 
+                            alt="Truwin on Google Business"
+                            />
+                        </a>
+                    </Link>
 
                     <Link href="https://www.houzz.com/pro/truwin/truwin-windows-doors">
                         <a target="_blank">
@@ -54,16 +87,7 @@ function Footer() {
                         </a>
                     </Link>
                     
-                    <Link href="https://g.page/r/CWA1WqW6HKBlEBM/review">
-                        <a target="_blank">
-                            <img className="m-4 mx-auto"  
-                            src="/images/google.jpg" 
-                            width='131px' 
-                            height='58px' 
-                            alt="Truwin on Google Business"
-                            />
-                        </a>
-                    </Link>
+                   
                    
                 </div>
                
