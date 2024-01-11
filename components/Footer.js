@@ -30,7 +30,7 @@ function Footer() {
                         </a>
                     </Link>
 
-                    <Link href="https://bcschamber.chambermaster.com/mic/members/details/truwin-windows-doors-10529?memId=10529&repId=22796">
+                    <Link href="https://business.bcschamber.org/list/member/truwin-windows-doors-10529">
                         <a target="_blank">
                             <img 
                             className="m-3 mx-auto" 
