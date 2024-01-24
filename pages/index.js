@@ -222,32 +222,32 @@ const hideTip = (e) => {
                 {/** Vinyl */}
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
                 
-                <Link href="/product_material/vinyl-doors">
+                <Link href="/product_material/vinyl-windows">
                   <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                <Link href="/product_material/vinyl-doors">
+                <Link href="/product_material/vinyl-windows">
                     <h1 className="text-2xl font-graphikSemibold text-truwinblue-900">Vinyl</h1>
                   </Link>
-                  <Link href="/product_material/vinyl-doors">
+                  <Link href="/product_material/vinyl-windows">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/vinyl-n.png" alt="windows and partner " />
                     </Link>
                 </div>
 
                 {/** Aluminum */}
                 <div className="relative w-auto border rounded border-truwinblue-300 px-8 pt-8 m-3 lg:max-w-[400px] min-h-[270px] max-h-[271px]">
-                <Link href="/product_material/aluminum">
+                <Link href="/product_material/aluminum-windows">
                   <svg className="absolute top-4 right-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="11.5" stroke="#E1E1E3"/>
                     <path d="M10 7L14.8 11.8L10 16.6" stroke="#2B50AF"/>
                   </svg>
                 </Link>
-                <Link href="/product_material/aluminum">
+                <Link href="/product_material/aluminum-windows">
                     <h1 className="text-2xl text-truwinblue-900 font-graphikSemibold">Aluminum</h1>
                     </Link>
-                    <Link href="/product_material/aluminum">
+                    <Link href="/product_material/aluminum-windows">
                     <img className="absolute bottom-0 inset-x-0 px-5 w-auto h-auto mx-auto mt-8" src="/images/home-icons/aluminum-n.jpg"  alt="windows and partner " />
                     </Link>
                 </div>
