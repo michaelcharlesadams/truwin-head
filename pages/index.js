@@ -88,6 +88,10 @@ const hideTip = (e) => {
     <Vendor vendorIcons={vendorIcons}/> 
     {/** VENDOR LOGOS */}
 
+    <div id="rwl-map"></div>
+
+    <div id="rwl-review-carousel"></div>
+
     {/** Categories */}
     <section id="post-title-section" className="lg:max-w-7xl mx-auto" >
       <div id="post-title-wrapper" className="mx-5 mt-20">

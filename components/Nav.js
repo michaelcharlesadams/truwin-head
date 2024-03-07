@@ -47,12 +47,12 @@ function Nav() {
             <div id="hug" className="w-[150px] flex justify-between md:hidden ">
                  <div className="px-4 py-2 rounded bg-truwinblue-900">
                     
-                    <Link href="/pricing">
+                     <Link href="/pricing">
                         <button>
                             <a  className=" text-white font-graphikSemibold">Get Pricing</a>
                         </button>
                     </Link>
-                    
+                        
                  </div>
                  <div id="navMobile" className="cursor-pointer" name="menu" onClick={myNavToggle}>
                      <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 text-truwinblue-300">
@@ -89,16 +89,17 @@ function Nav() {
             
          </div>
          <Link href="/pricing" >
-         <div className="hidden md:flex md:flex-auto mt-2 rounded mr-5 md:w-3/12 bg-truwinblue-900 hover:bg-truwinblue-500 cursor-pointer">
-                 
-                 
-                 <button className="mx-auto">
-                 <a className="text-white font-graphikSemibold">Get Pricing </a>
-                 </button>
-                 
-                 
+            <div className="hidden md:flex md:flex-auto mt-2 rounded mr-5 md:w-3/12 bg-truwinblue-900 hover:bg-truwinblue-500 cursor-pointer">
+                    
+                    
+                    <button  id="work-request-button-a561e1fc-17f2-4b15-93c1-b91578a9eabb" className="mx-auto">
+                        <span className="text-white font-graphikSemibold">Get Pricing </span>
+                    </button>
+                    
+                    
          </div>
          </Link>
+        
            {/**  */}
          
            {/**  */}
