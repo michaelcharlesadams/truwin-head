@@ -83,19 +83,60 @@ a {
 } */
 
 /****************
-* REALM WORKS
+* REALM WORKS - Recent project page
 ****************/
-/* .rwl-output h3.rwlLocationLabel {
+#rwl-output h3.rwlLocationLabel {
   padding: 2rem 0rem 1rem;
   font-size: 2rem;
-} */
+} 
 
-/* .rwl-output  .rwlMapLegend {
+#rwl-output  .rwlMapLegend {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.rwl-output .rwlMapLegendAreas a {
+#rwl-output .rwlMapLegendAreas a {
   color: #133EAC;
   text-decoration: none;
-} */
+  font-family: Graphik;
+} 
+
+#rwl-output .rwlMapLegendAreas a:hover {
+  color: #0A2337;
+  text-decoration: none;
+} 
+
+
+
+/****************
+* REALM WORKS - Homepage widget
+****************/
+#rwl-map{
+  padding-top: 0rem;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#rwl-map .rwlTopCitiesContainer{
+  padding-top: 1rem;
+  font-family: Graphik;
+}
+
+
+#rwl-map .rwlTopCitiesContainer a {
+  color: #133EAC;
+  text-decoration: none;
+  font-family: Graphik;
+  padding-right:.5rem;
+} 
+
+#rwl-map .rwlTopCitiesContainer h3.rwlTopCitiesLabel{
+  font-size: 1.5rem;
+}
+
+#rwl-map .sc-cCcXHH{
+  border-radius: 8px;
+}

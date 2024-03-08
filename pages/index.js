@@ -88,9 +88,7 @@ const hideTip = (e) => {
     <Vendor vendorIcons={vendorIcons}/> 
     {/** VENDOR LOGOS */}
 
-    <div id="rwl-map"></div>
-
-    <div id="rwl-review-carousel"></div>
+  
 
     {/** Categories */}
     <section id="post-title-section" className="lg:max-w-7xl mx-auto" >
@@ -411,6 +409,7 @@ const hideTip = (e) => {
     </section>
   {/** END PRODUCT MATERIALS */}
 
+
     {/** FEATURED POST    */}
     <section id="card-onethird-session-reverse" className="lg:max-w-7xl mx-auto">
         <div id="card-onethrid-wrapper" className="mx-5 mt-24 md:flex md:flex-row-reverse md:min-h-[390px]">
@@ -489,7 +488,18 @@ const hideTip = (e) => {
     </section>
     {/**  WHY TRUWIN   */}
 
+  {/** Customer Reviews */}
+  <section id="review-section" className="lg:max-w-7xl mx-auto" >
+      <div id="review-wrapper" className="mx-5 mt-20">
+          <div className="mx-2 mb-11">
+              <h1 className="text-5xl text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Project Reviews</h1>
+              <p className="font-graphikLight text-truwinblue-900 text-center">See what customers in your area think about our services. </p>
+          </div>
+          <div id="rwl-map"></div>
 
+          <div id="rwl-review-carousel"></div>
+      </div>
+    </section>
     {/**  MORE POSTS   */}
     <MorePost  posts={morePost}/>
     {/**  END MORE POSTS   */}
