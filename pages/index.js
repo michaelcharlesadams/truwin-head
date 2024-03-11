@@ -492,7 +492,7 @@ const hideTip = (e) => {
   <section id="review-section" className="lg:max-w-7xl mx-auto" >
       <div id="review-wrapper" className="mx-5 mt-20">
           <div className="mx-2 mb-11">
-              <h1 className="text-3xl text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Project Reviews</h1>
+              <h1 className="text-5xl text-center font-[Cigars-Semibold] text-truwinblue-900 pb-4 sm:text-4xl">Project Reviews</h1>
               <p className="font-graphikLight text-truwinblue-900 text-center">See what customers in your area think about our services. </p>
           </div>
           <div id="rwl-map"></div>
