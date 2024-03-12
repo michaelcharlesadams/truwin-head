@@ -85,28 +85,24 @@ a {
 /****************
 * REALM WORKS - Recent project page
 ****************/
-#rwl-output h3.rwlLocationLabel {
-  padding: 2rem 0rem 1rem;
-  font-size: 2rem;
-} 
 
 #rwl-output  .rwlMapLegend {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-
+#rwl-output h3.rwlLocationLabel {
+  padding: 2rem 0rem 1rem;
+  font-size: 1.5rem;
+} 
 #rwl-output .rwlMapLegendAreas a {
   color: #133EAC;
   text-decoration: none;
   font-family: Graphik;
 } 
-
 #rwl-output .rwlMapLegendAreas a:hover {
   color: #0A2337;
   text-decoration: none;
 } 
-
-
 
 /****************
 * REALM WORKS - Homepage widget
@@ -116,15 +112,13 @@ a {
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
-
 #rwl-map .rwlTopCitiesContainer{
   padding-top: 1rem;
   font-family: Graphik;
 }
-
 
 #rwl-map .rwlTopCitiesContainer a {
   color: #133EAC;
@@ -132,11 +126,23 @@ a {
   font-family: Graphik;
   padding-right:.5rem;
 } 
-
+#rwl-map .sc-cCcXHH{
+  border-radius: 8px;
+}
 #rwl-map .rwlTopCitiesContainer h3.rwlTopCitiesLabel{
   font-size: 1.5rem;
 }
+@media (min-width: 768px){
 
-#rwl-map .sc-cCcXHH{
-  border-radius: 8px;
+/******* REALM WORKS - Recent project page ********/
+#rwl-output h3.rwlLocationLabel {
+  font-size: 2rem;
+} 
+
+/**** REALM WORKS -(Desktop) Homepage widget *****/
+#rwl-map{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 }

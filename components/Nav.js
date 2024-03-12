@@ -48,7 +48,7 @@ function Nav() {
                  <div className="px-4 py-2 rounded bg-truwinblue-900">
                     
                      <Link href="/pricing">
-                        <button>
+                        <button name="button" type="button" id="work-request-button-a561e1fc-17f2-4b15-93c1-b91578a9eabb">
                             <a  className=" text-white font-graphikSemibold">Get Pricing</a>
                         </button>
                     </Link>
@@ -80,6 +80,9 @@ function Nav() {
                     <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:pb-4 md:pt-4 hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/company"><a >About</a></Link>
                         </li>
+                    <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block border-b-[1px] border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4  md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
+                     <Link href="/recent_projects"><a >Projects</a></Link>
+                    </li>
                      <li className="font-medium text-truwinblue-900 text-lg pb-7 pt-7 block  border-truwinblue-900 border-solid md:border-b-0 md:pl-4 md:pr-4 md:hidden hover:bg-slate-100 hover:rounded" onClick={()=> myNavToggle()} >
                      <Link href="/blog"><a >Blog</a></Link>
                     </li>
@@ -92,7 +95,7 @@ function Nav() {
             <div className="hidden md:flex md:flex-auto mt-2 rounded mr-5 md:w-3/12 bg-truwinblue-900 hover:bg-truwinblue-500 cursor-pointer">
                     
                     
-                    <button  id="work-request-button-a561e1fc-17f2-4b15-93c1-b91578a9eabb" className="mx-auto">
+                    <button name="button" type="button" id="work-request-button-a561e1fc-17f2-4b15-93c1-b91578a9eabb" className="mx-auto">
                         <span className="text-white font-graphikSemibold">Get Pricing </span>
                     </button>
                     
