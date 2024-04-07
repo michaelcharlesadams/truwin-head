@@ -122,7 +122,7 @@ export default function Product({post}) {
             <div className="px-5 py-6 text-truwinblue-900 rounded-b md:p-10 md:w-1/2 md:rounded-br md:rounded-tr md:rounded-bl-none md:rounded-tl-none lg:px-7">
                 <p className="py-2 font-graphik text-truwinblue-900">{postGeneral.productMaterialGeneralHeadline}</p>
                 <h3 className="font-serif text-4xl py-2">{postGeneral.productMaterialGeneralTitle}</h3>
-                <div className="py-2 font-graphik prod_p" >{postGeneral.productMaterialGeneralDescription}</div>
+                <div className="py-2 font-graphik prod_p" dangerouslySetInnerHTML={{__html : postGeneral.productMaterialGeneralDescription}}></div>
                
                 <p className="pt-6 font-graphik">Questions about {product_Materials.productMaterialHeroSection.heroSectionTitle}?</p>
                 <p className="font-graphikSemibold ">Call <a href="tel:832-777-3681">(832) 777-3681</a></p>
