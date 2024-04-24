@@ -57,7 +57,7 @@ function LocationList({locations, morePost}) {
                 </a>
                 </Link>
                 
-                <p className="text-sm font-graphik my-4" dangerouslySetInnerHTML={ {__html: post.content} }></p>
+                <p className="text-sm font-graphik my-4">{post.content}</p>
 
                 {post.locationProducts.locationServicesSection[0].locationProductsSection &&
 
