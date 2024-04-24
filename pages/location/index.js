@@ -57,7 +57,7 @@ function LocationList({locations, morePost}) {
                 </a>
                 </Link>
                 
-                <p className="text-sm font-graphik my-4">{post.content}</p>
+                <p className="text-sm font-graphik my-4">We strive to provide our clients with the transparent and competitive prices on the best value windows.</p>
 
                 {post.locationProducts.locationServicesSection[0].locationProductsSection &&
 
